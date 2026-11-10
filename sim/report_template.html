@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secret ONU Playtest Results</title>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f6f4; --surface:#ffffff; --ink:#14181f; --ink2:#4b5260; --ink3:#7a8190; --line:#e2e3e0; --grid:#ececea;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#e87ba4; --warn:#b3261e;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121417; --surface:#1a1d21; --ink:#eceef1; --ink2:#b4bac5; --ink3:#8b93a1; --line:#2c3037; --grid:#262a30;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#d55181; --warn:#ff8a80;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121417; --surface:#1a1d21; --ink:#eceef1; --ink2:#b4bac5; --ink3:#8b93a1; --line:#2c3037; --grid:#262a30;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#d55181; --warn:#ff8a80;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font-size:clamp(26px,5vw,36px);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:20px;line-height:1.25;margin:0;text-wrap:balance}
+p{margin:0;color:var(--ink2);max-width:65ch}
+.sub{color:var(--ink3);font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font-size:28px;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--ink2)}
+section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.chartbox{overflow-x:auto}
+.chart{display:block;width:100%;min-width:480px;height:auto}
+.grid{stroke:var(--grid);stroke-width:1}
+.base{stroke:var(--ink3);stroke-width:1}
+.tick,.cat,.axlabel,.note{fill:var(--ink3);font-size:12px}
+.cat{fill:var(--ink2)}
+.val{fill:var(--ink2);font-size:11px;font-variant-numeric:tabular-nums}
+.mark{stroke:var(--ink3);stroke-width:1;stroke-dasharray:4 4}
+.f1{fill:var(--s1)}.f2{fill:var(--s2)}.f3{fill:var(--s3)}.f4{fill:var(--s4)}
+.ln{fill:none;stroke-width:2.5;stroke-linejoin:round}
+.c1{stroke:var(--s1)}.c2{stroke:var(--s2)}.c3{stroke:var(--s3)}.c4{stroke:var(--s4)}
+.dot{stroke:var(--surface);stroke-width:2}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}
+.verdict{font-size:14px;color:var(--ink);border-left:3px solid var(--s2);padding-left:12px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+summary{cursor:pointer;font-weight:600}
+summary:focus-visible{outline:2px solid var(--s1);outline-offset:3px}
+.tablewrap{overflow-x:auto;margin-top:12px}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
+th{color:var(--ink2);font-weight:600}
+code{font:12px ui-monospace,Consolas,monospace;background:var(--grid);padding:1px 5px;border-radius:4px}
+.warn{border:1px solid var(--warn);border-radius:10px;padding:12px 16px;color:var(--ink);font-size:14px}
+.warn b{color:var(--warn)}
+ul{margin:8px 0 0;padding-left:20px;color:var(--ink2);font-size:14px;display:flex;flex-direction:column;gap:4px}
+</style>
+</head>
+<body>
+<main>
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <h1>Secret ONU: simulated playtest</h1>
+    <p>{{GAMES}} simulated games per setup, 12 rounds each, using the current test quadrants, events and objectives. Each game draws one quadrant per section (A to D) at random. The players are simple bots, so read these as pressure tests of the numbers, not predictions of how real tables will play.</p>
+    <p class="sub">Run <code>{{RUN_ID}}</code> · {{RUN_DATE}} · {{RULES_TXT}}</p>
+  </header>
+  {{WARN}}
+
+  <div class="kpis">
+    <div class="kpi"><b>{{K_PIN_ANY}}</b><span>of games end with a track stuck at 0 or 20 (4 players, mixed bots)</span></div>
+    <div class="kpi"><b>{{K_LOSS}}</b><span>games lost by everyone (4 players, mixed bots)</span></div>
+    <div class="kpi"><b>{{K_UNH}} / 5</b><span>unhandled events on average before the game ends</span></div>
+    <div class="kpi"><b>{{K_PASS}}</b><span>of votes pass when players protect against events</span></div>
+    <div class="kpi"><b>{{K_WIN3}} → {{K_WIN6}}</b><span>win rate per player, 3 players to 6 players</span></div>
+  </div>
+
+  <section>
+    <h2>Quadrants push the tracks before anyone votes</h2>
+    <p>Each quadrant's "(start)" space applies its effect every round from round 1. Across all {{K_HEAVY}} possible draws that are a track moving 4 or more per round, which reaches a track limit within about three rounds. Average start drift per round: {{DRIFT_TXT}}.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Quadrant</th><th>Name</th><th>Start space</th><th>Environment</th><th>Economy</th><th>Social</th></tr></thead>
+      <tbody>{{QUAD_ROWS}}</tbody>
+    </table></div>
+    <p class="sub">Effect per round from the starting space. Green is a gain, orange a loss.</p>
+  </section>
+
+  <section>
+    <h2>Win rate depends on which quadrants are drawn</h2>
+    <p>The average is {{K_AVG_WIN}} per player. The hardest quadrant is {{K_WORST_Q}} at {{K_WORST_WIN}}; the easiest is {{K_BEST_Q}} at {{K_BEST_WIN}}.</p>
+    <div class="chartbox">{{CHART_QWIN}}</div>
+    <p class="sub">Win rate per player in games where the quadrant was drawn, 4 players, mixed bots.</p>
+    <h2>Some quadrants make pinned tracks more likely</h2>
+    <div class="chartbox">{{CHART_QPIN}}</div>
+    <p class="sub">% of games where at least one track ends at 0 or 20, by quadrant drawn.</p>
+  </section>
+
+  <section>
+    <h2>{{LOSS_TITLE}}</h2>
+    <p>{{LOSS_TEXT}}</p>
+    {{LEG_STRAT}}
+    <div class="chartbox">{{CHART_LOSS}}</div>
+    <p class="sub">Games lost by everyone, in %. Cooperative bots always back the event; selfish bots only back it when it helps their own objective; mixed is halfway.</p>
+  </section>
+
+  <section>
+    <h2>{{SWEEP_TITLE}}</h2>
+    <p>At the current cost ({{K_BASE}} for 4 players) mixed bots lose {{K_SW_BASE}} of games. At {{K_BEST}} they lose {{K_SW_BEST}}, and at {{K_SW_LAST_COST}} the loss rate reaches {{K_SW_LAST}} ({{K_SW_LAST_COOP}} even when everyone cooperates).</p>
+    {{LEG_SWEEP}}
+    <div class="chartbox">{{CHART_SWEEP}}</div>
+    <p class="verdict">{{SWEEP_VERDICT}}</p>
+  </section>
+
+  <section>
+    <h2>Events and votes compete for the same cards</h2>
+    <p>{{VOTES_TEXT}}</p>
+    {{LEG_VOTES}}
+    <div class="chartbox">{{CHART_VOTES}}</div>
+    <p class="sub">4 players, % of rounds.</p>
+  </section>
+
+  <section>
+    <h2>Fewer players win as the table fills up</h2>
+    <p>No three objectives in the pool are compatible with each other, so at most two players can win in the same game. "Everyone wins" never happens at 3 or more players.</p>
+    {{LEG_WINS}}
+    <div class="chartbox">{{CHART_WINS}}</div>
+    <p class="sub">Mixed bots, % of games.</p>
+  </section>
+
+  <section>
+    <h2>Preset objective sets: {{PRESET_WORST}} is the hardest, {{PRESET_BEST}} the easiest</h2>
+    <p>Each game uses one of the two preset sets for its player count (the chart and table run every set on its own with mixed bots).</p>
+    {{LEG_PRESETS}}
+    <div class="chartbox">{{CHART_PRESETS}}</div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Set</th><th>Objective</th><th>Conditions</th><th>Win rate</th><th>Set: per player</th><th>Set: at least one winner</th></tr></thead>
+      <tbody>{{PRESET_TABLE}}</tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Neutral-drift baseline: the objectives spread {{BASE_SPREAD_BASE}} points apart, against {{BASE_SPREAD_CUR}} now</h2>
+    <p>The baseline uses three synthetic, symmetric quadrants (environment↔economy, economy↔social, social↔environment) that all start on a neutral space, so nothing drifts until a vote moves a pointer. Events, votes, bots and preset objectives are unchanged. What remains is the balance coming from the objectives and events alone.</p>
+    <p>With the baseline, {{BASE_PIN_BASE}} of 4-player games end with a track stuck at 0 or 20 (now {{BASE_PIN_CUR}}). Average final tracks: {{BASE_END}}. The hardest objective is {{BASE_HARD}} ({{BASE_HARD_V}}) and the easiest {{BASE_EASY}} ({{BASE_EASY_V}}). Objectives with a low condition win {{BASE_LOW}} of the time, the others {{BASE_NOLOW}}.</p>
+    {{LEG_BASE}}
+    <div class="chartbox">{{CHART_BASE_OBJ}}</div>
+    <p class="sub">Win rate per objective, pooled over all preset sets, mixed bots.</p>
+    {{LEG_BASE}}
+    <div class="chartbox">{{CHART_BASE_PRESETS}}</div>
+    <p class="sub">Win rate per player for each preset set.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Players</th><th>Per player now</th><th>Per player baseline</th><th>≥1 winner now</th><th>≥1 winner baseline</th><th>Pinned now</th><th>Pinned baseline</th><th>Loss now</th><th>Loss baseline</th></tr></thead>
+      <tbody>{{BASE_TABLE}}</tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>{{OBJ_TITLE}}</h2>
+    <p>{{OBJ_TEXT}}</p>
+    <div class="chartbox">{{CHART_OBJ}}</div>
+    <p class="sub">Win rate per objective across all preset sets, mixed bots.</p>
+  </section>
+
+  <section>
+    <h2>Which tracks hit their limits</h2>
+    <p>Average final values: {{MEAN_END}}.</p>
+    <div class="chartbox">{{CHART_TRACKS}}</div>
+    <p class="sub">% of games, 4 players, mixed bots.</p>
+  </section>
+
+  <section>
+    <h2>A lying President costs the table only a couple of points</h2>
+    <p>Bots trust the President's claim at 60%. In the model, lying changes the win rate by about {{K_LIE_DELTA}} points at 4 players. Human bluffing and suspicion aren't modelled.</p>
+    {{LEG_LIES}}
+    <div class="chartbox">{{CHART_LIES}}</div>
+    <p class="sub">Win rate per player, %, mixed bots.</p>
+  </section>
+
+  <details>
+    <summary>Version of this run</summary>
+    <p class="sub" style="margin-top:10px">{{CHANGED}} The exact files used are saved in <code>sim/runs/{{RUN_ID}}/</code>. Re-run them with <code>python reproduce.py runs/{{RUN_ID}}</code>.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>File</th><th>Hash</th><th>Since previous run</th></tr></thead>
+      <tbody>{{VERSION_ROWS}}</tbody>
+    </table></div>
+  </details>
+
+  <details>
+    <summary>All numbers</summary>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Players</th><th>Strategy</th><th>Loss</th><th>Unhandled</th><th>Events handled</th><th>Votes passed</th><th>Win/player</th><th>≥1 winner</th></tr></thead>
+      <tbody>{{TABLE}}</tbody>
+    </table></div>
+  </details>
+
+  <details>
+    <summary>Assumptions the rules don't define</summary>
+    <ul>
+      <li>Sections: low 0–6, medium 7–13, high 14–20.</li>
+      <li>Costs: events 6/8/10/12, votes 7/9/11/13 for 3/4/5/6 players. Loss at the 5th unhandled event.</li>
+      <li>Hand: one card each of 0–5. Each player plays one card on the event and one on the vote every round.</li>
+      <li>Vote deck: 40 random cards, each moving two quadrants by 1 step (70%) or 2 steps (30%), in a random direction.</li>
+      <li>Objectives come from <code>test_objective_sets.md</code>: a random one of the preset sets for the player count each game, dealt to random seats.</li>
+      <li>The President picks the card that best serves their own objective. In the lying runs, they claim the opposite effect whenever the card hurts them.</li>
+      <li>Bots estimate each decision by how far their objective would be from its target section after the remaining rounds. They do not plan further or read other players.</li>
+    </ul>
+  </details>
+</main>
+</body>
+</html>

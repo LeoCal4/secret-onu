@@ -1,0 +1,7558 @@
+{
+ "lies": {
+  "3p/lies": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8466,
+   "any_winner": 0.6099333333333333,
+   "by_obj": {
+    "Degrowth": [
+     280,
+     7506
+    ],
+    "Green Transition": [
+     975,
+     7494
+    ],
+    "Growth Power": [
+     2634,
+     7506
+    ],
+    "Humanist": [
+     2330,
+     7506
+    ],
+    "Resource Power": [
+     2678,
+     7494
+    ],
+    "Welfare State": [
+     2292,
+     7494
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6786762743528156,
+     "games": 7494,
+     "loss": 0.003869762476647985,
+     "pinned": 0.8461435815318922,
+     "win_per_player": 0.2644337692376123
+    },
+    "3-B": {
+     "any_winner": 0.5413002930988543,
+     "games": 7506,
+     "loss": 0.0031974420463629096,
+     "pinned": 0.8470556887823075,
+     "win_per_player": 0.23288036237676527
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4933,
+     "loss": 0.003040745996351105,
+     "pinned": 0.8374214473950943,
+     "win_per_player": 0.27049124940874386
+    },
+    "A2": {
+     "games": 4958,
+     "loss": 0.002016942315449778,
+     "pinned": 0.8662767244856797,
+     "win_per_player": 0.23046927524539465
+    },
+    "A3": {
+     "games": 5109,
+     "loss": 0.00548052456449403,
+     "pinned": 0.8363671951458211,
+     "win_per_player": 0.24518822992105435
+    },
+    "B1": {
+     "games": 4922,
+     "loss": 0.004266558309630231,
+     "pinned": 0.9197480698902885,
+     "win_per_player": 0.22436678856833264
+    },
+    "B2": {
+     "games": 4960,
+     "loss": 0.0036290322580645163,
+     "pinned": 0.8274193548387097,
+     "win_per_player": 0.2695564516129032
+    },
+    "B3": {
+     "games": 5118,
+     "loss": 0.0027354435326299334,
+     "pinned": 0.794841735052755,
+     "win_per_player": 0.25172593460987364
+    },
+    "C1": {
+     "games": 5157,
+     "loss": 0.0042660461508629045,
+     "pinned": 0.8627108784176847,
+     "win_per_player": 0.2563505914291255
+    },
+    "C2": {
+     "games": 4932,
+     "loss": 0.0032441200324412004,
+     "pinned": 0.8590835360908353,
+     "win_per_player": 0.2402676399026764
+    },
+    "C3": {
+     "games": 4911,
+     "loss": 0.0030543677458766036,
+     "pinned": 0.8171451842801873,
+     "win_per_player": 0.24896490870834181
+    },
+    "D1": {
+     "games": 4974,
+     "loss": 0.0038198632891033374,
+     "pinned": 0.8337354242058705,
+     "win_per_player": 0.23529017557968102
+    },
+    "D2": {
+     "games": 5032,
+     "loss": 0.003577106518282989,
+     "pinned": 0.8684419713831478,
+     "win_per_player": 0.24920508744038156
+    },
+    "D3": {
+     "games": 4994,
+     "loss": 0.0032038446135362435,
+     "pinned": 0.8374048858630356,
+     "win_per_player": 0.26138032305433184
+    }
+   },
+   "end": {
+    "economy": 15.054466666666666,
+    "environment": 8.191733333333334,
+    "social": 14.1208
+   },
+   "extreme": {
+    "economy": 0.4906,
+    "environment": 0.3555333333333333,
+    "social": 0.5631333333333334
+   },
+   "handled": 0.8594128497455386,
+   "loss": 0.003533333333333333,
+   "lost_round": 11.773584905660377,
+   "obj_win": {
+    "economy medium, social high": [
+     2292,
+     7494
+    ],
+    "environment high, economy low": [
+     280,
+     7506
+    ],
+    "environment high, economy medium": [
+     975,
+     7494
+    ],
+    "environment low, economy high": [
+     2678,
+     7494
+    ],
+    "environment medium, economy high": [
+     2634,
+     7506
+    ],
+    "environment medium, social high": [
+     2330,
+     7506
+    ]
+   },
+   "unhandled": 1.6869333333333334,
+   "vote_pass": 0.3325999511078516,
+   "win_per_player": 0.24864444444444445
+  },
+  "3p/truth": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8462666666666666,
+   "any_winner": 0.6227333333333334,
+   "by_obj": {
+    "Degrowth": [
+     300,
+     7472
+    ],
+    "Green Transition": [
+     953,
+     7528
+    ],
+    "Growth Power": [
+     2686,
+     7472
+    ],
+    "Humanist": [
+     2382,
+     7472
+    ],
+    "Resource Power": [
+     2704,
+     7528
+    ],
+    "Welfare State": [
+     2371,
+     7528
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6886291179596175,
+     "games": 7528,
+     "loss": 0.0033209351753453772,
+     "pinned": 0.8479011689691818,
+     "win_per_player": 0.2669146298264258
+    },
+    "3-B": {
+     "any_winner": 0.5563436830835118,
+     "games": 7472,
+     "loss": 0.0034796573875802996,
+     "pinned": 0.8446199143468951,
+     "win_per_player": 0.23947180585296218
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4937,
+     "loss": 0.0024306258861656878,
+     "pinned": 0.8399837958274256,
+     "win_per_player": 0.27506582945108365
+    },
+    "A2": {
+     "games": 4995,
+     "loss": 0.0024024024024024023,
+     "pinned": 0.8654654654654654,
+     "win_per_player": 0.23463463463463463
+    },
+    "A3": {
+     "games": 5068,
+     "loss": 0.005327545382794002,
+     "pinned": 0.8334648776637726,
+     "win_per_player": 0.2503288608260984
+    },
+    "B1": {
+     "games": 4973,
+     "loss": 0.004423889000603257,
+     "pinned": 0.9131309068972451,
+     "win_per_player": 0.22736108318251894
+    },
+    "B2": {
+     "games": 4942,
+     "loss": 0.0028328611898017,
+     "pinned": 0.8367057871307163,
+     "win_per_player": 0.27498988263860785
+    },
+    "B3": {
+     "games": 5085,
+     "loss": 0.0029498525073746312,
+     "pinned": 0.7901671583087513,
+     "win_per_player": 0.2574237954768928
+    },
+    "C1": {
+     "games": 5168,
+     "loss": 0.003676470588235294,
+     "pinned": 0.8593266253869969,
+     "win_per_player": 0.26096491228070173
+    },
+    "C2": {
+     "games": 4907,
+     "loss": 0.0030568575504381496,
+     "pinned": 0.8581618096596698,
+     "win_per_player": 0.24563548671965219
+    },
+    "C3": {
+     "games": 4925,
+     "loss": 0.0034517766497461928,
+     "pinned": 0.8207106598984771,
+     "win_per_player": 0.25272419627749576
+    },
+    "D1": {
+     "games": 5067,
+     "loss": 0.004341819617130452,
+     "pinned": 0.8296822577462009,
+     "win_per_player": 0.23833958292217616
+    },
+    "D2": {
+     "games": 4977,
+     "loss": 0.0028129395218002813,
+     "pinned": 0.8659835242113723,
+     "win_per_player": 0.2562453954859018
+    },
+    "D3": {
+     "games": 4956,
+     "loss": 0.003026634382566586,
+     "pinned": 0.8434221146085553,
+     "win_per_player": 0.265469464622007
+    }
+   },
+   "end": {
+    "economy": 15.0164,
+    "environment": 8.3094,
+    "social": 14.2054
+   },
+   "extreme": {
+    "economy": 0.4849333333333333,
+    "environment": 0.34846666666666665,
+    "social": 0.5638666666666666
+   },
+   "handled": 0.8634631197635398,
+   "loss": 0.0034,
+   "lost_round": 11.764705882352942,
+   "obj_win": {
+    "economy medium, social high": [
+     2371,
+     7528
+    ],
+    "environment high, economy low": [
+     300,
+     7472
+    ],
+    "environment high, economy medium": [
+     953,
+     7528
+    ],
+    "environment low, economy high": [
+     2704,
+     7528
+    ],
+    "environment medium, economy high": [
+     2686,
+     7472
+    ],
+    "environment medium, social high": [
+     2382,
+     7472
+    ]
+   },
+   "unhandled": 1.6383333333333334,
+   "vote_pass": 0.3302997977642954,
+   "win_per_player": 0.25324444444444444
+  },
+  "4p/lies": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8186666666666667,
+   "any_winner": 0.5934,
+   "by_obj": {
+    "Degrowth": [
+     462,
+     7473
+    ],
+    "Efficient State": [
+     3146,
+     7527
+    ],
+    "Free Market": [
+     1818,
+     7473
+    ],
+    "Green Transition": [
+     614,
+     7527
+    ],
+    "Growth Power": [
+     3775,
+     15000
+    ],
+    "Solidarity Economy": [
+     938,
+     7473
+    ],
+    "Welfare State": [
+     936,
+     7527
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6711837385412515,
+     "games": 7527,
+     "loss": 0.0009299853859439352,
+     "pinned": 0.8222399362295736,
+     "win_per_player": 0.22751428191842699
+    },
+    "4-B": {
+     "any_winner": 0.5150541951023685,
+     "games": 7473,
+     "loss": 0.0013381506757660913,
+     "pinned": 0.8150675766091262,
+     "win_per_player": 0.1618827780008029
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5097,
+     "loss": 0.0009809691975671965,
+     "pinned": 0.7930154993133216,
+     "win_per_player": 0.18569746909947027
+    },
+    "A2": {
+     "games": 5001,
+     "loss": 0.0009998000399920016,
+     "pinned": 0.8544291141771646,
+     "win_per_player": 0.21610677864427114
+    },
+    "A3": {
+     "games": 4902,
+     "loss": 0.0014279885760913912,
+     "pinned": 0.8088535291717667,
+     "win_per_player": 0.18257853937168503
+    },
+    "B1": {
+     "games": 4875,
+     "loss": 0.0008205128205128205,
+     "pinned": 0.893948717948718,
+     "win_per_player": 0.1427179487179487
+    },
+    "B2": {
+     "games": 5058,
+     "loss": 0.001383946223803875,
+     "pinned": 0.8090154211150652,
+     "win_per_player": 0.19968366943455912
+    },
+    "B3": {
+     "games": 5067,
+     "loss": 0.0011841326228537595,
+     "pinned": 0.7558713242549833,
+     "win_per_player": 0.24008288928359978
+    },
+    "C1": {
+     "games": 5006,
+     "loss": 0.001797842588893328,
+     "pinned": 0.8330003995205754,
+     "win_per_player": 0.18657610866959648
+    },
+    "C2": {
+     "games": 4936,
+     "loss": 0.0004051863857374392,
+     "pinned": 0.8383306320907618,
+     "win_per_player": 0.19768030794165317
+    },
+    "C3": {
+     "games": 5058,
+     "loss": 0.0011862396204033216,
+     "pinned": 0.7852906287069988,
+     "win_per_player": 0.2001779359430605
+    },
+    "D1": {
+     "games": 5012,
+     "loss": 0.0007980845969672786,
+     "pinned": 0.8020750199521149,
+     "win_per_player": 0.20750199521149243
+    },
+    "D2": {
+     "games": 5084,
+     "loss": 0.000983477576711251,
+     "pinned": 0.8251376868607396,
+     "win_per_player": 0.16783044846577497
+    },
+    "D3": {
+     "games": 4904,
+     "loss": 0.0016313213703099511,
+     "pinned": 0.8289151712887439,
+     "win_per_player": 0.20982871125611746
+    }
+   },
+   "end": {
+    "economy": 15.934,
+    "environment": 9.416533333333334,
+    "social": 11.0166
+   },
+   "extreme": {
+    "economy": 0.5237333333333334,
+    "environment": 0.36833333333333335,
+    "social": 0.43
+   },
+   "handled": 0.8661533247776352,
+   "loss": 0.0011333333333333334,
+   "lost_round": 11.823529411764707,
+   "obj_win": {
+    "economy high, social low": [
+     3146,
+     7527
+    ],
+    "economy high, social medium": [
+     1818,
+     7473
+    ],
+    "economy low, social high": [
+     938,
+     7473
+    ],
+    "economy medium, social high": [
+     936,
+     7527
+    ],
+    "environment high, economy low": [
+     462,
+     7473
+    ],
+    "environment high, economy medium": [
+     614,
+     7527
+    ],
+    "environment medium, economy high": [
+     3775,
+     15000
+    ]
+   },
+   "unhandled": 1.6061333333333334,
+   "vote_pass": 0.37112840769568384,
+   "win_per_player": 0.19481666666666667
+  },
+  "4p/truth": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8125333333333333,
+   "any_winner": 0.599,
+   "by_obj": {
+    "Degrowth": [
+     494,
+     7499
+    ],
+    "Efficient State": [
+     3164,
+     7501
+    ],
+    "Free Market": [
+     1842,
+     7499
+    ],
+    "Green Transition": [
+     627,
+     7501
+    ],
+    "Growth Power": [
+     3840,
+     15000
+    ],
+    "Solidarity Economy": [
+     992,
+     7499
+    ],
+    "Welfare State": [
+     914,
+     7501
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6753766164511399,
+     "games": 7501,
+     "loss": 0.0010665244634048793,
+     "pinned": 0.819224103452873,
+     "win_per_player": 0.2299026796427143
+    },
+    "4-B": {
+     "any_winner": 0.5226030137351647,
+     "games": 7499,
+     "loss": 0.0020002667022269638,
+     "pinned": 0.8058407787705028,
+     "win_per_player": 0.16585544739298574
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5029,
+     "loss": 0.001789620202823623,
+     "pinned": 0.7828594153907338,
+     "win_per_player": 0.1911910916683237
+    },
+    "A2": {
+     "games": 5059,
+     "loss": 0.0009883376161296698,
+     "pinned": 0.850168017394742,
+     "win_per_player": 0.21871911444949596
+    },
+    "A3": {
+     "games": 4912,
+     "loss": 0.0018322475570032573,
+     "pinned": 0.8041530944625407,
+     "win_per_player": 0.18327565146579805
+    },
+    "B1": {
+     "games": 4924,
+     "loss": 0.0016246953696181965,
+     "pinned": 0.8832250203086921,
+     "win_per_player": 0.14520714865962633
+    },
+    "B2": {
+     "games": 5028,
+     "loss": 0.0013922036595067622,
+     "pinned": 0.8070803500397773,
+     "win_per_player": 0.2025656324582339
+    },
+    "B3": {
+     "games": 5048,
+     "loss": 0.001584786053882726,
+     "pinned": 0.7490095087163233,
+     "win_per_player": 0.24460182250396195
+    },
+    "C1": {
+     "games": 5009,
+     "loss": 0.0017967658215212617,
+     "pinned": 0.826112996606109,
+     "win_per_player": 0.19005789578758236
+    },
+    "C2": {
+     "games": 4963,
+     "loss": 0.0010074551682450132,
+     "pinned": 0.8309490227684868,
+     "win_per_player": 0.1996776143461616
+    },
+    "C3": {
+     "games": 5028,
+     "loss": 0.0017899761336515514,
+     "pinned": 0.7808273667462211,
+     "win_per_player": 0.20390811455847255
+    },
+    "D1": {
+     "games": 4998,
+     "loss": 0.001800720288115246,
+     "pinned": 0.7943177270908364,
+     "win_per_player": 0.21173469387755103
+    },
+    "D2": {
+     "games": 5084,
+     "loss": 0.0013768686073957514,
+     "pinned": 0.8239575137686861,
+     "win_per_player": 0.1704366640440598
+    },
+    "D3": {
+     "games": 4918,
+     "loss": 0.0014233428222854819,
+     "pinned": 0.8192354615697438,
+     "win_per_player": 0.21217974786498578
+    }
+   },
+   "end": {
+    "economy": 15.896666666666667,
+    "environment": 9.606,
+    "social": 11.103
+   },
+   "extreme": {
+    "economy": 0.5213333333333333,
+    "environment": 0.3635333333333333,
+    "social": 0.4246
+   },
+   "handled": 0.8683978066301105,
+   "loss": 0.0015333333333333334,
+   "lost_round": 11.869565217391305,
+   "obj_win": {
+    "economy high, social low": [
+     3164,
+     7501
+    ],
+    "economy high, social medium": [
+     1842,
+     7499
+    ],
+    "economy low, social high": [
+     992,
+     7499
+    ],
+    "economy medium, social high": [
+     914,
+     7501
+    ],
+    "environment high, economy low": [
+     494,
+     7499
+    ],
+    "environment high, economy medium": [
+     627,
+     7501
+    ],
+    "environment medium, economy high": [
+     3840,
+     15000
+    ]
+   },
+   "unhandled": 1.5792,
+   "vote_pass": 0.3700339450101946,
+   "win_per_player": 0.19788333333333333
+  },
+  "5p/lies": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8141333333333334,
+   "any_winner": 0.7128,
+   "by_obj": {
+    "Conservation": [
+     1129,
+     7552
+    ],
+    "Degrowth": [
+     481,
+     7552
+    ],
+    "Efficient State": [
+     1657,
+     7448
+    ],
+    "Free Market": [
+     2899,
+     7552
+    ],
+    "Green Transition": [
+     417,
+     7448
+    ],
+    "Growth Power": [
+     1956,
+     7448
+    ],
+    "Resource Power": [
+     2628,
+     7552
+    ],
+    "Right to Development": [
+     1952,
+     7448
+    ],
+    "Solidarity Economy": [
+     658,
+     7552
+    ],
+    "Welfare State": [
+     1228,
+     7448
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.75859291084855,
+     "games": 7448,
+     "loss": 0.0006713211600429646,
+     "pinned": 0.8183404940923737,
+     "win_per_player": 0.19360902255639098
+    },
+    "5-B": {
+     "any_winner": 0.6676377118644068,
+     "games": 7552,
+     "loss": 0.0005296610169491525,
+     "pinned": 0.8099841101694916,
+     "win_per_player": 0.2064353813559322
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5037,
+     "loss": 0.0013897161008536827,
+     "pinned": 0.794719078816756,
+     "win_per_player": 0.20258090133015683
+    },
+    "A2": {
+     "games": 5019,
+     "loss": 0.0,
+     "pinned": 0.8451882845188284,
+     "win_per_player": 0.20585774058577405
+    },
+    "A3": {
+     "games": 4944,
+     "loss": 0.0004045307443365696,
+     "pinned": 0.8023867313915858,
+     "win_per_player": 0.191626213592233
+    },
+    "B1": {
+     "games": 4944,
+     "loss": 0.0008090614886731392,
+     "pinned": 0.9077669902912622,
+     "win_per_player": 0.21820388349514563
+    },
+    "B2": {
+     "games": 5110,
+     "loss": 0.0005870841487279843,
+     "pinned": 0.8009784735812133,
+     "win_per_player": 0.18923679060665363
+    },
+    "B3": {
+     "games": 4946,
+     "loss": 0.0004043671653861706,
+     "pinned": 0.7341285887585928,
+     "win_per_player": 0.1931257581884351
+    },
+    "C1": {
+     "games": 5061,
+     "loss": 0.00019758940920766647,
+     "pinned": 0.8346176644931832,
+     "win_per_player": 0.1986959098992294
+    },
+    "C2": {
+     "games": 5057,
+     "loss": 0.0009887284951552303,
+     "pinned": 0.837057543998418,
+     "win_per_player": 0.20245204666798497
+    },
+    "C3": {
+     "games": 4882,
+     "loss": 0.0006145022531749283,
+     "pinned": 0.7691519868906186,
+     "win_per_player": 0.19901679639492012
+    },
+    "D1": {
+     "games": 4973,
+     "loss": 0.0008043434546551378,
+     "pinned": 0.7977076211542329,
+     "win_per_player": 0.19621958576312085
+    },
+    "D2": {
+     "games": 5084,
+     "loss": 0.0005900865460267506,
+     "pinned": 0.8265145554681353,
+     "win_per_player": 0.2030684500393391
+    },
+    "D3": {
+     "games": 4943,
+     "loss": 0.00040461258345134534,
+     "pinned": 0.8179243374468946,
+     "win_per_player": 0.20084968642524784
+    }
+   },
+   "end": {
+    "economy": 16.279466666666668,
+    "environment": 8.465933333333334,
+    "social": 12.224866666666667
+   },
+   "extreme": {
+    "economy": 0.5586666666666666,
+    "environment": 0.4040666666666667,
+    "social": 0.3307333333333333
+   },
+   "handled": 0.8771222222222222,
+   "loss": 0.0006,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     1657,
+     7448
+    ],
+    "economy high, social medium": [
+     2899,
+     7552
+    ],
+    "economy low, social high": [
+     658,
+     7552
+    ],
+    "economy medium, social high": [
+     1228,
+     7448
+    ],
+    "environment high, economy low": [
+     481,
+     7552
+    ],
+    "environment high, economy medium": [
+     417,
+     7448
+    ],
+    "environment high, social medium": [
+     1129,
+     7552
+    ],
+    "environment low, economy high": [
+     2628,
+     7552
+    ],
+    "environment low, social high": [
+     1952,
+     7448
+    ],
+    "environment medium, economy high": [
+     1956,
+     7448
+    ]
+   },
+   "unhandled": 1.4745333333333333,
+   "vote_pass": 0.36430555555555555,
+   "win_per_player": 0.20006666666666667
+  },
+  "5p/truth": {
+   "all_winners": 0.0,
+   "any_extreme": 0.808,
+   "any_winner": 0.7149333333333333,
+   "by_obj": {
+    "Conservation": [
+     1162,
+     7541
+    ],
+    "Degrowth": [
+     494,
+     7541
+    ],
+    "Efficient State": [
+     1653,
+     7459
+    ],
+    "Free Market": [
+     2957,
+     7541
+    ],
+    "Green Transition": [
+     411,
+     7459
+    ],
+    "Growth Power": [
+     1986,
+     7459
+    ],
+    "Resource Power": [
+     2546,
+     7541
+    ],
+    "Right to Development": [
+     1941,
+     7459
+    ],
+    "Solidarity Economy": [
+     664,
+     7541
+    ],
+    "Welfare State": [
+     1270,
+     7459
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.7657862984314251,
+     "games": 7459,
+     "loss": 0.0009384636010189033,
+     "pinned": 0.8160611342002949,
+     "win_per_player": 0.19469097734280735
+    },
+    "5-B": {
+     "any_winner": 0.6646333377536136,
+     "games": 7541,
+     "loss": 0.0006630420368651372,
+     "pinned": 0.8000265216814746,
+     "win_per_player": 0.20747911417583875
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5062,
+     "loss": 0.001185302252074279,
+     "pinned": 0.7862504938759384,
+     "win_per_player": 0.20284472540497828
+    },
+    "A2": {
+     "games": 4974,
+     "loss": 0.0004020908725371934,
+     "pinned": 0.8411741053478086,
+     "win_per_player": 0.2093687173301166
+    },
+    "A3": {
+     "games": 4964,
+     "loss": 0.0008058017727639,
+     "pinned": 0.7969379532634971,
+     "win_per_player": 0.1910958904109589
+    },
+    "B1": {
+     "games": 4946,
+     "loss": 0.0010109179134654266,
+     "pinned": 0.9067933683784877,
+     "win_per_player": 0.21783259199353014
+    },
+    "B2": {
+     "games": 5112,
+     "loss": 0.0009780907668231612,
+     "pinned": 0.7949921752738655,
+     "win_per_player": 0.1905320813771518
+    },
+    "B3": {
+     "games": 4942,
+     "loss": 0.0004046944556859571,
+     "pinned": 0.7225819506272764,
+     "win_per_player": 0.1953460137596115
+    },
+    "C1": {
+     "games": 5101,
+     "loss": 0.00019603999215840032,
+     "pinned": 0.8257204469711821,
+     "win_per_player": 0.1974514801019408
+    },
+    "C2": {
+     "games": 5037,
+     "loss": 0.0011911852293031567,
+     "pinned": 0.8312487591820528,
+     "win_per_player": 0.2039309112567004
+    },
+    "C3": {
+     "games": 4862,
+     "loss": 0.0010283833813245578,
+     "pinned": 0.7653229123817359,
+     "win_per_player": 0.2020567667626491
+    },
+    "D1": {
+     "games": 4970,
+     "loss": 0.001006036217303823,
+     "pinned": 0.7973843058350101,
+     "win_per_player": 0.19730382293762574
+    },
+    "D2": {
+     "games": 5100,
+     "loss": 0.000980392156862745,
+     "pinned": 0.812156862745098,
+     "win_per_player": 0.20223529411764707
+    },
+    "D3": {
+     "games": 4930,
+     "loss": 0.00040567951318458417,
+     "pinned": 0.8144016227180527,
+     "win_per_player": 0.2038133874239351
+    }
+   },
+   "end": {
+    "economy": 16.26706666666667,
+    "environment": 8.5594,
+    "social": 12.4134
+   },
+   "extreme": {
+    "economy": 0.5479333333333334,
+    "environment": 0.397,
+    "social": 0.3228
+   },
+   "handled": 0.8788111111111111,
+   "loss": 0.0008,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     1653,
+     7459
+    ],
+    "economy high, social medium": [
+     2957,
+     7541
+    ],
+    "economy low, social high": [
+     664,
+     7541
+    ],
+    "economy medium, social high": [
+     1270,
+     7459
+    ],
+    "environment high, economy low": [
+     494,
+     7541
+    ],
+    "environment high, economy medium": [
+     411,
+     7459
+    ],
+    "environment high, social medium": [
+     1162,
+     7541
+    ],
+    "environment low, economy high": [
+     2546,
+     7541
+    ],
+    "environment low, social high": [
+     1941,
+     7459
+    ],
+    "environment medium, economy high": [
+     1986,
+     7459
+    ]
+   },
+   "unhandled": 1.4542666666666666,
+   "vote_pass": 0.36475555555555556,
+   "win_per_player": 0.20112
+  },
+  "6p/lies": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8301333333333333,
+   "any_winner": 0.8137333333333333,
+   "by_obj": {
+    "Conservation": [
+     1523,
+     7544
+    ],
+    "Efficient State": [
+     2146,
+     7544
+    ],
+    "Fortress Conservation": [
+     1053,
+     15000
+    ],
+    "Free Market": [
+     5686,
+     15000
+    ],
+    "Green Transition": [
+     449,
+     7456
+    ],
+    "Growth Power": [
+     2027,
+     7456
+    ],
+    "Humanist": [
+     319,
+     7544
+    ],
+    "Right to Development": [
+     1358,
+     7456
+    ],
+    "Solidarity Economy": [
+     209,
+     7544
+    ],
+    "Welfare State": [
+     886,
+     7456
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.7914431330472103,
+     "games": 7456,
+     "loss": 0.0009388412017167382,
+     "pinned": 0.808744635193133,
+     "win_per_player": 0.16279953505007153
+    },
+    "6-B": {
+     "any_winner": 0.8357635206786851,
+     "games": 7544,
+     "loss": 0.0009278897136797455,
+     "pinned": 0.851272534464475,
+     "win_per_player": 0.1849814422057264
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4934,
+     "loss": 0.0008107012565869477,
+     "pinned": 0.7892176732873936,
+     "win_per_player": 0.17244291311984866
+    },
+    "A2": {
+     "games": 5141,
+     "loss": 0.0013616028010114763,
+     "pinned": 0.8794008947675549,
+     "win_per_player": 0.17979640796213447
+    },
+    "A3": {
+     "games": 4925,
+     "loss": 0.0006091370558375635,
+     "pinned": 0.8196954314720812,
+     "win_per_player": 0.16937394247038917
+    },
+    "B1": {
+     "games": 4883,
+     "loss": 0.0014335449518738481,
+     "pinned": 0.9094818758959656,
+     "win_per_player": 0.1546180626663936
+    },
+    "B2": {
+     "games": 4942,
+     "loss": 0.0008093889113719142,
+     "pinned": 0.8195062727640632,
+     "win_per_player": 0.19418588965331174
+    },
+    "B3": {
+     "games": 5175,
+     "loss": 0.0005797101449275362,
+     "pinned": 0.7654106280193237,
+     "win_per_player": 0.17288244766505637
+    },
+    "C1": {
+     "games": 5040,
+     "loss": 0.0005952380952380953,
+     "pinned": 0.8422619047619048,
+     "win_per_player": 0.16875
+    },
+    "C2": {
+     "games": 4957,
+     "loss": 0.0012104095218882388,
+     "pinned": 0.8505144240468026,
+     "win_per_player": 0.17624907538161522
+    },
+    "C3": {
+     "games": 5003,
+     "loss": 0.0009994003597841295,
+     "pinned": 0.7977213671796922,
+     "win_per_player": 0.17692717702711705
+    },
+    "D1": {
+     "games": 4978,
+     "loss": 0.0014061872237846524,
+     "pinned": 0.8141824025713138,
+     "win_per_player": 0.1686755055577876
+    },
+    "D2": {
+     "games": 4934,
+     "loss": 0.0008107012565869477,
+     "pinned": 0.8384677746250506,
+     "win_per_player": 0.16413322523983245
+    },
+    "D3": {
+     "games": 5088,
+     "loss": 0.0005896226415094339,
+     "pinned": 0.8376572327044025,
+     "win_per_player": 0.18864648846960166
+    }
+   },
+   "end": {
+    "economy": 17.612933333333334,
+    "environment": 9.4932,
+    "social": 10.4372
+   },
+   "extreme": {
+    "economy": 0.6546666666666666,
+    "environment": 0.4084,
+    "social": 0.23253333333333334
+   },
+   "handled": 0.8813437852432513,
+   "loss": 0.0009333333333333333,
+   "lost_round": 11.928571428571429,
+   "obj_win": {
+    "economy high, social low": [
+     2146,
+     7544
+    ],
+    "economy high, social medium": [
+     5686,
+     15000
+    ],
+    "economy low, social high": [
+     209,
+     7544
+    ],
+    "economy medium, social high": [
+     886,
+     7456
+    ],
+    "environment high, economy medium": [
+     449,
+     7456
+    ],
+    "environment high, social low": [
+     1053,
+     15000
+    ],
+    "environment high, social medium": [
+     1523,
+     7544
+    ],
+    "environment low, social high": [
+     1358,
+     7456
+    ],
+    "environment medium, economy high": [
+     2027,
+     7456
+    ],
+    "environment medium, social high": [
+     319,
+     7544
+    ]
+   },
+   "unhandled": 1.4238666666666666,
+   "vote_pass": 0.3611464508136156,
+   "win_per_player": 0.17395555555555556
+  },
+  "6p/truth": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8249333333333333,
+   "any_winner": 0.8172666666666667,
+   "by_obj": {
+    "Conservation": [
+     1623,
+     7564
+    ],
+    "Efficient State": [
+     2051,
+     7564
+    ],
+    "Fortress Conservation": [
+     1071,
+     15000
+    ],
+    "Free Market": [
+     5857,
+     15000
+    ],
+    "Green Transition": [
+     467,
+     7436
+    ],
+    "Growth Power": [
+     2100,
+     7436
+    ],
+    "Humanist": [
+     322,
+     7564
+    ],
+    "Right to Development": [
+     1281,
+     7436
+    ],
+    "Solidarity Economy": [
+     189,
+     7564
+    ],
+    "Welfare State": [
+     873,
+     7436
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.7992200107584723,
+     "games": 7436,
+     "loss": 0.0004034427111350188,
+     "pinned": 0.8044647660032276,
+     "win_per_player": 0.16453738569123186
+    },
+    "6-B": {
+     "any_winner": 0.8350079323109466,
+     "games": 7564,
+     "loss": 0.0007932310946589106,
+     "pinned": 0.8450555261766262,
+     "win_per_player": 0.18713643574828134
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4927,
+     "loss": 0.0006088897909478384,
+     "pinned": 0.7830322711589203,
+     "win_per_player": 0.1728908734185779
+    },
+    "A2": {
+     "games": 5090,
+     "loss": 0.0005893909626719057,
+     "pinned": 0.8793713163064834,
+     "win_per_player": 0.18316961362148002
+    },
+    "A3": {
+     "games": 4983,
+     "loss": 0.0006020469596628537,
+     "pinned": 0.8107565723459763,
+     "win_per_player": 0.1715499364505987
+    },
+    "B1": {
+     "games": 4924,
+     "loss": 0.0016246953696181965,
+     "pinned": 0.9002843216896832,
+     "win_per_player": 0.15674925534795559
+    },
+    "B2": {
+     "games": 4985,
+     "loss": 0.0,
+     "pinned": 0.8176529588766299,
+     "win_per_player": 0.19739217652958876
+    },
+    "B3": {
+     "games": 5091,
+     "loss": 0.00019642506383814575,
+     "pinned": 0.7591828717344333,
+     "win_per_player": 0.1734760688797224
+    },
+    "C1": {
+     "games": 4978,
+     "loss": 0.0004017677782241864,
+     "pinned": 0.8396946564885496,
+     "win_per_player": 0.1712200348198741
+    },
+    "C2": {
+     "games": 4977,
+     "loss": 0.0008036970062286518,
+     "pinned": 0.8476994173196705,
+     "win_per_player": 0.1754738463599223
+    },
+    "C3": {
+     "games": 5045,
+     "loss": 0.0005946481665014867,
+     "pinned": 0.7879088206144698,
+     "win_per_player": 0.18103733069045258
+    },
+    "D1": {
+     "games": 4949,
+     "loss": 0.00040412204485754696,
+     "pinned": 0.8114770660739543,
+     "win_per_player": 0.17303158887317302
+    },
+    "D2": {
+     "games": 4985,
+     "loss": 0.0010030090270812437,
+     "pinned": 0.8310932798395185,
+     "win_per_player": 0.1641925777331996
+    },
+    "D3": {
+     "games": 5066,
+     "loss": 0.00039478878799842083,
+     "pinned": 0.8320173707066719,
+     "win_per_player": 0.19032109488090537
+    }
+   },
+   "end": {
+    "economy": 17.633133333333333,
+    "environment": 9.776733333333333,
+    "social": 10.5548
+   },
+   "extreme": {
+    "economy": 0.6486,
+    "environment": 0.40153333333333335,
+    "social": 0.2192
+   },
+   "handled": 0.8844666666666666,
+   "loss": 0.0006,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     2051,
+     7564
+    ],
+    "economy high, social medium": [
+     5857,
+     15000
+    ],
+    "economy low, social high": [
+     189,
+     7564
+    ],
+    "economy medium, social high": [
+     873,
+     7436
+    ],
+    "environment high, economy medium": [
+     467,
+     7436
+    ],
+    "environment high, social low": [
+     1071,
+     15000
+    ],
+    "environment high, social medium": [
+     1623,
+     7564
+    ],
+    "environment low, social high": [
+     1281,
+     7436
+    ],
+    "environment medium, economy high": [
+     2100,
+     7436
+    ],
+    "environment medium, social high": [
+     322,
+     7564
+    ]
+   },
+   "unhandled": 1.3864,
+   "vote_pass": 0.35945,
+   "win_per_player": 0.17593333333333333
+  }
+ },
+ "main": {
+  "3p/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8699333333333333,
+   "any_winner": 0.5958,
+   "by_obj": {
+    "Degrowth": [
+     297,
+     7343
+    ],
+    "Green Transition": [
+     888,
+     7657
+    ],
+    "Growth Power": [
+     2559,
+     7343
+    ],
+    "Humanist": [
+     2073,
+     7343
+    ],
+    "Resource Power": [
+     2929,
+     7657
+    ],
+    "Welfare State": [
+     2102,
+     7657
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6774193548387096,
+     "games": 7657,
+     "loss": 0.0005223978059292151,
+     "pinned": 0.8737103304166123,
+     "win_per_player": 0.25767271777458534
+    },
+    "3-B": {
+     "any_winner": 0.5106904534931227,
+     "games": 7343,
+     "loss": 0.0008171047255889964,
+     "pinned": 0.8659948250034046,
+     "win_per_player": 0.22375051069045349
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5126,
+     "loss": 0.0005852516582130316,
+     "pinned": 0.8542723371049551,
+     "win_per_player": 0.26394849785407726
+    },
+    "A2": {
+     "games": 4899,
+     "loss": 0.00020412329046744235,
+     "pinned": 0.9012043274137579,
+     "win_per_player": 0.22079335918895013
+    },
+    "A3": {
+     "games": 4975,
+     "loss": 0.001206030150753769,
+     "pinned": 0.8552763819095477,
+     "win_per_player": 0.23745393634840872
+    },
+    "B1": {
+     "games": 4897,
+     "loss": 0.0010210332856851133,
+     "pinned": 0.9287318766591791,
+     "win_per_player": 0.2170716765366551
+    },
+    "B2": {
+     "games": 4981,
+     "loss": 0.0002007628990162618,
+     "pinned": 0.8506324031319012,
+     "win_per_player": 0.2623301880479154
+    },
+    "B3": {
+     "games": 5122,
+     "loss": 0.0007809449433814916,
+     "pinned": 0.8324873096446701,
+     "win_per_player": 0.24332942860861642
+    },
+    "C1": {
+     "games": 5092,
+     "loss": 0.0007855459544383347,
+     "pinned": 0.8868813825608798,
+     "win_per_player": 0.2478397486252946
+    },
+    "C2": {
+     "games": 4980,
+     "loss": 0.001004016064257028,
+     "pinned": 0.8801204819277109,
+     "win_per_player": 0.2399598393574297
+    },
+    "C3": {
+     "games": 4928,
+     "loss": 0.00020292207792207794,
+     "pinned": 0.8421266233766234,
+     "win_per_player": 0.23518668831168832
+    },
+    "D1": {
+     "games": 5037,
+     "loss": 0.0009926543577526306,
+     "pinned": 0.8534842167957117,
+     "win_per_player": 0.22301634570842432
+    },
+    "D2": {
+     "games": 5108,
+     "loss": 0.0005873140172278779,
+     "pinned": 0.8907595927956147,
+     "win_per_player": 0.25639519707648134
+    },
+    "D3": {
+     "games": 4855,
+     "loss": 0.00041194644696189496,
+     "pinned": 0.8650875386199794,
+     "win_per_player": 0.24366632337796088
+    }
+   },
+   "end": {
+    "economy": 15.358533333333334,
+    "environment": 8.0222,
+    "social": 13.7392
+   },
+   "extreme": {
+    "economy": 0.5223333333333333,
+    "environment": 0.38393333333333335,
+    "social": 0.5719333333333333
+   },
+   "handled": 0.8624888888888889,
+   "loss": 0.0006666666666666666,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy medium, social high": [
+     2102,
+     7657
+    ],
+    "environment high, economy low": [
+     297,
+     7343
+    ],
+    "environment high, economy medium": [
+     888,
+     7657
+    ],
+    "environment low, economy high": [
+     2929,
+     7657
+    ],
+    "environment medium, economy high": [
+     2559,
+     7343
+    ],
+    "environment medium, social high": [
+     2073,
+     7343
+    ]
+   },
+   "unhandled": 1.6501333333333332,
+   "vote_pass": 0.25508333333333333,
+   "win_per_player": 0.24106666666666668
+  },
+  "3p/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8479333333333333,
+   "any_winner": 0.6159333333333333,
+   "by_obj": {
+    "Degrowth": [
+     277,
+     7529
+    ],
+    "Green Transition": [
+     950,
+     7471
+    ],
+    "Growth Power": [
+     2671,
+     7529
+    ],
+    "Humanist": [
+     2306,
+     7529
+    ],
+    "Resource Power": [
+     2715,
+     7471
+    ],
+    "Welfare State": [
+     2306,
+     7471
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6910721456297685,
+     "games": 7471,
+     "loss": 0.0022754651318431266,
+     "pinned": 0.8482130906170526,
+     "win_per_player": 0.2664078882791237
+    },
+    "3-B": {
+     "any_winner": 0.5413733563554257,
+     "games": 7529,
+     "loss": 0.0034533138531013417,
+     "pinned": 0.8476557311727985,
+     "win_per_player": 0.2326116792845442
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4965,
+     "loss": 0.0026183282980866062,
+     "pinned": 0.8342396777442095,
+     "win_per_player": 0.26545820745216514
+    },
+    "A2": {
+     "games": 5089,
+     "loss": 0.002751031636863824,
+     "pinned": 0.8695224995087444,
+     "win_per_player": 0.228990633392284
+    },
+    "A3": {
+     "games": 4946,
+     "loss": 0.003234937323089365,
+     "pinned": 0.8394662353416903,
+     "win_per_player": 0.2544143415554657
+    },
+    "B1": {
+     "games": 4972,
+     "loss": 0.003218020917135961,
+     "pinned": 0.91733708769107,
+     "win_per_player": 0.220568517028694
+    },
+    "B2": {
+     "games": 5045,
+     "loss": 0.00356788899900892,
+     "pinned": 0.8338949454905847,
+     "win_per_player": 0.264816650148662
+    },
+    "B3": {
+     "games": 4983,
+     "loss": 0.001806140878988561,
+     "pinned": 0.7928958458759783,
+     "win_per_player": 0.26269315673289184
+    },
+    "C1": {
+     "games": 5094,
+     "loss": 0.002944640753828033,
+     "pinned": 0.8641539065567334,
+     "win_per_player": 0.25723072896217775
+    },
+    "C2": {
+     "games": 4919,
+     "loss": 0.002642813579995934,
+     "pinned": 0.8652165074202074,
+     "win_per_player": 0.2463237785457749
+    },
+    "C3": {
+     "games": 4987,
+     "loss": 0.00300782033286545,
+     "pinned": 0.8143172247844396,
+     "win_per_player": 0.24456921328788184
+    },
+    "D1": {
+     "games": 4971,
+     "loss": 0.003621001810500905,
+     "pinned": 0.8352444176222088,
+     "win_per_player": 0.2401260645074767
+    },
+    "D2": {
+     "games": 4988,
+     "loss": 0.003007217321571772,
+     "pinned": 0.8648757016840417,
+     "win_per_player": 0.25240577385725743
+    },
+    "D3": {
+     "games": 5041,
+     "loss": 0.0019837333862328904,
+     "pinned": 0.8436818091648483,
+     "win_per_player": 0.25570323348541957
+    }
+   },
+   "end": {
+    "economy": 15.061066666666667,
+    "environment": 8.211466666666666,
+    "social": 14.106066666666667
+   },
+   "extreme": {
+    "economy": 0.48406666666666665,
+    "environment": 0.36446666666666666,
+    "social": 0.5518
+   },
+   "handled": 0.8600914500330575,
+   "loss": 0.0028666666666666667,
+   "lost_round": 11.744186046511627,
+   "obj_win": {
+    "economy medium, social high": [
+     2306,
+     7471
+    ],
+    "environment high, economy low": [
+     277,
+     7529
+    ],
+    "environment high, economy medium": [
+     950,
+     7471
+    ],
+    "environment low, economy high": [
+     2715,
+     7471
+    ],
+    "environment medium, economy high": [
+     2671,
+     7529
+    ],
+    "environment medium, social high": [
+     2306,
+     7529
+    ]
+   },
+   "unhandled": 1.6788,
+   "vote_pass": 0.33263699448299616,
+   "win_per_player": 0.24944444444444444
+  },
+  "3p/random": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8420666666666666,
+   "any_winner": 0.41226666666666667,
+   "by_obj": {
+    "Degrowth": [
+     367,
+     7482
+    ],
+    "Green Transition": [
+     387,
+     7518
+    ],
+    "Growth Power": [
+     1405,
+     7482
+    ],
+    "Humanist": [
+     832,
+     7482
+    ],
+    "Resource Power": [
+     3048,
+     7518
+    ],
+    "Welfare State": [
+     857,
+     7518
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.5300611864857675,
+     "games": 7518,
+     "loss": 0.1527001862197393,
+     "pinned": 0.8476988560787444,
+     "win_per_player": 0.1902988383435311
+    },
+    "3-B": {
+     "any_winner": 0.2939053728949479,
+     "games": 7482,
+     "loss": 0.15503875968992248,
+     "pinned": 0.8364073777064955,
+     "win_per_player": 0.11601176156107992
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5023,
+     "loss": 0.15867011745968546,
+     "pinned": 0.8263985665936692,
+     "win_per_player": 0.1605282367774902
+    },
+    "A2": {
+     "games": 4951,
+     "loss": 0.1492627751969299,
+     "pinned": 0.8683094324378914,
+     "win_per_player": 0.14226082272941493
+    },
+    "A3": {
+     "games": 5026,
+     "loss": 0.15360127337843216,
+     "pinned": 0.8318742538798249,
+     "win_per_player": 0.15678471945881417
+    },
+    "B1": {
+     "games": 5022,
+     "loss": 0.14436479490242932,
+     "pinned": 0.9161688570290721,
+     "win_per_player": 0.1588344617018452
+    },
+    "B2": {
+     "games": 4958,
+     "loss": 0.15752319483662766,
+     "pinned": 0.8118192819685357,
+     "win_per_player": 0.13957240822912464
+    },
+    "B3": {
+     "games": 5020,
+     "loss": 0.1597609561752988,
+     "pinned": 0.797808764940239,
+     "win_per_player": 0.16115537848605577
+    },
+    "C1": {
+     "games": 5045,
+     "loss": 0.15262636273538158,
+     "pinned": 0.8507433102081269,
+     "win_per_player": 0.15929963660389826
+    },
+    "C2": {
+     "games": 4996,
+     "loss": 0.14811849479583666,
+     "pinned": 0.860088070456365,
+     "win_per_player": 0.15278889778489457
+    },
+    "C3": {
+     "games": 4959,
+     "loss": 0.16091954022988506,
+     "pinned": 0.815083686227062,
+     "win_per_player": 0.1475431874705922
+    },
+    "D1": {
+     "games": 5137,
+     "loss": 0.155343585750438,
+     "pinned": 0.8296671208876776,
+     "win_per_player": 0.14872493673350204
+    },
+    "D2": {
+     "games": 4921,
+     "loss": 0.15444015444015444,
+     "pinned": 0.8571428571428571,
+     "win_per_player": 0.1562690510058931
+    },
+    "D3": {
+     "games": 4942,
+     "loss": 0.1517604208822339,
+     "pinned": 0.839943342776204,
+     "win_per_player": 0.1549305274517739
+    }
+   },
+   "end": {
+    "economy": 15.567,
+    "environment": 7.244133333333333,
+    "social": 10.814066666666667
+   },
+   "extreme": {
+    "economy": 0.5489333333333334,
+    "environment": 0.43373333333333336,
+    "social": 0.49473333333333336
+   },
+   "handled": 0.7376685044679537,
+   "loss": 0.15386666666666668,
+   "lost_round": 10.474436741767764,
+   "obj_win": {
+    "economy medium, social high": [
+     857,
+     7518
+    ],
+    "environment high, economy low": [
+     367,
+     7482
+    ],
+    "environment high, economy medium": [
+     387,
+     7518
+    ],
+    "environment low, economy high": [
+     3048,
+     7518
+    ],
+    "environment medium, economy high": [
+     1405,
+     7482
+    ],
+    "environment medium, social high": [
+     832,
+     7482
+    ]
+   },
+   "unhandled": 3.0864,
+   "vote_pass": 0.6220683480754085,
+   "win_per_player": 0.15324444444444443
+  },
+  "3p/selfish": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7897333333333333,
+   "any_winner": 0.5644666666666667,
+   "by_obj": {
+    "Degrowth": [
+     300,
+     7454
+    ],
+    "Green Transition": [
+     850,
+     7546
+    ],
+    "Growth Power": [
+     2328,
+     7454
+    ],
+    "Humanist": [
+     2162,
+     7454
+    ],
+    "Resource Power": [
+     2418,
+     7546
+    ],
+    "Welfare State": [
+     2155,
+     7546
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6184733633713225,
+     "games": 7546,
+     "loss": 0.08931884442088524,
+     "pinned": 0.7953882851842036,
+     "win_per_player": 0.23955296404275997
+    },
+    "3-B": {
+     "any_winner": 0.5097933995170378,
+     "games": 7454,
+     "loss": 0.09364099812181378,
+     "pinned": 0.7840085859940972,
+     "win_per_player": 0.21420266523566764
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4994,
+     "loss": 0.07829395274329196,
+     "pinned": 0.7985582699239087,
+     "win_per_player": 0.24435989854492057
+    },
+    "A2": {
+     "games": 5000,
+     "loss": 0.09,
+     "pinned": 0.8022,
+     "win_per_player": 0.2112
+    },
+    "A3": {
+     "games": 5006,
+     "loss": 0.10607271274470635,
+     "pinned": 0.7684778266080703,
+     "win_per_player": 0.22532960447463043
+    },
+    "B1": {
+     "games": 4998,
+     "loss": 0.12144857943177272,
+     "pinned": 0.8691476590636255,
+     "win_per_player": 0.19754568494064292
+    },
+    "B2": {
+     "games": 4974,
+     "loss": 0.09489344591877764,
+     "pinned": 0.7545235223160435,
+     "win_per_player": 0.24078541750435598
+    },
+    "B3": {
+     "games": 5028,
+     "loss": 0.05827366746221162,
+     "pinned": 0.7456245027844073,
+     "win_per_player": 0.24250861840360646
+    },
+    "C1": {
+     "games": 5004,
+     "loss": 0.09612310151878498,
+     "pinned": 0.8169464428457234,
+     "win_per_player": 0.23254729549693579
+    },
+    "C2": {
+     "games": 5000,
+     "loss": 0.0904,
+     "pinned": 0.8004,
+     "win_per_player": 0.22106666666666666
+    },
+    "C3": {
+     "games": 4996,
+     "loss": 0.0878702962369896,
+     "pinned": 0.7518014411529224,
+     "win_per_player": 0.2272484654390179
+    },
+    "D1": {
+     "games": 5064,
+     "loss": 0.10643759873617693,
+     "pinned": 0.7794233807266983,
+     "win_per_player": 0.21919431279620852
+    },
+    "D2": {
+     "games": 4939,
+     "loss": 0.08240534521158129,
+     "pinned": 0.8070459607207937,
+     "win_per_player": 0.22305459944658163
+    },
+    "D3": {
+     "games": 4997,
+     "loss": 0.08525115069041425,
+     "pinned": 0.7830698419051431,
+     "win_per_player": 0.23867653925688748
+    }
+   },
+   "end": {
+    "economy": 14.5624,
+    "environment": 8.1656,
+    "social": 13.964666666666666
+   },
+   "extreme": {
+    "economy": 0.4076666666666667,
+    "environment": 0.3168,
+    "social": 0.493
+   },
+   "handled": 0.7742985409652077,
+   "loss": 0.09146666666666667,
+   "lost_round": 10.68804664723032,
+   "obj_win": {
+    "economy medium, social high": [
+     2155,
+     7546
+    ],
+    "environment high, economy low": [
+     300,
+     7454
+    ],
+    "environment high, economy medium": [
+     850,
+     7546
+    ],
+    "environment low, economy high": [
+     2418,
+     7546
+    ],
+    "environment medium, economy high": [
+     2328,
+     7454
+    ],
+    "environment medium, social high": [
+     2162,
+     7454
+    ]
+   },
+   "unhandled": 2.6813333333333333,
+   "vote_pass": 0.5666442199775533,
+   "win_per_player": 0.22695555555555555
+  },
+  "4p/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8462,
+   "any_winner": 0.5816666666666667,
+   "by_obj": {
+    "Degrowth": [
+     402,
+     7529
+    ],
+    "Efficient State": [
+     3345,
+     7471
+    ],
+    "Free Market": [
+     1868,
+     7529
+    ],
+    "Green Transition": [
+     458,
+     7471
+    ],
+    "Growth Power": [
+     3771,
+     15000
+    ],
+    "Solidarity Economy": [
+     763,
+     7529
+    ],
+    "Welfare State": [
+     732,
+     7471
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6620265024762415,
+     "games": 7471,
+     "loss": 0.0,
+     "pinned": 0.8599919689465935,
+     "win_per_player": 0.22296212019809933
+    },
+    "4-B": {
+     "any_winner": 0.5019258865719219,
+     "games": 7529,
+     "loss": 0.0,
+     "pinned": 0.8325142781245849,
+     "win_per_player": 0.15526630362597954
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5040,
+     "loss": 0.0,
+     "pinned": 0.8212301587301587,
+     "win_per_player": 0.17152777777777778
+    },
+    "A2": {
+     "games": 4941,
+     "loss": 0.0,
+     "pinned": 0.8907103825136612,
+     "win_per_player": 0.21792147338595427
+    },
+    "A3": {
+     "games": 5019,
+     "loss": 0.0,
+     "pinned": 0.8274556684598525,
+     "win_per_player": 0.17802351065949393
+    },
+    "B1": {
+     "games": 5002,
+     "loss": 0.0,
+     "pinned": 0.9184326269492203,
+     "win_per_player": 0.13869452219112355
+    },
+    "B2": {
+     "games": 5036,
+     "loss": 0.0,
+     "pinned": 0.8206910246227165,
+     "win_per_player": 0.1885921366163622
+    },
+    "B3": {
+     "games": 4962,
+     "loss": 0.0,
+     "pinned": 0.7992744860943168,
+     "win_per_player": 0.240074566706973
+    },
+    "C1": {
+     "games": 4965,
+     "loss": 0.0,
+     "pinned": 0.851963746223565,
+     "win_per_player": 0.18288016112789526
+    },
+    "C2": {
+     "games": 5049,
+     "loss": 0.0,
+     "pinned": 0.8655179243414538,
+     "win_per_player": 0.18979005743711627
+    },
+    "C3": {
+     "games": 4986,
+     "loss": 0.0,
+     "pinned": 0.8208985158443642,
+     "win_per_player": 0.19424388287204172
+    },
+    "D1": {
+     "games": 4958,
+     "loss": 0.0,
+     "pinned": 0.8331988705123033,
+     "win_per_player": 0.20340863251311012
+    },
+    "D2": {
+     "games": 4965,
+     "loss": 0.0,
+     "pinned": 0.8499496475327291,
+     "win_per_player": 0.1566968781470292
+    },
+    "D3": {
+     "games": 5077,
+     "loss": 0.0,
+     "pinned": 0.8552294662202088,
+     "win_per_player": 0.20647035650974985
+    }
+   },
+   "end": {
+    "economy": 16.2788,
+    "environment": 9.043133333333333,
+    "social": 10.5668
+   },
+   "extreme": {
+    "economy": 0.5641333333333334,
+    "environment": 0.4013333333333333,
+    "social": 0.44393333333333335
+   },
+   "handled": 0.8562166666666666,
+   "loss": 0.0,
+   "lost_round": null,
+   "obj_win": {
+    "economy high, social low": [
+     3345,
+     7471
+    ],
+    "economy high, social medium": [
+     1868,
+     7529
+    ],
+    "economy low, social high": [
+     763,
+     7529
+    ],
+    "economy medium, social high": [
+     732,
+     7471
+    ],
+    "environment high, economy low": [
+     402,
+     7529
+    ],
+    "environment high, economy medium": [
+     458,
+     7471
+    ],
+    "environment medium, economy high": [
+     3771,
+     15000
+    ]
+   },
+   "unhandled": 1.7254,
+   "vote_pass": 0.27159444444444447,
+   "win_per_player": 0.18898333333333334
+  },
+  "4p/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8112,
+   "any_winner": 0.6039333333333333,
+   "by_obj": {
+    "Degrowth": [
+     486,
+     7455
+    ],
+    "Efficient State": [
+     3220,
+     7545
+    ],
+    "Free Market": [
+     1827,
+     7455
+    ],
+    "Green Transition": [
+     637,
+     7545
+    ],
+    "Growth Power": [
+     3846,
+     15000
+    ],
+    "Solidarity Economy": [
+     965,
+     7455
+    ],
+    "Welfare State": [
+     996,
+     7545
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6846918489065607,
+     "games": 7545,
+     "loss": 0.0017229953611663353,
+     "pinned": 0.8181577203445991,
+     "win_per_player": 0.23389662027833003
+    },
+    "4-B": {
+     "any_winner": 0.5221998658618376,
+     "games": 7455,
+     "loss": 0.002146210596914822,
+     "pinned": 0.8041582830315225,
+     "win_per_player": 0.16492287055667337
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5133,
+     "loss": 0.0023378141437755697,
+     "pinned": 0.7895967270601987,
+     "win_per_player": 0.190239625949737
+    },
+    "A2": {
+     "games": 4888,
+     "loss": 0.0006137479541734861,
+     "pinned": 0.8496317512274959,
+     "win_per_player": 0.22340425531914893
+    },
+    "A3": {
+     "games": 4979,
+     "loss": 0.0028118096003213497,
+     "pinned": 0.795742116890942,
+     "win_per_player": 0.18593090982124924
+    },
+    "B1": {
+     "games": 4975,
+     "loss": 0.0016080402010050252,
+     "pinned": 0.8916582914572865,
+     "win_per_player": 0.15035175879396984
+    },
+    "B2": {
+     "games": 5051,
+     "loss": 0.002375767174816868,
+     "pinned": 0.8053850722629182,
+     "win_per_player": 0.20164323896258166
+    },
+    "B3": {
+     "games": 4974,
+     "loss": 0.0018094089264173703,
+     "pinned": 0.7366304784881383,
+     "win_per_player": 0.2468335343787696
+    },
+    "C1": {
+     "games": 5045,
+     "loss": 0.0023785926660059467,
+     "pinned": 0.8136769078295342,
+     "win_per_player": 0.18929633300297324
+    },
+    "C2": {
+     "games": 4988,
+     "loss": 0.002004811547714515,
+     "pinned": 0.8313953488372093,
+     "win_per_player": 0.20419005613472332
+    },
+    "C3": {
+     "games": 4967,
+     "loss": 0.0014093013891685123,
+     "pinned": 0.788403462854842,
+     "win_per_player": 0.20550634185625125
+    },
+    "D1": {
+     "games": 5059,
+     "loss": 0.002569677801937142,
+     "pinned": 0.7987744613559992,
+     "win_per_player": 0.21140541609013638
+    },
+    "D2": {
+     "games": 4991,
+     "loss": 0.0012021638950110197,
+     "pinned": 0.8218793828892006,
+     "win_per_player": 0.17311160088158686
+    },
+    "D3": {
+     "games": 4950,
+     "loss": 0.00202020202020202,
+     "pinned": 0.8131313131313131,
+     "win_per_player": 0.21429292929292929
+    }
+   },
+   "end": {
+    "economy": 15.8222,
+    "environment": 9.533533333333333,
+    "social": 10.946
+   },
+   "extreme": {
+    "economy": 0.5154,
+    "environment": 0.37346666666666667,
+    "social": 0.42573333333333335
+   },
+   "handled": 0.8660925606978166,
+   "loss": 0.0019333333333333333,
+   "lost_round": 11.655172413793103,
+   "obj_win": {
+    "economy high, social low": [
+     3220,
+     7545
+    ],
+    "economy high, social medium": [
+     1827,
+     7455
+    ],
+    "economy low, social high": [
+     965,
+     7455
+    ],
+    "economy medium, social high": [
+     996,
+     7545
+    ],
+    "environment high, economy low": [
+     486,
+     7455
+    ],
+    "environment high, economy medium": [
+     637,
+     7545
+    ],
+    "environment medium, economy high": [
+     3846,
+     15000
+    ]
+   },
+   "unhandled": 1.6068,
+   "vote_pass": 0.3712761820101117,
+   "win_per_player": 0.19961666666666666
+  },
+  "4p/random": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8478666666666667,
+   "any_winner": 0.4628,
+   "by_obj": {
+    "Degrowth": [
+     379,
+     7429
+    ],
+    "Efficient State": [
+     2954,
+     7571
+    ],
+    "Free Market": [
+     1202,
+     7429
+    ],
+    "Green Transition": [
+     323,
+     7571
+    ],
+    "Growth Power": [
+     2247,
+     15000
+    ],
+    "Solidarity Economy": [
+     777,
+     7429
+    ],
+    "Welfare State": [
+     635,
+     7571
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.549200898164047,
+     "games": 7571,
+     "loss": 0.10764760269449214,
+     "pinned": 0.8500858539162595,
+     "win_per_player": 0.16956148461233655
+    },
+    "4-B": {
+     "any_winner": 0.3747476107147665,
+     "games": 7429,
+     "loss": 0.1055323731323193,
+     "pinned": 0.8456050612464665,
+     "win_per_player": 0.11381074168797954
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5130,
+     "loss": 0.10623781676413255,
+     "pinned": 0.8296296296296296,
+     "win_per_player": 0.14142300194931773
+    },
+    "A2": {
+     "games": 4808,
+     "loss": 0.10940099833610649,
+     "pinned": 0.8752079866888519,
+     "win_per_player": 0.14933444259567388
+    },
+    "A3": {
+     "games": 5062,
+     "loss": 0.10430659818253654,
+     "pinned": 0.8403792967206638,
+     "win_per_player": 0.1354701698933228
+    },
+    "B1": {
+     "games": 4975,
+     "loss": 0.10592964824120603,
+     "pinned": 0.9083417085427136,
+     "win_per_player": 0.1085929648241206
+    },
+    "B2": {
+     "games": 5013,
+     "loss": 0.10732096548972671,
+     "pinned": 0.8340315180530621,
+     "win_per_player": 0.15634350688210652
+    },
+    "B3": {
+     "games": 5012,
+     "loss": 0.10654429369513169,
+     "pinned": 0.8016759776536313,
+     "win_per_player": 0.16066440542697527
+    },
+    "C1": {
+     "games": 5030,
+     "loss": 0.10815109343936381,
+     "pinned": 0.862027833001988,
+     "win_per_player": 0.1313121272365805
+    },
+    "C2": {
+     "games": 4987,
+     "loss": 0.10747944656105875,
+     "pinned": 0.8558251453779827,
+     "win_per_player": 0.14743332664928815
+    },
+    "C3": {
+     "games": 4983,
+     "loss": 0.10415412402167369,
+     "pinned": 0.82560706401766,
+     "win_per_player": 0.14720048163756774
+    },
+    "D1": {
+     "games": 4983,
+     "loss": 0.10656231186032511,
+     "pinned": 0.8400561910495685,
+     "win_per_player": 0.14870559903672487
+    },
+    "D2": {
+     "games": 4975,
+     "loss": 0.10532663316582914,
+     "pinned": 0.8621105527638191,
+     "win_per_player": 0.12447236180904522
+    },
+    "D3": {
+     "games": 5042,
+     "loss": 0.1078936929789766,
+     "pinned": 0.8415311384371281,
+     "win_per_player": 0.15251884172947244
+    }
+   },
+   "end": {
+    "economy": 16.2386,
+    "environment": 7.593066666666667,
+    "social": 9.903333333333334
+   },
+   "extreme": {
+    "economy": 0.5808,
+    "environment": 0.45686666666666664,
+    "social": 0.4606
+   },
+   "handled": 0.761106888494778,
+   "loss": 0.1066,
+   "lost_round": 10.50844277673546,
+   "obj_win": {
+    "economy high, social low": [
+     2954,
+     7571
+    ],
+    "economy high, social medium": [
+     1202,
+     7429
+    ],
+    "economy low, social high": [
+     777,
+     7429
+    ],
+    "economy medium, social high": [
+     635,
+     7571
+    ],
+    "environment high, economy low": [
+     379,
+     7429
+    ],
+    "environment high, economy medium": [
+     323,
+     7571
+    ],
+    "environment medium, economy high": [
+     2247,
+     15000
+    ]
+   },
+   "unhandled": 2.8287333333333335,
+   "vote_pass": 0.660349632632379,
+   "win_per_player": 0.14195
+  },
+  "4p/selfish": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7586666666666667,
+   "any_winner": 0.5577333333333333,
+   "by_obj": {
+    "Degrowth": [
+     448,
+     7524
+    ],
+    "Efficient State": [
+     2727,
+     7476
+    ],
+    "Free Market": [
+     1695,
+     7524
+    ],
+    "Green Transition": [
+     623,
+     7476
+    ],
+    "Growth Power": [
+     3605,
+     15000
+    ],
+    "Solidarity Economy": [
+     907,
+     7524
+    ],
+    "Welfare State": [
+     1061,
+     7476
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6326912787586945,
+     "games": 7476,
+     "loss": 0.06246655965757089,
+     "pinned": 0.7636436597110754,
+     "win_per_player": 0.21465355805243447
+    },
+    "4-B": {
+     "any_winner": 0.48325358851674644,
+     "games": 7524,
+     "loss": 0.05382775119617225,
+     "pinned": 0.7537214247740563,
+     "win_per_player": 0.15440590111642744
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5055,
+     "loss": 0.05697329376854599,
+     "pinned": 0.7442136498516321,
+     "win_per_player": 0.17665677546983186
+    },
+    "A2": {
+     "games": 4920,
+     "loss": 0.0524390243902439,
+     "pinned": 0.7839430894308943,
+     "win_per_player": 0.20772357723577237
+    },
+    "A3": {
+     "games": 5025,
+     "loss": 0.06487562189054727,
+     "pinned": 0.7484577114427861,
+     "win_per_player": 0.16945273631840796
+    },
+    "B1": {
+     "games": 5022,
+     "loss": 0.08243727598566308,
+     "pinned": 0.8512544802867383,
+     "win_per_player": 0.13893866985264836
+    },
+    "B2": {
+     "games": 5003,
+     "loss": 0.05876474115530682,
+     "pinned": 0.7503497901259244,
+     "win_per_player": 0.19113531880871476
+    },
+    "B3": {
+     "games": 4975,
+     "loss": 0.03296482412060302,
+     "pinned": 0.6735678391959798,
+     "win_per_player": 0.2236180904522613
+    },
+    "C1": {
+     "games": 4927,
+     "loss": 0.05906230972194033,
+     "pinned": 0.7734929977674041,
+     "win_per_player": 0.17485285163385428
+    },
+    "C2": {
+     "games": 5057,
+     "loss": 0.05971920110737591,
+     "pinned": 0.7892030848329049,
+     "win_per_player": 0.18736404983191615
+    },
+    "C3": {
+     "games": 5016,
+     "loss": 0.05562200956937799,
+     "pinned": 0.7133173843700159,
+     "win_per_player": 0.1908891547049442
+    },
+    "D1": {
+     "games": 5028,
+     "loss": 0.06543357199681782,
+     "pinned": 0.7430389817024662,
+     "win_per_player": 0.1884447096260939
+    },
+    "D2": {
+     "games": 4959,
+     "loss": 0.05263157894736842,
+     "pinned": 0.7707199032062916,
+     "win_per_player": 0.16636418632788869
+    },
+    "D3": {
+     "games": 5013,
+     "loss": 0.056253740275284264,
+     "pinned": 0.7624177139437462,
+     "win_per_player": 0.19828446040295233
+    }
+   },
+   "end": {
+    "economy": 15.6378,
+    "environment": 9.476733333333334,
+    "social": 11.2624
+   },
+   "extreme": {
+    "economy": 0.4513333333333333,
+    "environment": 0.3327333333333333,
+    "social": 0.3821333333333333
+   },
+   "handled": 0.7976584799110759,
+   "loss": 0.058133333333333335,
+   "lost_round": 10.886467889908257,
+   "obj_win": {
+    "economy high, social low": [
+     2727,
+     7476
+    ],
+    "economy high, social medium": [
+     1695,
+     7524
+    ],
+    "economy low, social high": [
+     907,
+     7524
+    ],
+    "economy medium, social high": [
+     1061,
+     7476
+    ],
+    "environment high, economy low": [
+     448,
+     7524
+    ],
+    "environment high, economy medium": [
+     623,
+     7476
+    ],
+    "environment medium, economy high": [
+     3605,
+     15000
+    ]
+   },
+   "unhandled": 2.415,
+   "vote_pass": 0.6507604913170492,
+   "win_per_player": 0.18443333333333334
+  },
+  "5p/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8410666666666666,
+   "any_winner": 0.7191333333333333,
+   "by_obj": {
+    "Conservation": [
+     1158,
+     7510
+    ],
+    "Degrowth": [
+     420,
+     7510
+    ],
+    "Efficient State": [
+     1898,
+     7490
+    ],
+    "Free Market": [
+     2885,
+     7510
+    ],
+    "Green Transition": [
+     333,
+     7490
+    ],
+    "Growth Power": [
+     2092,
+     7490
+    ],
+    "Resource Power": [
+     2694,
+     7510
+    ],
+    "Right to Development": [
+     1974,
+     7490
+    ],
+    "Solidarity Economy": [
+     542,
+     7510
+    ],
+    "Welfare State": [
+     1009,
+     7490
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.7688918558077437,
+     "games": 7490,
+     "loss": 0.0,
+     "pinned": 0.8522029372496662,
+     "win_per_player": 0.195086782376502
+    },
+    "5-B": {
+     "any_winner": 0.6695073235685752,
+     "games": 7510,
+     "loss": 0.00013315579227696404,
+     "pinned": 0.8299600532623169,
+     "win_per_player": 0.20503328894806924
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5009,
+     "loss": 0.00019964064683569574,
+     "pinned": 0.8125374326212816,
+     "win_per_player": 0.19836294669594728
+    },
+    "A2": {
+     "games": 4993,
+     "loss": 0.0,
+     "pinned": 0.8864410174243942,
+     "win_per_player": 0.20909272982175045
+    },
+    "A3": {
+     "games": 4998,
+     "loss": 0.0,
+     "pinned": 0.8243297318927572,
+     "win_per_player": 0.19275710284113645
+    },
+    "B1": {
+     "games": 4861,
+     "loss": 0.0,
+     "pinned": 0.9185352808064184,
+     "win_per_player": 0.21896729068092985
+    },
+    "B2": {
+     "games": 5005,
+     "loss": 0.0001998001998001998,
+     "pinned": 0.8285714285714286,
+     "win_per_player": 0.1866933066933067
+    },
+    "B3": {
+     "games": 5134,
+     "loss": 0.0,
+     "pinned": 0.7798987144526685,
+     "win_per_player": 0.19520841449162446
+    },
+    "C1": {
+     "games": 4993,
+     "loss": 0.0002002803925495694,
+     "pinned": 0.858602042860004,
+     "win_per_player": 0.20040056078509913
+    },
+    "C2": {
+     "games": 5070,
+     "loss": 0.0,
+     "pinned": 0.8583826429980276,
+     "win_per_player": 0.19972386587771204
+    },
+    "C3": {
+     "games": 4937,
+     "loss": 0.0,
+     "pinned": 0.8055499291067449,
+     "win_per_player": 0.2000810208628722
+    },
+    "D1": {
+     "games": 4981,
+     "loss": 0.0,
+     "pinned": 0.8249347520578197,
+     "win_per_player": 0.19357558723147963
+    },
+    "D2": {
+     "games": 4961,
+     "loss": 0.0,
+     "pinned": 0.8544648256399919,
+     "win_per_player": 0.20471679096956258
+    },
+    "D3": {
+     "games": 5058,
+     "loss": 0.00019770660340055358,
+     "pinned": 0.8438117833135627,
+     "win_per_player": 0.2018979833926453
+    }
+   },
+   "end": {
+    "economy": 16.6172,
+    "environment": 8.3218,
+    "social": 11.7854
+   },
+   "extreme": {
+    "economy": 0.5978,
+    "environment": 0.4224,
+    "social": 0.3476
+   },
+   "handled": 0.8580222222222222,
+   "loss": 6.666666666666667e-05,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     1898,
+     7490
+    ],
+    "economy high, social medium": [
+     2885,
+     7510
+    ],
+    "economy low, social high": [
+     542,
+     7510
+    ],
+    "economy medium, social high": [
+     1009,
+     7490
+    ],
+    "environment high, economy low": [
+     420,
+     7510
+    ],
+    "environment high, economy medium": [
+     333,
+     7490
+    ],
+    "environment high, social medium": [
+     1158,
+     7510
+    ],
+    "environment low, economy high": [
+     2694,
+     7510
+    ],
+    "environment low, social high": [
+     1974,
+     7490
+    ],
+    "environment medium, economy high": [
+     2092,
+     7490
+    ]
+   },
+   "unhandled": 1.7037333333333333,
+   "vote_pass": 0.2567055555555556,
+   "win_per_player": 0.20006666666666667
+  },
+  "5p/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8164666666666667,
+   "any_winner": 0.7067333333333333,
+   "by_obj": {
+    "Conservation": [
+     1196,
+     7645
+    ],
+    "Degrowth": [
+     463,
+     7645
+    ],
+    "Efficient State": [
+     1641,
+     7355
+    ],
+    "Free Market": [
+     2863,
+     7645
+    ],
+    "Green Transition": [
+     413,
+     7355
+    ],
+    "Growth Power": [
+     1852,
+     7355
+    ],
+    "Resource Power": [
+     2570,
+     7645
+    ],
+    "Right to Development": [
+     2014,
+     7355
+    ],
+    "Solidarity Economy": [
+     657,
+     7645
+    ],
+    "Welfare State": [
+     1195,
+     7355
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.7605710401087695,
+     "games": 7355,
+     "loss": 0.0008157715839564922,
+     "pinned": 0.8202583276682529,
+     "win_per_player": 0.19347382732834806
+    },
+    "5-B": {
+     "any_winner": 0.6549378678875082,
+     "games": 7645,
+     "loss": 0.0011772400261608894,
+     "pinned": 0.8128188358404186,
+     "win_per_player": 0.20272073250490516
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5042,
+     "loss": 0.0005950019833399445,
+     "pinned": 0.7927409758032526,
+     "win_per_player": 0.19908766362554542
+    },
+    "A2": {
+     "games": 4961,
+     "loss": 0.0008062890546260835,
+     "pinned": 0.8558758314855875,
+     "win_per_player": 0.20435396089498084
+    },
+    "A3": {
+     "games": 4997,
+     "loss": 0.0016009605763458075,
+     "pinned": 0.8012807684610767,
+     "win_per_player": 0.19115469281568942
+    },
+    "B1": {
+     "games": 4975,
+     "loss": 0.0004020100502512563,
+     "pinned": 0.9021105527638191,
+     "win_per_player": 0.21748743718592964
+    },
+    "B2": {
+     "games": 5101,
+     "loss": 0.0017643599294256027,
+     "pinned": 0.8021956479121741,
+     "win_per_player": 0.18415996863360126
+    },
+    "B3": {
+     "games": 4924,
+     "loss": 0.0008123476848090983,
+     "pinned": 0.7447197400487409,
+     "win_per_player": 0.19321689683184404
+    },
+    "C1": {
+     "games": 5023,
+     "loss": 0.0009954210631096954,
+     "pinned": 0.8311765876965956,
+     "win_per_player": 0.19685446944057336
+    },
+    "C2": {
+     "games": 5000,
+     "loss": 0.0004,
+     "pinned": 0.8484,
+     "win_per_player": 0.20128
+    },
+    "C3": {
+     "games": 4977,
+     "loss": 0.0016073940124573037,
+     "pinned": 0.7695398834639341,
+     "win_per_player": 0.1964235483222825
+    },
+    "D1": {
+     "games": 4861,
+     "loss": 0.0008228759514503189,
+     "pinned": 0.7996297058218473,
+     "win_per_player": 0.19263526023451966
+    },
+    "D2": {
+     "games": 5085,
+     "loss": 0.0013765978367748278,
+     "pinned": 0.824385447394297,
+     "win_per_player": 0.20534906588003934
+    },
+    "D3": {
+     "games": 5054,
+     "loss": 0.0007914523149980214,
+     "pinned": 0.8246933122279383,
+     "win_per_player": 0.1963197467352592
+    }
+   },
+   "end": {
+    "economy": 16.367733333333334,
+    "environment": 8.574666666666667,
+    "social": 12.213733333333334
+   },
+   "extreme": {
+    "economy": 0.5598666666666666,
+    "environment": 0.4138,
+    "social": 0.32866666666666666
+   },
+   "handled": 0.8771222222222222,
+   "loss": 0.001,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     1641,
+     7355
+    ],
+    "economy high, social medium": [
+     2863,
+     7645
+    ],
+    "economy low, social high": [
+     657,
+     7645
+    ],
+    "economy medium, social high": [
+     1195,
+     7355
+    ],
+    "environment high, economy low": [
+     463,
+     7645
+    ],
+    "environment high, economy medium": [
+     413,
+     7355
+    ],
+    "environment high, social medium": [
+     1196,
+     7645
+    ],
+    "environment low, economy high": [
+     2570,
+     7645
+    ],
+    "environment low, social high": [
+     2014,
+     7355
+    ],
+    "environment medium, economy high": [
+     1852,
+     7355
+    ]
+   },
+   "unhandled": 1.4745333333333333,
+   "vote_pass": 0.36235,
+   "win_per_player": 0.19818666666666668
+  },
+  "5p/random": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8594666666666667,
+   "any_winner": 0.6449333333333334,
+   "by_obj": {
+    "Conservation": [
+     532,
+     7508
+    ],
+    "Degrowth": [
+     390,
+     7508
+    ],
+    "Efficient State": [
+     2584,
+     7492
+    ],
+    "Free Market": [
+     1461,
+     7508
+    ],
+    "Green Transition": [
+     300,
+     7492
+    ],
+    "Growth Power": [
+     1117,
+     7492
+    ],
+    "Resource Power": [
+     3006,
+     7508
+    ],
+    "Right to Development": [
+     1604,
+     7492
+    ],
+    "Solidarity Economy": [
+     774,
+     7508
+    ],
+    "Welfare State": [
+     668,
+     7492
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.6835290977042179,
+     "games": 7492,
+     "loss": 0.0795515216230646,
+     "pinned": 0.8595835557928457,
+     "win_per_player": 0.1674586225306994
+    },
+    "5-B": {
+     "any_winner": 0.6064198188598828,
+     "games": 7508,
+     "loss": 0.07924880127863612,
+     "pinned": 0.8593500266382526,
+     "win_per_player": 0.1641715503462973
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5030,
+     "loss": 0.07693836978131213,
+     "pinned": 0.8441351888667992,
+     "win_per_player": 0.16834990059642146
+    },
+    "A2": {
+     "games": 5005,
+     "loss": 0.08131868131868132,
+     "pinned": 0.8863136863136863,
+     "win_per_player": 0.16855144855144855
+    },
+    "A3": {
+     "games": 4965,
+     "loss": 0.07995971802618328,
+     "pinned": 0.8479355488418933,
+     "win_per_player": 0.16048338368580062
+    },
+    "B1": {
+     "games": 5053,
+     "loss": 0.0821294280625371,
+     "pinned": 0.9275677815159311,
+     "win_per_player": 0.17862655848011083
+    },
+    "B2": {
+     "games": 4996,
+     "loss": 0.0744595676541233,
+     "pinned": 0.8464771817453963,
+     "win_per_player": 0.14907926341072858
+    },
+    "B3": {
+     "games": 4951,
+     "loss": 0.08159967683296304,
+     "pinned": 0.8030700868511412,
+     "win_per_player": 0.16962229852555039
+    },
+    "C1": {
+     "games": 4904,
+     "loss": 0.08340130505709625,
+     "pinned": 0.8666394779771615,
+     "win_per_player": 0.16765905383360521
+    },
+    "C2": {
+     "games": 5040,
+     "loss": 0.07896825396825397,
+     "pinned": 0.8696428571428572,
+     "win_per_player": 0.16412698412698412
+    },
+    "C3": {
+     "games": 5056,
+     "loss": 0.0759493670886076,
+     "pinned": 0.8423655063291139,
+     "win_per_player": 0.16570411392405063
+    },
+    "D1": {
+     "games": 4989,
+     "loss": 0.07957506514331529,
+     "pinned": 0.8592904389657245,
+     "win_per_player": 0.1653237121667669
+    },
+    "D2": {
+     "games": 5081,
+     "loss": 0.07833103719740209,
+     "pinned": 0.8665617004526668,
+     "win_per_player": 0.16835268647903956
+    },
+    "D3": {
+     "games": 4930,
+     "loss": 0.08032454361054767,
+     "pinned": 0.8523326572008113,
+     "win_per_player": 0.1636916835699797
+    }
+   },
+   "end": {
+    "economy": 16.2756,
+    "environment": 7.230266666666667,
+    "social": 10.513733333333333
+   },
+   "extreme": {
+    "economy": 0.6048666666666667,
+    "environment": 0.478,
+    "social": 0.42766666666666664
+   },
+   "handled": 0.7781309207502326,
+   "loss": 0.0794,
+   "lost_round": 10.654911838790932,
+   "obj_win": {
+    "economy high, social low": [
+     2584,
+     7492
+    ],
+    "economy high, social medium": [
+     1461,
+     7508
+    ],
+    "economy low, social high": [
+     774,
+     7508
+    ],
+    "economy medium, social high": [
+     668,
+     7492
+    ],
+    "environment high, economy low": [
+     390,
+     7508
+    ],
+    "environment high, economy medium": [
+     300,
+     7492
+    ],
+    "environment high, social medium": [
+     532,
+     7508
+    ],
+    "environment low, economy high": [
+     3006,
+     7508
+    ],
+    "environment low, social high": [
+     1604,
+     7492
+    ],
+    "environment medium, economy high": [
+     1117,
+     7492
+    ]
+   },
+   "unhandled": 2.638733333333333,
+   "vote_pass": 0.6933934236930908,
+   "win_per_player": 0.16581333333333334
+  },
+  "5p/selfish": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7783333333333333,
+   "any_winner": 0.6705333333333333,
+   "by_obj": {
+    "Conservation": [
+     991,
+     7477
+    ],
+    "Degrowth": [
+     472,
+     7477
+    ],
+    "Efficient State": [
+     1590,
+     7523
+    ],
+    "Free Market": [
+     2392,
+     7477
+    ],
+    "Green Transition": [
+     451,
+     7523
+    ],
+    "Growth Power": [
+     1798,
+     7523
+    ],
+    "Resource Power": [
+     2308,
+     7477
+    ],
+    "Right to Development": [
+     1904,
+     7523
+    ],
+    "Solidarity Economy": [
+     718,
+     7477
+    ],
+    "Welfare State": [
+     1329,
+     7523
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.7334839824538083,
+     "games": 7523,
+     "loss": 0.041871593779077496,
+     "pinned": 0.7895786255483185,
+     "win_per_player": 0.18801010235278479
+    },
+    "5-B": {
+     "any_winner": 0.6071953992242878,
+     "games": 7477,
+     "loss": 0.04627524408185101,
+     "pinned": 0.7670188578306808,
+     "win_per_player": 0.1840577771833623
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4858,
+     "loss": 0.045491972004940304,
+     "pinned": 0.763894606834088,
+     "win_per_player": 0.18649650061753809
+    },
+    "A2": {
+     "games": 5040,
+     "loss": 0.038293650793650796,
+     "pinned": 0.7956349206349206,
+     "win_per_player": 0.19333333333333333
+    },
+    "A3": {
+     "games": 5102,
+     "loss": 0.04841238729909839,
+     "pinned": 0.7749901999215993,
+     "win_per_player": 0.17840062720501765
+    },
+    "B1": {
+     "games": 5055,
+     "loss": 0.06567754698318497,
+     "pinned": 0.8706231454005935,
+     "win_per_player": 0.19537091988130564
+    },
+    "B2": {
+     "games": 5066,
+     "loss": 0.041255428345834975,
+     "pinned": 0.7700355309909198,
+     "win_per_player": 0.17828661666008686
+    },
+    "B3": {
+     "games": 4879,
+     "loss": 0.02459520393523263,
+     "pinned": 0.6913301906128305,
+     "win_per_player": 0.184423037507686
+    },
+    "C1": {
+     "games": 5099,
+     "loss": 0.04432241616003138,
+     "pinned": 0.7968229064522455,
+     "win_per_player": 0.18717395567758385
+    },
+    "C2": {
+     "games": 5015,
+     "loss": 0.04207377866400797,
+     "pinned": 0.7954137587238285,
+     "win_per_player": 0.18556331006979063
+    },
+    "C3": {
+     "games": 4886,
+     "loss": 0.045845272206303724,
+     "pinned": 0.7415063446582071,
+     "win_per_player": 0.18534588620548506
+    },
+    "D1": {
+     "games": 4977,
+     "loss": 0.047418123367490454,
+     "pinned": 0.7683343379545912,
+     "win_per_player": 0.1816355234076753
+    },
+    "D2": {
+     "games": 5119,
+     "loss": 0.042586442664582926,
+     "pinned": 0.794295760890799,
+     "win_per_player": 0.19327993748779057
+    },
+    "D3": {
+     "games": 4904,
+     "loss": 0.042210440456769985,
+     "pinned": 0.7718189233278956,
+     "win_per_player": 0.18295269168026101
+    }
+   },
+   "end": {
+    "economy": 15.984333333333334,
+    "environment": 8.5596,
+    "social": 12.388666666666667
+   },
+   "extreme": {
+    "economy": 0.49793333333333334,
+    "environment": 0.37073333333333336,
+    "social": 0.31926666666666664
+   },
+   "handled": 0.8091775172036589,
+   "loss": 0.044066666666666664,
+   "lost_round": 10.754916792738275,
+   "obj_win": {
+    "economy high, social low": [
+     1590,
+     7523
+    ],
+    "economy high, social medium": [
+     2392,
+     7477
+    ],
+    "economy low, social high": [
+     718,
+     7477
+    ],
+    "economy medium, social high": [
+     1329,
+     7523
+    ],
+    "environment high, economy low": [
+     472,
+     7477
+    ],
+    "environment high, economy medium": [
+     451,
+     7523
+    ],
+    "environment high, social medium": [
+     991,
+     7477
+    ],
+    "environment low, economy high": [
+     2308,
+     7477
+    ],
+    "environment low, social high": [
+     1904,
+     7523
+    ],
+    "environment medium, economy high": [
+     1798,
+     7523
+    ]
+   },
+   "unhandled": 2.2794,
+   "vote_pass": 0.6657718345546583,
+   "win_per_player": 0.18604
+  },
+  "6p/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8540666666666666,
+   "any_winner": 0.8168,
+   "by_obj": {
+    "Conservation": [
+     1469,
+     7331
+    ],
+    "Efficient State": [
+     1965,
+     7331
+    ],
+    "Fortress Conservation": [
+     1032,
+     15000
+    ],
+    "Free Market": [
+     5792,
+     15000
+    ],
+    "Green Transition": [
+     389,
+     7669
+    ],
+    "Growth Power": [
+     2170,
+     7669
+    ],
+    "Humanist": [
+     284,
+     7331
+    ],
+    "Right to Development": [
+     1404,
+     7669
+    ],
+    "Solidarity Economy": [
+     184,
+     7331
+    ],
+    "Welfare State": [
+     766,
+     7669
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.792802190637632,
+     "games": 7669,
+     "loss": 0.00013039509714434736,
+     "pinned": 0.8353109923066893,
+     "win_per_player": 0.15951666883991827
+    },
+    "6-B": {
+     "any_winner": 0.8419042422589006,
+     "games": 7331,
+     "loss": 0.0,
+     "pinned": 0.8736870822534443,
+     "win_per_player": 0.1844905197108171
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4872,
+     "loss": 0.0,
+     "pinned": 0.8191707717569786,
+     "win_per_player": 0.1672824302134647
+    },
+    "A2": {
+     "games": 5136,
+     "loss": 0.0,
+     "pinned": 0.9116043613707165,
+     "win_per_player": 0.18045820353063344
+    },
+    "A3": {
+     "games": 4992,
+     "loss": 0.00020032051282051281,
+     "pinned": 0.828926282051282,
+     "win_per_player": 0.16706730769230768
+    },
+    "B1": {
+     "games": 4988,
+     "loss": 0.0,
+     "pinned": 0.9196070569366479,
+     "win_per_player": 0.14972600908847902
+    },
+    "B2": {
+     "games": 5006,
+     "loss": 0.00019976028765481422,
+     "pinned": 0.8320015980823012,
+     "win_per_player": 0.19430017312558262
+    },
+    "B3": {
+     "games": 5006,
+     "loss": 0.0,
+     "pinned": 0.8108270075908909,
+     "win_per_player": 0.1710613929950726
+    },
+    "C1": {
+     "games": 5048,
+     "loss": 0.0,
+     "pinned": 0.8666798732171157,
+     "win_per_player": 0.1666336502905441
+    },
+    "C2": {
+     "games": 4922,
+     "loss": 0.0002031694433157253,
+     "pinned": 0.882364892320195,
+     "win_per_player": 0.17628335365027767
+    },
+    "C3": {
+     "games": 5030,
+     "loss": 0.0,
+     "pinned": 0.8137176938369781,
+     "win_per_player": 0.17236580516898609
+    },
+    "D1": {
+     "games": 4918,
+     "loss": 0.0,
+     "pinned": 0.8438389589263928,
+     "win_per_player": 0.16710722515927884
+    },
+    "D2": {
+     "games": 5000,
+     "loss": 0.0,
+     "pinned": 0.8606,
+     "win_per_player": 0.16063333333333332
+    },
+    "D3": {
+     "games": 5082,
+     "loss": 0.0001967729240456513,
+     "pinned": 0.8575364029909485,
+     "win_per_player": 0.18709825528007346
+    }
+   },
+   "end": {
+    "economy": 17.7722,
+    "environment": 9.143733333333333,
+    "social": 10.298533333333333
+   },
+   "extreme": {
+    "economy": 0.6853333333333333,
+    "environment": 0.43666666666666665,
+    "social": 0.24433333333333335
+   },
+   "handled": 0.8600444444444444,
+   "loss": 6.666666666666667e-05,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     1965,
+     7331
+    ],
+    "economy high, social medium": [
+     5792,
+     15000
+    ],
+    "economy low, social high": [
+     184,
+     7331
+    ],
+    "economy medium, social high": [
+     766,
+     7669
+    ],
+    "environment high, economy medium": [
+     389,
+     7669
+    ],
+    "environment high, social low": [
+     1032,
+     15000
+    ],
+    "environment high, social medium": [
+     1469,
+     7331
+    ],
+    "environment low, social high": [
+     1404,
+     7669
+    ],
+    "environment medium, economy high": [
+     2170,
+     7669
+    ],
+    "environment medium, social high": [
+     284,
+     7331
+    ]
+   },
+   "unhandled": 1.6794666666666667,
+   "vote_pass": 0.2501277777777778,
+   "win_per_player": 0.17172222222222222
+  },
+  "6p/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8276666666666667,
+   "any_winner": 0.8141333333333334,
+   "by_obj": {
+    "Conservation": [
+     1519,
+     7443
+    ],
+    "Efficient State": [
+     2087,
+     7443
+    ],
+    "Fortress Conservation": [
+     1031,
+     15000
+    ],
+    "Free Market": [
+     5676,
+     15000
+    ],
+    "Green Transition": [
+     474,
+     7557
+    ],
+    "Growth Power": [
+     2043,
+     7557
+    ],
+    "Humanist": [
+     335,
+     7443
+    ],
+    "Right to Development": [
+     1371,
+     7557
+    ],
+    "Solidarity Economy": [
+     193,
+     7443
+    ],
+    "Welfare State": [
+     940,
+     7557
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.7952891359004897,
+     "games": 7557,
+     "loss": 0.000661638216223369,
+     "pinned": 0.8049490538573508,
+     "win_per_player": 0.1637334039080764
+    },
+    "6-B": {
+     "any_winner": 0.8332661561198441,
+     "games": 7443,
+     "loss": 0.0005374177079134758,
+     "pinned": 0.8507322316270322,
+     "win_per_player": 0.18462537507277532
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4928,
+     "loss": 0.0008116883116883117,
+     "pinned": 0.7913961038961039,
+     "win_per_player": 0.17038690476190477
+    },
+    "A2": {
+     "games": 5087,
+     "loss": 0.00019657951641438963,
+     "pinned": 0.8690780420680165,
+     "win_per_player": 0.1835069785728327
+    },
+    "A3": {
+     "games": 4985,
+     "loss": 0.0008024072216649949,
+     "pinned": 0.8212637913741224,
+     "win_per_player": 0.16817118020728852
+    },
+    "B1": {
+     "games": 5018,
+     "loss": 0.0005978477481068154,
+     "pinned": 0.9067357512953368,
+     "win_per_player": 0.15301580975156104
+    },
+    "B2": {
+     "games": 5017,
+     "loss": 0.00039864460833167234,
+     "pinned": 0.8255929838548933,
+     "win_per_player": 0.1943724669457179
+    },
+    "B3": {
+     "games": 4965,
+     "loss": 0.0008056394763343404,
+     "pinned": 0.7498489425981874,
+     "win_per_player": 0.17492447129909366
+    },
+    "C1": {
+     "games": 4911,
+     "loss": 0.00020362451639177357,
+     "pinned": 0.8316025249440032,
+     "win_per_player": 0.1711803434466843
+    },
+    "C2": {
+     "games": 4937,
+     "loss": 0.00040510431436094796,
+     "pinned": 0.855580311930322,
+     "win_per_player": 0.1766254810613733
+    },
+    "C3": {
+     "games": 5152,
+     "loss": 0.0011645962732919255,
+     "pinned": 0.797166149068323,
+     "win_per_player": 0.1744629917184265
+    },
+    "D1": {
+     "games": 5106,
+     "loss": 0.0005875440658049354,
+     "pinned": 0.8149236192714454,
+     "win_per_player": 0.17002872437655045
+    },
+    "D2": {
+     "games": 4964,
+     "loss": 0.0006043513295729251,
+     "pinned": 0.8325946817082998,
+     "win_per_player": 0.16471931238248724
+    },
+    "D3": {
+     "games": 4930,
+     "loss": 0.0006085192697768763,
+     "pinned": 0.8359026369168358,
+     "win_per_player": 0.18776200135226503
+    }
+   },
+   "end": {
+    "economy": 17.5832,
+    "environment": 9.525933333333333,
+    "social": 10.552533333333333
+   },
+   "extreme": {
+    "economy": 0.6508666666666667,
+    "environment": 0.4114,
+    "social": 0.234
+   },
+   "handled": 0.8813222222222222,
+   "loss": 0.0006,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     2087,
+     7443
+    ],
+    "economy high, social medium": [
+     5676,
+     15000
+    ],
+    "economy low, social high": [
+     193,
+     7443
+    ],
+    "economy medium, social high": [
+     940,
+     7557
+    ],
+    "environment high, economy medium": [
+     474,
+     7557
+    ],
+    "environment high, social low": [
+     1031,
+     15000
+    ],
+    "environment high, social medium": [
+     1519,
+     7443
+    ],
+    "environment low, social high": [
+     1371,
+     7557
+    ],
+    "environment medium, economy high": [
+     2043,
+     7557
+    ],
+    "environment medium, social high": [
+     335,
+     7443
+    ]
+   },
+   "unhandled": 1.4241333333333333,
+   "vote_pass": 0.3620388888888889,
+   "win_per_player": 0.1741
+  },
+  "6p/random": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8529333333333333,
+   "any_winner": 0.6698666666666667,
+   "by_obj": {
+    "Conservation": [
+     626,
+     7451
+    ],
+    "Efficient State": [
+     2620,
+     7451
+    ],
+    "Fortress Conservation": [
+     1208,
+     15000
+    ],
+    "Free Market": [
+     2955,
+     15000
+    ],
+    "Green Transition": [
+     313,
+     7549
+    ],
+    "Growth Power": [
+     1177,
+     7549
+    ],
+    "Humanist": [
+     459,
+     7451
+    ],
+    "Right to Development": [
+     1540,
+     7549
+    ],
+    "Solidarity Economy": [
+     629,
+     7451
+    ],
+    "Welfare State": [
+     650,
+     7549
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.6227314876142536,
+     "games": 7549,
+     "loss": 0.0569611869121738,
+     "pinned": 0.8512385746456484,
+     "win_per_player": 0.12100940521923434
+    },
+    "6-B": {
+     "any_winner": 0.7176217957321165,
+     "games": 7451,
+     "loss": 0.05663669306133405,
+     "pinned": 0.8546503824989934,
+     "win_per_player": 0.14977855321433364
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5063,
+     "loss": 0.052538020936203834,
+     "pinned": 0.8402133122654553,
+     "win_per_player": 0.136513266179472
+    },
+    "A2": {
+     "games": 5001,
+     "loss": 0.05838832233553289,
+     "pinned": 0.8792241551689662,
+     "win_per_player": 0.13820569219489434
+    },
+    "A3": {
+     "games": 4936,
+     "loss": 0.05956239870340357,
+     "pinned": 0.8393435980551054,
+     "win_per_player": 0.13111156131820637
+    },
+    "B1": {
+     "games": 4933,
+     "loss": 0.05594972633286033,
+     "pinned": 0.9116156497060612,
+     "win_per_player": 0.12342050138522873
+    },
+    "B2": {
+     "games": 5053,
+     "loss": 0.05818325747080942,
+     "pinned": 0.8531565406689096,
+     "win_per_player": 0.1503727158783561
+    },
+    "B3": {
+     "games": 5014,
+     "loss": 0.05624252094136418,
+     "pinned": 0.7949740725967291,
+     "win_per_player": 0.13179763329344502
+    },
+    "C1": {
+     "games": 4913,
+     "loss": 0.061062487278648485,
+     "pinned": 0.8593527376348463,
+     "win_per_player": 0.13155573648144378
+    },
+    "C2": {
+     "games": 5083,
+     "loss": 0.052921503049380286,
+     "pinned": 0.8672044068463506,
+     "win_per_player": 0.1385992524099941
+    },
+    "C3": {
+     "games": 5004,
+     "loss": 0.056554756195043965,
+     "pinned": 0.8321342925659473,
+     "win_per_player": 0.1356248334665601
+    },
+    "D1": {
+     "games": 5015,
+     "loss": 0.054636091724825524,
+     "pinned": 0.8344965104685942,
+     "win_per_player": 0.13296776337653707
+    },
+    "D2": {
+     "games": 4969,
+     "loss": 0.060575568524854094,
+     "pinned": 0.8726101831354397,
+     "win_per_player": 0.12869792714831957
+    },
+    "D3": {
+     "games": 5016,
+     "loss": 0.05522328548644338,
+     "pinned": 0.8518740031897927,
+     "win_per_player": 0.14417198298777245
+    }
+   },
+   "end": {
+    "economy": 16.643266666666666,
+    "environment": 7.981066666666667,
+    "social": 9.949333333333334
+   },
+   "extreme": {
+    "economy": 0.6370666666666667,
+    "environment": 0.46326666666666666,
+    "social": 0.3893333333333333
+   },
+   "handled": 0.7948567402536402,
+   "loss": 0.0568,
+   "lost_round": 10.633802816901408,
+   "obj_win": {
+    "economy high, social low": [
+     2620,
+     7451
+    ],
+    "economy high, social medium": [
+     2955,
+     15000
+    ],
+    "economy low, social high": [
+     629,
+     7451
+    ],
+    "economy medium, social high": [
+     650,
+     7549
+    ],
+    "environment high, economy medium": [
+     313,
+     7549
+    ],
+    "environment high, social low": [
+     1208,
+     15000
+    ],
+    "environment high, social medium": [
+     626,
+     7451
+    ],
+    "environment low, social high": [
+     1540,
+     7549
+    ],
+    "environment medium, economy high": [
+     1177,
+     7549
+    ],
+    "environment medium, social high": [
+     459,
+     7451
+    ]
+   },
+   "unhandled": 2.4458,
+   "vote_pass": 0.719430092375137,
+   "win_per_player": 0.1353
+  },
+  "6p/selfish": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7722666666666667,
+   "any_winner": 0.7682,
+   "by_obj": {
+    "Conservation": [
+     1355,
+     7482
+    ],
+    "Efficient State": [
+     2019,
+     7482
+    ],
+    "Fortress Conservation": [
+     1020,
+     15000
+    ],
+    "Free Market": [
+     5078,
+     15000
+    ],
+    "Green Transition": [
+     460,
+     7518
+    ],
+    "Growth Power": [
+     1975,
+     7518
+    ],
+    "Humanist": [
+     407,
+     7482
+    ],
+    "Right to Development": [
+     1261,
+     7518
+    ],
+    "Solidarity Economy": [
+     277,
+     7482
+    ],
+    "Welfare State": [
+     936,
+     7518
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.7468741686618782,
+     "games": 7518,
+     "loss": 0.03777600425645118,
+     "pinned": 0.7544559723330673,
+     "win_per_player": 0.15473973574532235
+    },
+    "6-B": {
+     "any_winner": 0.7896284415931569,
+     "games": 7482,
+     "loss": 0.030473135525260625,
+     "pinned": 0.7901630580058808,
+     "win_per_player": 0.17392853960616592
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5031,
+     "loss": 0.03617571059431524,
+     "pinned": 0.7437885112303717,
+     "win_per_player": 0.16163121977075465
+    },
+    "A2": {
+     "games": 5054,
+     "loss": 0.030273051048674317,
+     "pinned": 0.8112386228729719,
+     "win_per_player": 0.17497691597414589
+    },
+    "A3": {
+     "games": 4915,
+     "loss": 0.036012207527975584,
+     "pinned": 0.7613428280773143,
+     "win_per_player": 0.15608680908782638
+    },
+    "B1": {
+     "games": 4972,
+     "loss": 0.04505229283990346,
+     "pinned": 0.8588093322606597,
+     "win_per_player": 0.14799544113703406
+    },
+    "B2": {
+     "games": 4994,
+     "loss": 0.03924709651581898,
+     "pinned": 0.7741289547456949,
+     "win_per_player": 0.1801161393672407
+    },
+    "B3": {
+     "games": 5034,
+     "loss": 0.018275725069527213,
+     "pinned": 0.6849423917361939,
+     "win_per_player": 0.16474639120646273
+    },
+    "C1": {
+     "games": 5011,
+     "loss": 0.0341249251646378,
+     "pinned": 0.7850728397525444,
+     "win_per_player": 0.15738708175347568
+    },
+    "C2": {
+     "games": 4927,
+     "loss": 0.03511264461132535,
+     "pinned": 0.7946011771869291,
+     "win_per_player": 0.16686962993031595
+    },
+    "C3": {
+     "games": 5062,
+     "loss": 0.03318846305807981,
+     "pinned": 0.7378506519162387,
+     "win_per_player": 0.16867509548268142
+    },
+    "D1": {
+     "games": 4896,
+     "loss": 0.030637254901960783,
+     "pinned": 0.758578431372549,
+     "win_per_player": 0.16295615468409586
+    },
+    "D2": {
+     "games": 5103,
+     "loss": 0.03880070546737213,
+     "pinned": 0.7785616304134823,
+     "win_per_player": 0.15451695081324712
+    },
+    "D3": {
+     "games": 5001,
+     "loss": 0.03279344131173765,
+     "pinned": 0.7792441511697661,
+     "win_per_player": 0.17563154035859493
+    }
+   },
+   "end": {
+    "economy": 17.122933333333332,
+    "environment": 9.595066666666666,
+    "social": 10.707266666666667
+   },
+   "extreme": {
+    "economy": 0.5788666666666666,
+    "environment": 0.3612,
+    "social": 0.22226666666666667
+   },
+   "handled": 0.8244009297503386,
+   "loss": 0.034133333333333335,
+   "lost_round": 10.833984375,
+   "obj_win": {
+    "economy high, social low": [
+     2019,
+     7482
+    ],
+    "economy high, social medium": [
+     5078,
+     15000
+    ],
+    "economy low, social high": [
+     277,
+     7482
+    ],
+    "economy medium, social high": [
+     936,
+     7518
+    ],
+    "environment high, economy medium": [
+     460,
+     7518
+    ],
+    "environment high, social low": [
+     1020,
+     15000
+    ],
+    "environment high, social medium": [
+     1355,
+     7482
+    ],
+    "environment low, social high": [
+     1261,
+     7518
+    ],
+    "environment medium, economy high": [
+     1975,
+     7518
+    ],
+    "environment medium, social high": [
+     407,
+     7482
+    ]
+   },
+   "unhandled": 2.1002,
+   "vote_pass": 0.6578541050038182,
+   "win_per_player": 0.1643111111111111
+  }
+ },
+ "presets": {
+  "3-A": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8520666666666666,
+   "any_winner": 0.6941333333333334,
+   "by_obj": {
+    "Green Transition": [
+     1880,
+     15000
+    ],
+    "Resource Power": [
+     5572,
+     15000
+    ],
+    "Welfare State": [
+     4610,
+     15000
+    ]
+   },
+   "by_preset": {
+    "3-A": {
+     "any_winner": 0.6941333333333334,
+     "games": 15000,
+     "loss": 0.0026666666666666666,
+     "pinned": 0.8520666666666666,
+     "win_per_player": 0.2680444444444444
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5017,
+     "loss": 0.0029898345624875425,
+     "pinned": 0.8449272473589795,
+     "win_per_player": 0.29645870706265365
+    },
+    "A2": {
+     "games": 5020,
+     "loss": 0.0013944223107569722,
+     "pinned": 0.8667330677290837,
+     "win_per_player": 0.24043824701195218
+    },
+    "A3": {
+     "games": 4963,
+     "loss": 0.0036268386056820473,
+     "pinned": 0.84444892202297,
+     "win_per_player": 0.26724427429646047
+    },
+    "B1": {
+     "games": 5058,
+     "loss": 0.0011862396204033216,
+     "pinned": 0.9302095689996046,
+     "win_per_player": 0.29833926453143533
+    },
+    "B2": {
+     "games": 4936,
+     "loss": 0.0034440842787682334,
+     "pinned": 0.8338735818476499,
+     "win_per_player": 0.2757293354943274
+    },
+    "B3": {
+     "games": 5006,
+     "loss": 0.0033959248901318418,
+     "pinned": 0.7910507391130643,
+     "win_per_player": 0.22985750432813956
+    },
+    "C1": {
+     "games": 4988,
+     "loss": 0.003408179631114675,
+     "pinned": 0.8755012028869287,
+     "win_per_player": 0.27211975407645017
+    },
+    "C2": {
+     "games": 5023,
+     "loss": 0.0017917579135974518,
+     "pinned": 0.8614373880151304,
+     "win_per_player": 0.2604021501094963
+    },
+    "C3": {
+     "games": 4989,
+     "loss": 0.0028061735818801364,
+     "pinned": 0.8192022449388655,
+     "win_per_player": 0.27166432818868175
+    },
+    "D1": {
+     "games": 5051,
+     "loss": 0.002375767174816868,
+     "pinned": 0.832112452979608,
+     "win_per_player": 0.24575991552827822
+    },
+    "D2": {
+     "games": 4950,
+     "loss": 0.0024242424242424242,
+     "pinned": 0.8719191919191919,
+     "win_per_player": 0.2962962962962963
+    },
+    "D3": {
+     "games": 4999,
+     "loss": 0.003200640128025605,
+     "pinned": 0.8525705141028206,
+     "win_per_player": 0.262585850503434
+    }
+   },
+   "end": {
+    "economy": 15.084733333333334,
+    "environment": 7.335466666666667,
+    "social": 14.494
+   },
+   "extreme": {
+    "economy": 0.3930666666666667,
+    "environment": 0.478,
+    "social": 0.5613333333333334
+   },
+   "handled": 0.8613049468865283,
+   "loss": 0.0026666666666666666,
+   "lost_round": 11.8,
+   "obj_win": {
+    "economy medium, social high": [
+     4610,
+     15000
+    ],
+    "environment high, economy medium": [
+     1880,
+     15000
+    ],
+    "environment low, economy high": [
+     5572,
+     15000
+    ]
+   },
+   "unhandled": 1.6642666666666666,
+   "vote_pass": 0.34212076092270766,
+   "win_per_player": 0.2680444444444444
+  },
+  "3-B": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8496666666666667,
+   "any_winner": 0.5308666666666667,
+   "by_obj": {
+    "Degrowth": [
+     576,
+     15000
+    ],
+    "Growth Power": [
+     5261,
+     15000
+    ],
+    "Humanist": [
+     4582,
+     15000
+    ]
+   },
+   "by_preset": {
+    "3-B": {
+     "any_winner": 0.5308666666666667,
+     "games": 15000,
+     "loss": 0.0030666666666666668,
+     "pinned": 0.8496666666666667,
+     "win_per_player": 0.23153333333333334
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5023,
+     "loss": 0.001990842126219391,
+     "pinned": 0.8375472825004977,
+     "win_per_player": 0.24122370429358286
+    },
+    "A2": {
+     "games": 4981,
+     "loss": 0.003011443485243927,
+     "pinned": 0.8662919092551696,
+     "win_per_player": 0.21622164224051396
+    },
+    "A3": {
+     "games": 4996,
+     "loss": 0.004203362690152122,
+     "pinned": 0.8452762209767815,
+     "win_per_player": 0.2370563117160395
+    },
+    "B1": {
+     "games": 5041,
+     "loss": 0.0037690934338424917,
+     "pinned": 0.9103352509422734,
+     "win_per_player": 0.14097731931495075
+    },
+    "B2": {
+     "games": 4932,
+     "loss": 0.0032441200324412004,
+     "pinned": 0.8327250608272506,
+     "win_per_player": 0.2661530143281968
+    },
+    "B3": {
+     "games": 5027,
+     "loss": 0.002188183807439825,
+     "pinned": 0.8054505669385319,
+     "win_per_player": 0.2883761023804787
+    },
+    "C1": {
+     "games": 4945,
+     "loss": 0.003640040444893832,
+     "pinned": 0.8687563195146613,
+     "win_per_player": 0.23768115942028986
+    },
+    "C2": {
+     "games": 4981,
+     "loss": 0.0024091547881951417,
+     "pinned": 0.8656896205581208,
+     "win_per_player": 0.2407147159204979
+    },
+    "C3": {
+     "games": 5074,
+     "loss": 0.0031533307055577452,
+     "pinned": 0.8153330705557745,
+     "win_per_player": 0.21652870844829852
+    },
+    "D1": {
+     "games": 5001,
+     "loss": 0.003799240151969606,
+     "pinned": 0.8370325934813038,
+     "win_per_player": 0.2250883156701993
+    },
+    "D2": {
+     "games": 5029,
+     "loss": 0.0029827003380393717,
+     "pinned": 0.8606084708689601,
+     "win_per_player": 0.21296480413601113
+    },
+    "D3": {
+     "games": 4970,
+     "loss": 0.002414486921529175,
+     "pinned": 0.851307847082495,
+     "win_per_player": 0.2568075117370892
+    }
+   },
+   "end": {
+    "economy": 15.2176,
+    "environment": 8.8872,
+    "social": 13.8448
+   },
+   "extreme": {
+    "economy": 0.5887333333333333,
+    "environment": 0.24226666666666666,
+    "social": 0.5526666666666666
+   },
+   "handled": 0.8589628197435385,
+   "loss": 0.0030666666666666668,
+   "lost_round": 11.73913043478261,
+   "obj_win": {
+    "environment high, economy low": [
+     576,
+     15000
+    ],
+    "environment medium, economy high": [
+     5261,
+     15000
+    ],
+    "environment medium, social high": [
+     4582,
+     15000
+    ]
+   },
+   "unhandled": 1.6923333333333332,
+   "vote_pass": 0.3219936884681201,
+   "win_per_player": 0.23153333333333334
+  },
+  "4-A": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8181333333333334,
+   "any_winner": 0.6748,
+   "by_obj": {
+    "Efficient State": [
+     6290,
+     15000
+    ],
+    "Green Transition": [
+     1161,
+     15000
+    ],
+    "Growth Power": [
+     4415,
+     15000
+    ],
+    "Welfare State": [
+     1858,
+     15000
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6748,
+     "games": 15000,
+     "loss": 0.0016,
+     "pinned": 0.8181333333333334,
+     "win_per_player": 0.22873333333333334
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5061,
+     "loss": 0.0017783046828689982,
+     "pinned": 0.7875913851017585,
+     "win_per_player": 0.20430744912072712
+    },
+    "A2": {
+     "games": 5004,
+     "loss": 0.0017985611510791368,
+     "pinned": 0.8727018385291767,
+     "win_per_player": 0.2685851318944844
+    },
+    "A3": {
+     "games": 4935,
+     "loss": 0.0012158054711246201,
+     "pinned": 0.7941236068895643,
+     "win_per_player": 0.2133738601823708
+    },
+    "B1": {
+     "games": 4951,
+     "loss": 0.00222177337911533,
+     "pinned": 0.8899212280347405,
+     "win_per_player": 0.16653201373459908
+    },
+    "B2": {
+     "games": 5054,
+     "loss": 0.0021764938662445586,
+     "pinned": 0.7962010288880095,
+     "win_per_player": 0.2274436090225564
+    },
+    "B3": {
+     "games": 4995,
+     "loss": 0.0004004004004004004,
+     "pinned": 0.7691691691691692,
+     "win_per_player": 0.2916916916916917
+    },
+    "C1": {
+     "games": 5033,
+     "loss": 0.0013908205841446453,
+     "pinned": 0.8241605404331412,
+     "win_per_player": 0.21562686270613948
+    },
+    "C2": {
+     "games": 5003,
+     "loss": 0.0015990405756546072,
+     "pinned": 0.8502898261043373,
+     "win_per_player": 0.23490905456725963
+    },
+    "C3": {
+     "games": 4964,
+     "loss": 0.0018130539887187753,
+     "pinned": 0.7796132151490733,
+     "win_per_player": 0.23579774375503626
+    },
+    "D1": {
+     "games": 5069,
+     "loss": 0.002170053264943776,
+     "pinned": 0.8108108108108109,
+     "win_per_player": 0.25
+    },
+    "D2": {
+     "games": 5002,
+     "loss": 0.001799280287884846,
+     "pinned": 0.8222710915633746,
+     "win_per_player": 0.18927429028388645
+    },
+    "D3": {
+     "games": 4929,
+     "loss": 0.0008115236356258876,
+     "pinned": 0.8214648001623047,
+     "win_per_player": 0.24690606613917632
+    }
+   },
+   "end": {
+    "economy": 16.917,
+    "environment": 9.491,
+    "social": 8.944133333333333
+   },
+   "extreme": {
+    "economy": 0.5307333333333333,
+    "environment": 0.35026666666666667,
+    "social": 0.4693333333333333
+   },
+   "handled": 0.8695512072624643,
+   "loss": 0.0016,
+   "lost_round": 11.75,
+   "obj_win": {
+    "economy high, social low": [
+     6290,
+     15000
+    ],
+    "economy medium, social high": [
+     1858,
+     15000
+    ],
+    "environment high, economy medium": [
+     1161,
+     15000
+    ],
+    "environment medium, economy high": [
+     4415,
+     15000
+    ]
+   },
+   "unhandled": 1.5653333333333332,
+   "vote_pass": 0.35716746113759346,
+   "win_per_player": 0.22873333333333334
+  },
+  "4-B": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8142,
+   "any_winner": 0.5099333333333333,
+   "by_obj": {
+    "Degrowth": [
+     927,
+     15000
+    ],
+    "Free Market": [
+     3614,
+     15000
+    ],
+    "Growth Power": [
+     3297,
+     15000
+    ],
+    "Solidarity Economy": [
+     1791,
+     15000
+    ]
+   },
+   "by_preset": {
+    "4-B": {
+     "any_winner": 0.5099333333333333,
+     "games": 15000,
+     "loss": 0.0015333333333333334,
+     "pinned": 0.8142,
+     "win_per_player": 0.16048333333333334
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5071,
+     "loss": 0.0015775981068822718,
+     "pinned": 0.8018142378229146,
+     "win_per_player": 0.163873003352396
+    },
+    "A2": {
+     "games": 4927,
+     "loss": 0.0018266693728435153,
+     "pinned": 0.8471686624720925,
+     "win_per_player": 0.16734321087883094
+    },
+    "A3": {
+     "games": 5002,
+     "loss": 0.0011995201919232307,
+     "pinned": 0.7942822870851659,
+     "win_per_player": 0.15028988404638144
+    },
+    "B1": {
+     "games": 5011,
+     "loss": 0.0017960486928756735,
+     "pinned": 0.8830572739972061,
+     "win_per_player": 0.117990421073638
+    },
+    "B2": {
+     "games": 5081,
+     "loss": 0.00098405825624877,
+     "pinned": 0.8246408187364692,
+     "win_per_player": 0.17245620940759693
+    },
+    "B3": {
+     "games": 4908,
+     "loss": 0.0018337408312958435,
+     "pinned": 0.7330888345558272,
+     "win_per_player": 0.19147310513447433
+    },
+    "C1": {
+     "games": 5011,
+     "loss": 0.001995609658750748,
+     "pinned": 0.8285771303133107,
+     "win_per_player": 0.16014767511474756
+    },
+    "C2": {
+     "games": 4982,
+     "loss": 0.0012043356081894822,
+     "pinned": 0.8364110798875953,
+     "win_per_player": 0.16323765556001607
+    },
+    "C3": {
+     "games": 5007,
+     "loss": 0.0013980427401637707,
+     "pinned": 0.7777112043139605,
+     "win_per_player": 0.15807868983423207
+    },
+    "D1": {
+     "games": 4998,
+     "loss": 0.0022008803521408565,
+     "pinned": 0.7887154861944778,
+     "win_per_player": 0.1561124449779912
+    },
+    "D2": {
+     "games": 4978,
+     "loss": 0.0014061872237846524,
+     "pinned": 0.8316593009240659,
+     "win_per_player": 0.1523704298915227
+    },
+    "D3": {
+     "games": 5024,
+     "loss": 0.0009952229299363057,
+     "pinned": 0.8222531847133758,
+     "win_per_player": 0.1728702229299363
+    }
+   },
+   "end": {
+    "economy": 15.086,
+    "environment": 9.417533333333333,
+    "social": 12.995933333333333
+   },
+   "extreme": {
+    "economy": 0.5222,
+    "environment": 0.39453333333333335,
+    "social": 0.37466666666666665
+   },
+   "handled": 0.8633747416609258,
+   "loss": 0.0015333333333333334,
+   "lost_round": 11.826086956521738,
+   "obj_win": {
+    "economy high, social medium": [
+     3614,
+     15000
+    ],
+    "economy low, social high": [
+     1791,
+     15000
+    ],
+    "environment high, economy low": [
+     927,
+     15000
+    ],
+    "environment medium, economy high": [
+     3297,
+     15000
+    ]
+   },
+   "unhandled": 1.6394666666666666,
+   "vote_pass": 0.38613080290673124,
+   "win_per_player": 0.16048333333333334
+  },
+  "5-A": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8291333333333334,
+   "any_winner": 0.7736,
+   "by_obj": {
+    "Efficient State": [
+     3454,
+     15000
+    ],
+    "Green Transition": [
+     847,
+     15000
+    ],
+    "Growth Power": [
+     4050,
+     15000
+    ],
+    "Right to Development": [
+     4029,
+     15000
+    ],
+    "Welfare State": [
+     2424,
+     15000
+    ]
+   },
+   "by_preset": {
+    "5-A": {
+     "any_winner": 0.7736,
+     "games": 15000,
+     "loss": 0.0007333333333333333,
+     "pinned": 0.8291333333333334,
+     "win_per_player": 0.19738666666666665
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5012,
+     "loss": 0.0007980845969672786,
+     "pinned": 0.8092577813248204,
+     "win_per_player": 0.20147645650438947
+    },
+    "A2": {
+     "games": 4992,
+     "loss": 0.0008012820512820513,
+     "pinned": 0.8573717948717948,
+     "win_per_player": 0.19899839743589742
+    },
+    "A3": {
+     "games": 4996,
+     "loss": 0.0006004803843074459,
+     "pinned": 0.8208566853482786,
+     "win_per_player": 0.19167333867093675
+    },
+    "B1": {
+     "games": 5033,
+     "loss": 0.0005960659646334195,
+     "pinned": 0.9143651897476655,
+     "win_per_player": 0.18636995827538247
+    },
+    "B2": {
+     "games": 4995,
+     "loss": 0.0014014014014014013,
+     "pinned": 0.8,
+     "win_per_player": 0.18246246246246245
+    },
+    "B3": {
+     "games": 4972,
+     "loss": 0.00020112630732099757,
+     "pinned": 0.7721238938053098,
+     "win_per_player": 0.2235317779565567
+    },
+    "C1": {
+     "games": 5013,
+     "loss": 0.0005984440454817474,
+     "pinned": 0.8477957310991422,
+     "win_per_player": 0.19202074606024336
+    },
+    "C2": {
+     "games": 4908,
+     "loss": 0.0012224938875305623,
+     "pinned": 0.8522819885900571,
+     "win_per_player": 0.19702526487367564
+    },
+    "C3": {
+     "games": 5079,
+     "loss": 0.00039377830281551486,
+     "pinned": 0.7883441622366607,
+     "win_per_player": 0.20303209293167945
+    },
+    "D1": {
+     "games": 5067,
+     "loss": 0.0005920663114268798,
+     "pinned": 0.8211959739490823,
+     "win_per_player": 0.20059206631142687
+    },
+    "D2": {
+     "games": 4964,
+     "loss": 0.0006043513295729251,
+     "pinned": 0.83058017727639,
+     "win_per_player": 0.2
+    },
+    "D3": {
+     "games": 4969,
+     "loss": 0.001006238679814852,
+     "pinned": 0.8357818474542161,
+     "win_per_player": 0.19150734554236265
+    }
+   },
+   "end": {
+    "economy": 16.823,
+    "environment": 7.608066666666667,
+    "social": 12.690666666666667
+   },
+   "extreme": {
+    "economy": 0.531,
+    "environment": 0.36733333333333335,
+    "social": 0.436
+   },
+   "handled": 0.8767111111111111,
+   "loss": 0.0007333333333333333,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     3454,
+     15000
+    ],
+    "economy medium, social high": [
+     2424,
+     15000
+    ],
+    "environment high, economy medium": [
+     847,
+     15000
+    ],
+    "environment low, social high": [
+     4029,
+     15000
+    ],
+    "environment medium, economy high": [
+     4050,
+     15000
+    ]
+   },
+   "unhandled": 1.4794666666666667,
+   "vote_pass": 0.3675833333333333,
+   "win_per_player": 0.19738666666666665
+  },
+  "5-B": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8116,
+   "any_winner": 0.658,
+   "by_obj": {
+    "Conservation": [
+     2261,
+     15000
+    ],
+    "Degrowth": [
+     955,
+     15000
+    ],
+    "Free Market": [
+     5490,
+     15000
+    ],
+    "Resource Power": [
+     5162,
+     15000
+    ],
+    "Solidarity Economy": [
+     1334,
+     15000
+    ]
+   },
+   "by_preset": {
+    "5-B": {
+     "any_winner": 0.658,
+     "games": 15000,
+     "loss": 0.0009333333333333333,
+     "pinned": 0.8116,
+     "win_per_player": 0.20269333333333334
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5023,
+     "loss": 0.0009954210631096954,
+     "pinned": 0.7752339239498308,
+     "win_per_player": 0.19597849890503682
+    },
+    "A2": {
+     "games": 4998,
+     "loss": 0.0,
+     "pinned": 0.8585434173669467,
+     "win_per_player": 0.2179671868747499
+    },
+    "A3": {
+     "games": 4979,
+     "loss": 0.0018075918859208676,
+     "pinned": 0.8011648925487046,
+     "win_per_player": 0.19413536854790117
+    },
+    "B1": {
+     "games": 4966,
+     "loss": 0.0016109544905356424,
+     "pinned": 0.8920660491341119,
+     "win_per_player": 0.2423681031010874
+    },
+    "B2": {
+     "games": 5052,
+     "loss": 0.000395882818685669,
+     "pinned": 0.807403008709422,
+     "win_per_player": 0.19996041171813142
+    },
+    "B3": {
+     "games": 4982,
+     "loss": 0.0008028904054596548,
+     "pinned": 0.7356483340024087,
+     "win_per_player": 0.16591730228823764
+    },
+    "C1": {
+     "games": 5054,
+     "loss": 0.0009893153937475267,
+     "pinned": 0.8294420261179264,
+     "win_per_player": 0.2110407597942224
+    },
+    "C2": {
+     "games": 4999,
+     "loss": 0.000600120024004801,
+     "pinned": 0.8309661932386477,
+     "win_per_player": 0.1981996399279856
+    },
+    "C3": {
+     "games": 4947,
+     "loss": 0.001212856276531231,
+     "pinned": 0.7738023044269254,
+     "win_per_player": 0.19870628663836667
+    },
+    "D1": {
+     "games": 4893,
+     "loss": 0.0008174943797261394,
+     "pinned": 0.7915389331698345,
+     "win_per_player": 0.18978132025342326
+    },
+    "D2": {
+     "games": 5042,
+     "loss": 0.0009916699722332407,
+     "pinned": 0.828639428798096,
+     "win_per_player": 0.21356604522015074
+    },
+    "D3": {
+     "games": 5065,
+     "loss": 0.0009871668311944718,
+     "pinned": 0.8140177690029615,
+     "win_per_player": 0.20434353405725567
+    }
+   },
+   "end": {
+    "economy": 15.8158,
+    "environment": 9.3442,
+    "social": 11.691066666666666
+   },
+   "extreme": {
+    "economy": 0.5879333333333333,
+    "environment": 0.45626666666666665,
+    "social": 0.22733333333333333
+   },
+   "handled": 0.8754055555555555,
+   "loss": 0.0009333333333333333,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social medium": [
+     5490,
+     15000
+    ],
+    "economy low, social high": [
+     1334,
+     15000
+    ],
+    "environment high, economy low": [
+     955,
+     15000
+    ],
+    "environment high, social medium": [
+     2261,
+     15000
+    ],
+    "environment low, economy high": [
+     5162,
+     15000
+    ]
+   },
+   "unhandled": 1.4951333333333334,
+   "vote_pass": 0.3638888888888889,
+   "win_per_player": 0.20269333333333334
+  },
+  "6-A": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8078666666666666,
+   "any_winner": 0.7877333333333333,
+   "by_obj": {
+    "Fortress Conservation": [
+     654,
+     15000
+    ],
+    "Free Market": [
+     4420,
+     15000
+    ],
+    "Green Transition": [
+     951,
+     15000
+    ],
+    "Growth Power": [
+     3992,
+     15000
+    ],
+    "Right to Development": [
+     2722,
+     15000
+    ],
+    "Welfare State": [
+     1810,
+     15000
+    ]
+   },
+   "by_preset": {
+    "6-A": {
+     "any_winner": 0.7877333333333333,
+     "games": 15000,
+     "loss": 0.00046666666666666666,
+     "pinned": 0.8078666666666666,
+     "win_per_player": 0.16165555555555555
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5042,
+     "loss": 0.0003966679888932963,
+     "pinned": 0.7758825862752876,
+     "win_per_player": 0.17106307021023404
+    },
+    "A2": {
+     "games": 4993,
+     "loss": 0.0004005607850991388,
+     "pinned": 0.8453835369517324,
+     "win_per_player": 0.15458308298284265
+    },
+    "A3": {
+     "games": 4965,
+     "loss": 0.0006042296072507553,
+     "pinned": 0.8026183282980867,
+     "win_per_player": 0.159214501510574
+    },
+    "B1": {
+     "games": 5002,
+     "loss": 0.00039984006397441024,
+     "pinned": 0.895641743302679,
+     "win_per_player": 0.15730374516859924
+    },
+    "B2": {
+     "games": 5024,
+     "loss": 0.0007961783439490446,
+     "pinned": 0.7945859872611465,
+     "win_per_player": 0.15538747346072188
+    },
+    "B3": {
+     "games": 4974,
+     "loss": 0.0002010454362685967,
+     "pinned": 0.7330116606353035,
+     "win_per_player": 0.17236295402761023
+    },
+    "C1": {
+     "games": 5032,
+     "loss": 0.0,
+     "pinned": 0.8271065182829889,
+     "win_per_player": 0.161466613672496
+    },
+    "C2": {
+     "games": 4980,
+     "loss": 0.0008032128514056225,
+     "pinned": 0.828714859437751,
+     "win_per_player": 0.16127844712182063
+    },
+    "C3": {
+     "games": 4988,
+     "loss": 0.0006014434643143544,
+     "pinned": 0.7676423416198878,
+     "win_per_player": 0.1622226677358995
+    },
+    "D1": {
+     "games": 4982,
+     "loss": 0.0008028904054596548,
+     "pinned": 0.7896427137695704,
+     "win_per_player": 0.15422186538204202
+    },
+    "D2": {
+     "games": 5052,
+     "loss": 0.000395882818685669,
+     "pinned": 0.8188836104513064,
+     "win_per_player": 0.16765637371338085
+    },
+    "D3": {
+     "games": 4966,
+     "loss": 0.0002013693113169553,
+     "pinned": 0.8149416028997181,
+     "win_per_player": 0.16300845751107532
+    }
+   },
+   "end": {
+    "economy": 17.181066666666666,
+    "environment": 8.965466666666666,
+    "social": 12.0426
+   },
+   "extreme": {
+    "economy": 0.5732666666666667,
+    "environment": 0.3725333333333333,
+    "social": 0.30346666666666666
+   },
+   "handled": 0.8793757673739007,
+   "loss": 0.00046666666666666666,
+   "lost_round": 11.571428571428571,
+   "obj_win": {
+    "economy high, social medium": [
+     4420,
+     15000
+    ],
+    "economy medium, social high": [
+     1810,
+     15000
+    ],
+    "environment high, economy medium": [
+     951,
+     15000
+    ],
+    "environment high, social low": [
+     654,
+     15000
+    ],
+    "environment low, social high": [
+     2722,
+     15000
+    ],
+    "environment medium, economy high": [
+     3992,
+     15000
+    ]
+   },
+   "unhandled": 1.4474666666666667,
+   "vote_pass": 0.37225620427007117,
+   "win_per_player": 0.16165555555555555
+  },
+  "6-B": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8468666666666667,
+   "any_winner": 0.8346666666666667,
+   "by_obj": {
+    "Conservation": [
+     2982,
+     15000
+    ],
+    "Efficient State": [
+     4226,
+     15000
+    ],
+    "Fortress Conservation": [
+     1383,
+     15000
+    ],
+    "Free Market": [
+     6970,
+     15000
+    ],
+    "Humanist": [
+     635,
+     15000
+    ],
+    "Solidarity Economy": [
+     376,
+     15000
+    ]
+   },
+   "by_preset": {
+    "6-B": {
+     "any_winner": 0.8346666666666667,
+     "games": 15000,
+     "loss": 0.0007333333333333333,
+     "pinned": 0.8468666666666667,
+     "win_per_player": 0.18413333333333334
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4995,
+     "loss": 0.0004004004004004004,
+     "pinned": 0.8088088088088088,
+     "win_per_player": 0.16986986986986988
+    },
+    "A2": {
+     "games": 5023,
+     "loss": 0.0007963368504877563,
+     "pinned": 0.8990643042006768,
+     "win_per_player": 0.20757847236047514
+    },
+    "A3": {
+     "games": 4982,
+     "loss": 0.0010036130068245685,
+     "pinned": 0.8323966278602971,
+     "win_per_player": 0.17479593202194568
+    },
+    "B1": {
+     "games": 4920,
+     "loss": 0.0008130081300813008,
+     "pinned": 0.9150406504065041,
+     "win_per_player": 0.15064363143631437
+    },
+    "B2": {
+     "games": 5009,
+     "loss": 0.0009982032341784787,
+     "pinned": 0.8526652026352566,
+     "win_per_player": 0.23258135356358556
+    },
+    "B3": {
+     "games": 5071,
+     "loss": 0.00039439952672056796,
+     "pinned": 0.7749950700059159,
+     "win_per_player": 0.16877013080917636
+    },
+    "C1": {
+     "games": 4938,
+     "loss": 0.001012555690562981,
+     "pinned": 0.8533819360064804,
+     "win_per_player": 0.17689347914135278
+    },
+    "C2": {
+     "games": 5059,
+     "loss": 0.000790670092903736,
+     "pinned": 0.8663767542992686,
+     "win_per_player": 0.18778414706463728
+    },
+    "C3": {
+     "games": 5003,
+     "loss": 0.0003997601439136518,
+     "pinned": 0.8207075754547272,
+     "win_per_player": 0.1875874475314811
+    },
+    "D1": {
+     "games": 4998,
+     "loss": 0.0006002400960384153,
+     "pinned": 0.8299319727891157,
+     "win_per_player": 0.182406295851674
+    },
+    "D2": {
+     "games": 5068,
+     "loss": 0.0013812154696132596,
+     "pinned": 0.8526045777426993,
+     "win_per_player": 0.1599579058142594
+    },
+    "D3": {
+     "games": 4934,
+     "loss": 0.00020267531414673692,
+     "pinned": 0.8581272800972841,
+     "win_per_player": 0.21071476827455748
+    }
+   },
+   "end": {
+    "economy": 17.9838,
+    "environment": 10.014733333333334,
+    "social": 9.142466666666667
+   },
+   "extreme": {
+    "economy": 0.7272,
+    "environment": 0.44293333333333335,
+    "social": 0.1564
+   },
+   "handled": 0.8839666666666667,
+   "loss": 0.0007333333333333333,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     4226,
+     15000
+    ],
+    "economy high, social medium": [
+     6970,
+     15000
+    ],
+    "economy low, social high": [
+     376,
+     15000
+    ],
+    "environment high, social low": [
+     1383,
+     15000
+    ],
+    "environment high, social medium": [
+     2982,
+     15000
+    ],
+    "environment medium, social high": [
+     635,
+     15000
+    ]
+   },
+   "unhandled": 1.3924,
+   "vote_pass": 0.35281111111111113,
+   "win_per_player": 0.18413333333333334
+  }
+ },
+ "sweep": {
+  "cost10/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8158,
+   "any_winner": 0.5696666666666667,
+   "by_obj": {
+    "Degrowth": [
+     383,
+     7439
+    ],
+    "Efficient State": [
+     3455,
+     7561
+    ],
+    "Free Market": [
+     1717,
+     7439
+    ],
+    "Green Transition": [
+     479,
+     7561
+    ],
+    "Growth Power": [
+     3182,
+     15000
+    ],
+    "Solidarity Economy": [
+     856,
+     7439
+    ],
+    "Welfare State": [
+     765,
+     7561
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6583785213596085,
+     "games": 7561,
+     "loss": 0.019574130406030947,
+     "pinned": 0.8289908742229863,
+     "win_per_player": 0.21600978706520302
+    },
+    "4-B": {
+     "any_winner": 0.47949993278666486,
+     "games": 7439,
+     "loss": 0.029305014114800375,
+     "pinned": 0.8023927947304745,
+     "win_per_player": 0.1446430971904826
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5058,
+     "loss": 0.027283511269276393,
+     "pinned": 0.7761961249505733,
+     "win_per_player": 0.16706207987346777
+    },
+    "A2": {
+     "games": 5052,
+     "loss": 0.016429136975455266,
+     "pinned": 0.8687648456057007,
+     "win_per_player": 0.20170229612034837
+    },
+    "A3": {
+     "games": 4890,
+     "loss": 0.02965235173824131,
+     "pinned": 0.8020449897750511,
+     "win_per_player": 0.17285276073619632
+    },
+    "B1": {
+     "games": 4968,
+     "loss": 0.02677133655394525,
+     "pinned": 0.9086151368760065,
+     "win_per_player": 0.12967995169082125
+    },
+    "B2": {
+     "games": 5022,
+     "loss": 0.025886101154918358,
+     "pinned": 0.7737953006770211,
+     "win_per_player": 0.19558940661091198
+    },
+    "B3": {
+     "games": 5010,
+     "loss": 0.02055888223552894,
+     "pinned": 0.7658682634730539,
+     "win_per_player": 0.21611776447105788
+    },
+    "C1": {
+     "games": 5038,
+     "loss": 0.025803890432711394,
+     "pinned": 0.8251290194521635,
+     "win_per_player": 0.17189360857483127
+    },
+    "C2": {
+     "games": 4902,
+     "loss": 0.022439820481436147,
+     "pinned": 0.8537331701346389,
+     "win_per_player": 0.18803549571603428
+    },
+    "C3": {
+     "games": 5060,
+     "loss": 0.024901185770750987,
+     "pinned": 0.7697628458498024,
+     "win_per_player": 0.18211462450592886
+    },
+    "D1": {
+     "games": 4970,
+     "loss": 0.02676056338028169,
+     "pinned": 0.8164989939637827,
+     "win_per_player": 0.18963782696177062
+    },
+    "D2": {
+     "games": 5057,
+     "loss": 0.025509195175004943,
+     "pinned": 0.8257860391536485,
+     "win_per_player": 0.15162151473205457
+    },
+    "D3": {
+     "games": 4973,
+     "loss": 0.02091292982103358,
+     "pinned": 0.8049467122461291,
+     "win_per_player": 0.20108586366378445
+    }
+   },
+   "end": {
+    "economy": 15.8886,
+    "environment": 8.071666666666667,
+    "social": 9.903266666666667
+   },
+   "extreme": {
+    "economy": 0.5301333333333333,
+    "environment": 0.39526666666666666,
+    "social": 0.4226666666666667
+   },
+   "handled": 0.7327010478825661,
+   "loss": 0.0244,
+   "lost_round": 11.950819672131148,
+   "obj_win": {
+    "economy high, social low": [
+     3455,
+     7561
+    ],
+    "economy high, social medium": [
+     1717,
+     7439
+    ],
+    "economy low, social high": [
+     856,
+     7439
+    ],
+    "economy medium, social high": [
+     765,
+     7561
+    ],
+    "environment high, economy low": [
+     383,
+     7439
+    ],
+    "environment high, economy medium": [
+     479,
+     7561
+    ],
+    "environment medium, economy high": [
+     3182,
+     15000
+    ]
+   },
+   "unhandled": 3.2072666666666665,
+   "vote_pass": 0.2641208565300975,
+   "win_per_player": 0.18061666666666668
+  },
+  "cost10/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7778666666666667,
+   "any_winner": 0.5485333333333333,
+   "by_obj": {
+    "Degrowth": [
+     414,
+     7439
+    ],
+    "Efficient State": [
+     3143,
+     7561
+    ],
+    "Free Market": [
+     1660,
+     7439
+    ],
+    "Green Transition": [
+     513,
+     7561
+    ],
+    "Growth Power": [
+     3105,
+     15000
+    ],
+    "Solidarity Economy": [
+     871,
+     7439
+    ],
+    "Welfare State": [
+     885,
+     7561
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6319269937838911,
+     "games": 7561,
+     "loss": 0.07895780981351673,
+     "pinned": 0.7864039148260812,
+     "win_per_player": 0.20830577965877528
+    },
+    "4-B": {
+     "any_winner": 0.4637720123672537,
+     "games": 7439,
+     "loss": 0.11211184298964914,
+     "pinned": 0.7691894071783842,
+     "win_per_player": 0.14420621051216562
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5002,
+     "loss": 0.1017592962814874,
+     "pinned": 0.7510995601759296,
+     "win_per_player": 0.1635345861655338
+    },
+    "A2": {
+     "games": 4969,
+     "loss": 0.07083920305896559,
+     "pinned": 0.8281344334876233,
+     "win_per_player": 0.20346146105856308
+    },
+    "A3": {
+     "games": 5029,
+     "loss": 0.11334261284549613,
+     "pinned": 0.7548220322131637,
+     "win_per_player": 0.16280572678464902
+    },
+    "B1": {
+     "games": 4971,
+     "loss": 0.09937638302152485,
+     "pinned": 0.867632267149467,
+     "win_per_player": 0.1324180245423456
+    },
+    "B2": {
+     "games": 5068,
+     "loss": 0.10003946329913181,
+     "pinned": 0.744869771112865,
+     "win_per_player": 0.18962115232833465
+    },
+    "B3": {
+     "games": 4961,
+     "loss": 0.08667607337230397,
+     "pinned": 0.7216287038903447,
+     "win_per_player": 0.2073170731707317
+    },
+    "C1": {
+     "games": 4989,
+     "loss": 0.09220284626177591,
+     "pinned": 0.7851272800160353,
+     "win_per_player": 0.17112647825215474
+    },
+    "C2": {
+     "games": 5001,
+     "loss": 0.08978204359128174,
+     "pinned": 0.8020395920815837,
+     "win_per_player": 0.17956408718256348
+    },
+    "C3": {
+     "games": 5010,
+     "loss": 0.10419161676646707,
+     "pinned": 0.7465069860279441,
+     "win_per_player": 0.17884231536926148
+    },
+    "D1": {
+     "games": 4931,
+     "loss": 0.0924761711620361,
+     "pinned": 0.780774690732103,
+     "win_per_player": 0.18054147231798823
+    },
+    "D2": {
+     "games": 5050,
+     "loss": 0.10534653465346534,
+     "pinned": 0.785940594059406,
+     "win_per_player": 0.15574257425742574
+    },
+    "D3": {
+     "games": 5019,
+     "loss": 0.08826459454074517,
+     "pinned": 0.7668858338314405,
+     "win_per_player": 0.19346483363219766
+    }
+   },
+   "end": {
+    "economy": 15.428533333333334,
+    "environment": 8.328533333333333,
+    "social": 10.216933333333333
+   },
+   "extreme": {
+    "economy": 0.4882666666666667,
+    "environment": 0.3641333333333333,
+    "social": 0.4053333333333333
+   },
+   "handled": 0.7364721478024029,
+   "loss": 0.0954,
+   "lost_round": 11.6764500349406,
+   "obj_win": {
+    "economy high, social low": [
+     3143,
+     7561
+    ],
+    "economy high, social medium": [
+     1660,
+     7439
+    ],
+    "economy low, social high": [
+     871,
+     7439
+    ],
+    "economy medium, social high": [
+     885,
+     7561
+    ],
+    "environment high, economy low": [
+     414,
+     7439
+    ],
+    "environment high, economy medium": [
+     513,
+     7561
+    ],
+    "environment medium, economy high": [
+     3105,
+     15000
+    ]
+   },
+   "unhandled": 3.1542,
+   "vote_pass": 0.35222266162406635,
+   "win_per_player": 0.17651666666666666
+  },
+  "cost11/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7976,
+   "any_winner": 0.5245333333333333,
+   "by_obj": {
+    "Degrowth": [
+     351,
+     7555
+    ],
+    "Efficient State": [
+     3271,
+     7445
+    ],
+    "Free Market": [
+     1595,
+     7555
+    ],
+    "Green Transition": [
+     415,
+     7445
+    ],
+    "Growth Power": [
+     2778,
+     15000
+    ],
+    "Solidarity Economy": [
+     775,
+     7555
+    ],
+    "Welfare State": [
+     698,
+     7445
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6217595701813298,
+     "games": 7445,
+     "loss": 0.0842175957018133,
+     "pinned": 0.8171927468099396,
+     "win_per_player": 0.19986568166554736
+    },
+    "4-B": {
+     "any_winner": 0.428722700198544,
+     "games": 7555,
+     "loss": 0.12270019854401058,
+     "pinned": 0.7782925215089345,
+     "win_per_player": 0.1300794176042356
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5002,
+     "loss": 0.11915233906437425,
+     "pinned": 0.7662934826069572,
+     "win_per_player": 0.14964014394242303
+    },
+    "A2": {
+     "games": 5065,
+     "loss": 0.07166831194471866,
+     "pinned": 0.8491609081934847,
+     "win_per_player": 0.19072063178677195
+    },
+    "A3": {
+     "games": 4933,
+     "loss": 0.12061625785526049,
+     "pinned": 0.7764038110683155,
+     "win_per_player": 0.15330427731603485
+    },
+    "B1": {
+     "games": 4941,
+     "loss": 0.10200364298724955,
+     "pinned": 0.898401133373811,
+     "win_per_player": 0.1231532078526614
+    },
+    "B2": {
+     "games": 5041,
+     "loss": 0.11089069629041856,
+     "pinned": 0.7401309264034913,
+     "win_per_player": 0.17992461813132316
+    },
+    "B3": {
+     "games": 5018,
+     "loss": 0.09784774810681546,
+     "pinned": 0.7560781187724193,
+     "win_per_player": 0.19036468712634516
+    },
+    "C1": {
+     "games": 5024,
+     "loss": 0.10429936305732485,
+     "pinned": 0.8073248407643312,
+     "win_per_player": 0.15838972929936307
+    },
+    "C2": {
+     "games": 5018,
+     "loss": 0.09445994420087685,
+     "pinned": 0.8316062176165803,
+     "win_per_player": 0.16973893981666002
+    },
+    "C3": {
+     "games": 4958,
+     "loss": 0.11214199273900767,
+     "pinned": 0.7533279548204921,
+     "win_per_player": 0.166044776119403
+    },
+    "D1": {
+     "games": 5005,
+     "loss": 0.10269730269730269,
+     "pinned": 0.7968031968031968,
+     "win_per_player": 0.16873126873126873
+    },
+    "D2": {
+     "games": 5003,
+     "loss": 0.10893463921647012,
+     "pinned": 0.809314411353188,
+     "win_per_player": 0.14111533080151908
+    },
+    "D3": {
+     "games": 4992,
+     "loss": 0.09915865384615384,
+     "pinned": 0.7866586538461539,
+     "win_per_player": 0.18434495192307693
+    }
+   },
+   "end": {
+    "economy": 15.633333333333333,
+    "environment": 7.621533333333334,
+    "social": 9.602266666666667
+   },
+   "extreme": {
+    "economy": 0.5098,
+    "environment": 0.3858,
+    "social": 0.4132
+   },
+   "handled": 0.6860328051153739,
+   "loss": 0.1036,
+   "lost_round": 11.903474903474903,
+   "obj_win": {
+    "economy high, social low": [
+     3271,
+     7445
+    ],
+    "economy high, social medium": [
+     1595,
+     7555
+    ],
+    "economy low, social high": [
+     775,
+     7555
+    ],
+    "economy medium, social high": [
+     698,
+     7445
+    ],
+    "environment high, economy low": [
+     351,
+     7555
+    ],
+    "environment high, economy medium": [
+     415,
+     7445
+    ],
+    "environment medium, economy high": [
+     2778,
+     15000
+    ]
+   },
+   "unhandled": 3.764466666666667,
+   "vote_pass": 0.2599777592438143,
+   "win_per_player": 0.16471666666666668
+  },
+  "cost11/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7406,
+   "any_winner": 0.42186666666666667,
+   "by_obj": {
+    "Degrowth": [
+     303,
+     7470
+    ],
+    "Efficient State": [
+     2625,
+     7530
+    ],
+    "Free Market": [
+     1240,
+     7470
+    ],
+    "Green Transition": [
+     345,
+     7530
+    ],
+    "Growth Power": [
+     2285,
+     15000
+    ],
+    "Solidarity Economy": [
+     645,
+     7470
+    ],
+    "Welfare State": [
+     597,
+     7530
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.500265604249668,
+     "games": 7530,
+     "loss": 0.26095617529880477,
+     "pinned": 0.7658698539176627,
+     "win_per_player": 0.16318061088977423
+    },
+    "4-B": {
+     "any_winner": 0.3428380187416332,
+     "games": 7470,
+     "loss": 0.3315930388219545,
+     "pinned": 0.7151271753681392,
+     "win_per_player": 0.10458500669344042
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5052,
+     "loss": 0.31848772763262073,
+     "pinned": 0.7074425969912905,
+     "win_per_player": 0.12029889152810767
+    },
+    "A2": {
+     "games": 4878,
+     "loss": 0.24559245592455925,
+     "pinned": 0.7906929069290692,
+     "win_per_player": 0.1606191061910619
+    },
+    "A3": {
+     "games": 5070,
+     "loss": 0.3224852071005917,
+     "pinned": 0.7254437869822485,
+     "win_per_player": 0.1220414201183432
+    },
+    "B1": {
+     "games": 4941,
+     "loss": 0.2809147945759968,
+     "pinned": 0.8563043918235175,
+     "win_per_player": 0.09977737300141672
+    },
+    "B2": {
+     "games": 4910,
+     "loss": 0.33747454175152747,
+     "pinned": 0.6733197556008147,
+     "win_per_player": 0.13996945010183298
+    },
+    "B3": {
+     "games": 5149,
+     "loss": 0.27131481841134203,
+     "pinned": 0.6937269372693727,
+     "win_per_player": 0.1611477956884832
+    },
+    "C1": {
+     "games": 4942,
+     "loss": 0.3006879805746661,
+     "pinned": 0.7416025900445163,
+     "win_per_player": 0.12560704168352893
+    },
+    "C2": {
+     "games": 4992,
+     "loss": 0.2880608974358974,
+     "pinned": 0.7718349358974359,
+     "win_per_player": 0.1399238782051282
+    },
+    "C3": {
+     "games": 5066,
+     "loss": 0.2996446900908014,
+     "pinned": 0.7088432688511647,
+     "win_per_player": 0.1363501776549546
+    },
+    "D1": {
+     "games": 4947,
+     "loss": 0.27895694360218315,
+     "pinned": 0.7485344653325248,
+     "win_per_player": 0.13806347281180514
+    },
+    "D2": {
+     "games": 5008,
+     "loss": 0.3304712460063898,
+     "pinned": 0.7577875399361023,
+     "win_per_player": 0.10897563897763578
+    },
+    "D3": {
+     "games": 5045,
+     "loss": 0.27888999008919724,
+     "pinned": 0.7157581764122894,
+     "win_per_player": 0.15485629335976214
+    }
+   },
+   "end": {
+    "economy": 14.9782,
+    "environment": 7.662866666666667,
+    "social": 9.616466666666666
+   },
+   "extreme": {
+    "economy": 0.4414,
+    "environment": 0.36393333333333333,
+    "social": 0.37133333333333335
+   },
+   "handled": 0.6693499220990359,
+   "loss": 0.29613333333333336,
+   "lost_round": 11.357946870778928,
+   "obj_win": {
+    "economy high, social low": [
+     2625,
+     7530
+    ],
+    "economy high, social medium": [
+     1240,
+     7470
+    ],
+    "economy low, social high": [
+     645,
+     7470
+    ],
+    "economy medium, social high": [
+     597,
+     7530
+    ],
+    "environment high, economy low": [
+     303,
+     7470
+    ],
+    "environment high, economy medium": [
+     345,
+     7530
+    ],
+    "environment medium, economy high": [
+     2285,
+     15000
+    ]
+   },
+   "unhandled": 3.904933333333333,
+   "vote_pass": 0.3441246867026441,
+   "win_per_player": 0.134
+  },
+  "cost12/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7658666666666667,
+   "any_winner": 0.4039333333333333,
+   "by_obj": {
+    "Degrowth": [
+     237,
+     7514
+    ],
+    "Efficient State": [
+     2767,
+     7486
+    ],
+    "Free Market": [
+     1211,
+     7514
+    ],
+    "Green Transition": [
+     306,
+     7486
+    ],
+    "Growth Power": [
+     2007,
+     15000
+    ],
+    "Solidarity Economy": [
+     528,
+     7514
+    ],
+    "Welfare State": [
+     498,
+     7486
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.49599251936948974,
+     "games": 7486,
+     "loss": 0.26796687149345444,
+     "pinned": 0.7884050227090569,
+     "win_per_player": 0.15852925460860273
+    },
+    "4-B": {
+     "any_winner": 0.31221719457013575,
+     "games": 7514,
+     "loss": 0.3315145062549907,
+     "pinned": 0.743412297045515,
+     "win_per_player": 0.09339233430928932
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4984,
+     "loss": 0.324438202247191,
+     "pinned": 0.7295345104333868,
+     "win_per_player": 0.11220906902086678
+    },
+    "A2": {
+     "games": 5034,
+     "loss": 0.2421533571712356,
+     "pinned": 0.8289630512514898,
+     "win_per_player": 0.14863925307906237
+    },
+    "A3": {
+     "games": 4982,
+     "loss": 0.3334002408671216,
+     "pinned": 0.7384584504215175,
+     "win_per_player": 0.11661983139301485
+    },
+    "B1": {
+     "games": 4993,
+     "loss": 0.27538553975565794,
+     "pinned": 0.878630082114961,
+     "win_per_player": 0.09593430803124374
+    },
+    "B2": {
+     "games": 4938,
+     "loss": 0.3422438234102876,
+     "pinned": 0.6836776022681248,
+     "win_per_player": 0.1333535844471446
+    },
+    "B3": {
+     "games": 5069,
+     "loss": 0.2825014795817716,
+     "pinned": 0.7348589465377786,
+     "win_per_player": 0.1481554547247978
+    },
+    "C1": {
+     "games": 4957,
+     "loss": 0.29412951381884206,
+     "pinned": 0.7696187210006052,
+     "win_per_player": 0.12320960258220698
+    },
+    "C2": {
+     "games": 5037,
+     "loss": 0.29263450466547547,
+     "pinned": 0.7879690291840381,
+     "win_per_player": 0.12750645225332538
+    },
+    "C3": {
+     "games": 5006,
+     "loss": 0.31262485017978425,
+     "pinned": 0.7399121054734319,
+     "win_per_player": 0.12694766280463443
+    },
+    "D1": {
+     "games": 4969,
+     "loss": 0.2918092171463071,
+     "pinned": 0.7792312336486215,
+     "win_per_player": 0.13010666130006038
+    },
+    "D2": {
+     "games": 4976,
+     "loss": 0.3237540192926045,
+     "pinned": 0.77491961414791,
+     "win_per_player": 0.09882435691318328
+    },
+    "D3": {
+     "games": 5055,
+     "loss": 0.2840751730959446,
+     "pinned": 0.7438180019782393,
+     "win_per_player": 0.1484174085064293
+    }
+   },
+   "end": {
+    "economy": 15.418333333333333,
+    "environment": 7.2102,
+    "social": 9.167866666666667
+   },
+   "extreme": {
+    "economy": 0.46213333333333334,
+    "environment": 0.38066666666666665,
+    "social": 0.39026666666666665
+   },
+   "handled": 0.6470407129382393,
+   "loss": 0.2998,
+   "lost_round": 11.697798532354904,
+   "obj_win": {
+    "economy high, social low": [
+     2767,
+     7486
+    ],
+    "economy high, social medium": [
+     1211,
+     7514
+    ],
+    "economy low, social high": [
+     528,
+     7514
+    ],
+    "economy medium, social high": [
+     498,
+     7486
+    ],
+    "environment high, economy low": [
+     237,
+     7514
+    ],
+    "environment high, economy medium": [
+     306,
+     7486
+    ],
+    "environment medium, economy high": [
+     2007,
+     15000
+    ]
+   },
+   "unhandled": 4.203533333333334,
+   "vote_pass": 0.2608079892074048,
+   "win_per_player": 0.1259
+  },
+  "cost12/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.6896,
+   "any_winner": 0.25433333333333336,
+   "by_obj": {
+    "Degrowth": [
+     106,
+     7442
+    ],
+    "Efficient State": [
+     1848,
+     7558
+    ],
+    "Free Market": [
+     762,
+     7442
+    ],
+    "Green Transition": [
+     171,
+     7558
+    ],
+    "Growth Power": [
+     1341,
+     15000
+    ],
+    "Solidarity Economy": [
+     259,
+     7442
+    ],
+    "Welfare State": [
+     311,
+     7558
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.3171473934903414,
+     "games": 7558,
+     "loss": 0.5558348769515745,
+     "pinned": 0.713945488224398,
+     "win_per_player": 0.10316882773220429
+    },
+    "4-B": {
+     "any_winner": 0.19054017737167428,
+     "games": 7442,
+     "loss": 0.6260413867239989,
+     "pinned": 0.6648750335931202,
+     "win_per_player": 0.05640284869658694
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5048,
+     "loss": 0.6424326465927099,
+     "pinned": 0.6452060221870047,
+     "win_per_player": 0.06462955625990491
+    },
+    "A2": {
+     "games": 4857,
+     "loss": 0.49804406011941527,
+     "pinned": 0.7591105620753552,
+     "win_per_player": 0.10767963763640107
+    },
+    "A3": {
+     "games": 5095,
+     "loss": 0.6276741903827282,
+     "pinned": 0.6673209028459274,
+     "win_per_player": 0.06874386653581943
+    },
+    "B1": {
+     "games": 5015,
+     "loss": 0.5545363908275175,
+     "pinned": 0.8291126620139582,
+     "win_per_player": 0.06470588235294118
+    },
+    "B2": {
+     "games": 5032,
+     "loss": 0.6726947535771065,
+     "pinned": 0.5796899841017488,
+     "win_per_player": 0.07159181240063593
+    },
+    "B3": {
+     "games": 4953,
+     "loss": 0.5439127801332526,
+     "pinned": 0.6600040379567939,
+     "win_per_player": 0.10392691298203109
+    },
+    "C1": {
+     "games": 4934,
+     "loss": 0.5907985407377382,
+     "pinned": 0.698013781921362,
+     "win_per_player": 0.07737130117551683
+    },
+    "C2": {
+     "games": 5055,
+     "loss": 0.5711177052423343,
+     "pinned": 0.715727002967359,
+     "win_per_player": 0.08501483679525222
+    },
+    "C3": {
+     "games": 5011,
+     "loss": 0.6102574336459788,
+     "pinned": 0.6549590900019956,
+     "win_per_player": 0.07742965475952904
+    },
+    "D1": {
+     "games": 5075,
+     "loss": 0.5647290640394088,
+     "pinned": 0.7052216748768473,
+     "win_per_player": 0.08847290640394088
+    },
+    "D2": {
+     "games": 4936,
+     "loss": 0.631482982171799,
+     "pinned": 0.706645056726094,
+     "win_per_player": 0.060068881685575365
+    },
+    "D3": {
+     "games": 4989,
+     "loss": 0.576668671076368,
+     "pinned": 0.6568450591300862,
+     "win_per_player": 0.09100020044097014
+    }
+   },
+   "end": {
+    "economy": 14.5988,
+    "environment": 6.9518,
+    "social": 8.932933333333333
+   },
+   "extreme": {
+    "economy": 0.36946666666666667,
+    "environment": 0.34813333333333335,
+    "social": 0.34546666666666664
+   },
+   "handled": 0.6056464537945367,
+   "loss": 0.5906666666666667,
+   "lost_round": 10.909367945823927,
+   "obj_win": {
+    "economy high, social low": [
+     1848,
+     7558
+    ],
+    "economy high, social medium": [
+     762,
+     7442
+    ],
+    "economy low, social high": [
+     259,
+     7442
+    ],
+    "economy medium, social high": [
+     311,
+     7558
+    ],
+    "environment high, economy low": [
+     106,
+     7442
+    ],
+    "environment high, economy medium": [
+     171,
+     7558
+    ],
+    "environment medium, economy high": [
+     1341,
+     15000
+    ]
+   },
+   "unhandled": 4.4782,
+   "vote_pass": 0.3411824794378203,
+   "win_per_player": 0.07996666666666667
+  },
+  "cost13/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7238,
+   "any_winner": 0.2527333333333333,
+   "by_obj": {
+    "Degrowth": [
+     131,
+     7482
+    ],
+    "Efficient State": [
+     1981,
+     7518
+    ],
+    "Free Market": [
+     696,
+     7482
+    ],
+    "Green Transition": [
+     125,
+     7518
+    ],
+    "Growth Power": [
+     1287,
+     15000
+    ],
+    "Solidarity Economy": [
+     250,
+     7482
+    ],
+    "Welfare State": [
+     250,
+     7518
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.32482043096568236,
+     "games": 7518,
+     "loss": 0.5377760042564512,
+     "pinned": 0.7463421122639,
+     "win_per_player": 0.10358472998137802
+    },
+    "4-B": {
+     "any_winner": 0.18029938519112537,
+     "games": 7482,
+     "loss": 0.611467522052927,
+     "pinned": 0.7011494252873564,
+     "win_per_player": 0.05362870890136327
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5045,
+     "loss": 0.6186323092170466,
+     "pinned": 0.6753221010901883,
+     "win_per_player": 0.06318136769078295
+    },
+    "A2": {
+     "games": 4995,
+     "loss": 0.4906906906906907,
+     "pinned": 0.7905905905905906,
+     "win_per_player": 0.10205205205205205
+    },
+    "A3": {
+     "games": 4960,
+     "loss": 0.6141129032258065,
+     "pinned": 0.7058467741935484,
+     "win_per_player": 0.07086693548387096
+    },
+    "B1": {
+     "games": 4967,
+     "loss": 0.5341252264948662,
+     "pinned": 0.8548419569156432,
+     "win_per_player": 0.05919065834507751
+    },
+    "B2": {
+     "games": 4995,
+     "loss": 0.6318318318318318,
+     "pinned": 0.6136136136136137,
+     "win_per_player": 0.07637637637637637
+    },
+    "B3": {
+     "games": 5038,
+     "loss": 0.5575625248114331,
+     "pinned": 0.70385073441842,
+     "win_per_player": 0.1001389440254069
+    },
+    "C1": {
+     "games": 4901,
+     "loss": 0.5633544174658233,
+     "pinned": 0.7214854111405835,
+     "win_per_player": 0.07937155682513773
+    },
+    "C2": {
+     "games": 5077,
+     "loss": 0.5660823320858774,
+     "pinned": 0.7388221390584991,
+     "win_per_player": 0.07972227693519796
+    },
+    "C3": {
+     "games": 5022,
+     "loss": 0.5939864595778575,
+     "pinned": 0.7108721624850657,
+     "win_per_player": 0.0769115890083632
+    },
+    "D1": {
+     "games": 5039,
+     "loss": 0.5548719984123834,
+     "pinned": 0.7479658662433022,
+     "win_per_player": 0.0862274260766025
+    },
+    "D2": {
+     "games": 4944,
+     "loss": 0.606593851132686,
+     "pinned": 0.738673139158576,
+     "win_per_player": 0.058201860841423946
+    },
+    "D3": {
+     "games": 5017,
+     "loss": 0.5626868646601555,
+     "pinned": 0.684871437113813,
+     "win_per_player": 0.0912397847319115
+    }
+   },
+   "end": {
+    "economy": 15.067666666666666,
+    "environment": 6.763133333333333,
+    "social": 8.597533333333333
+   },
+   "extreme": {
+    "economy": 0.39093333333333335,
+    "environment": 0.3762666666666667,
+    "social": 0.3705333333333333
+   },
+   "handled": 0.6062133193570124,
+   "loss": 0.5745333333333333,
+   "lost_round": 11.260501276398236,
+   "obj_win": {
+    "economy high, social low": [
+     1981,
+     7518
+    ],
+    "economy high, social medium": [
+     696,
+     7482
+    ],
+    "economy low, social high": [
+     250,
+     7482
+    ],
+    "economy medium, social high": [
+     250,
+     7518
+    ],
+    "environment high, economy low": [
+     131,
+     7482
+    ],
+    "environment high, economy medium": [
+     125,
+     7518
+    ],
+    "environment medium, economy high": [
+     1287,
+     15000
+    ]
+   },
+   "unhandled": 4.558133333333333,
+   "vote_pass": 0.2591071665121208,
+   "win_per_player": 0.07866666666666666
+  },
+  "cost13/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.6518,
+   "any_winner": 0.10913333333333333,
+   "by_obj": {
+    "Degrowth": [
+     32,
+     7704
+    ],
+    "Efficient State": [
+     879,
+     7296
+    ],
+    "Free Market": [
+     327,
+     7704
+    ],
+    "Green Transition": [
+     48,
+     7296
+    ],
+    "Growth Power": [
+     589,
+     15000
+    ],
+    "Solidarity Economy": [
+     76,
+     7704
+    ],
+    "Welfare State": [
+     100,
+     7296
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.14501096491228072,
+     "games": 7296,
+     "loss": 0.8019462719298246,
+     "pinned": 0.6840734649122807,
+     "win_per_player": 0.04694353070175439
+    },
+    "4-B": {
+     "any_winner": 0.07515576323987538,
+     "games": 7704,
+     "loss": 0.8450155763239875,
+     "pinned": 0.6212357217030114,
+     "win_per_player": 0.02209890965732087
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4918,
+     "loss": 0.8596990646604311,
+     "pinned": 0.5984139894265962,
+     "win_per_player": 0.024400162667751118
+    },
+    "A2": {
+     "games": 5039,
+     "loss": 0.7600714427465767,
+     "pinned": 0.7229609049414566,
+     "win_per_player": 0.04966263147449891
+    },
+    "A3": {
+     "games": 5043,
+     "loss": 0.8532619472536189,
+     "pinned": 0.6327582788023002,
+     "win_per_player": 0.02825698988697204
+    },
+    "B1": {
+     "games": 4906,
+     "loss": 0.8010599266204648,
+     "pinned": 0.8136975132490828,
+     "win_per_player": 0.02670199755401549
+    },
+    "B2": {
+     "games": 5008,
+     "loss": 0.8873801916932907,
+     "pinned": 0.516573482428115,
+     "win_per_player": 0.024660543130990416
+    },
+    "B3": {
+     "games": 5086,
+     "loss": 0.7839166338969721,
+     "pinned": 0.6287848997247346,
+     "win_per_player": 0.05077664176169878
+    },
+    "C1": {
+     "games": 5015,
+     "loss": 0.8340977068793619,
+     "pinned": 0.6444666001994018,
+     "win_per_player": 0.03290129611166501
+    },
+    "C2": {
+     "games": 5059,
+     "loss": 0.8130065230282665,
+     "pinned": 0.6700929037359162,
+     "win_per_player": 0.03597548922711998
+    },
+    "C3": {
+     "games": 4926,
+     "loss": 0.8252131546894031,
+     "pinned": 0.6404790905399919,
+     "win_per_player": 0.033647990255785624
+    },
+    "D1": {
+     "games": 4900,
+     "loss": 0.7975510204081633,
+     "pinned": 0.6775510204081633,
+     "win_per_player": 0.042091836734693876
+    },
+    "D2": {
+     "games": 4990,
+     "loss": 0.8583166332665331,
+     "pinned": 0.6723446893787575,
+     "win_per_player": 0.02154308617234469
+    },
+    "D3": {
+     "games": 5110,
+     "loss": 0.8160469667318982,
+     "pinned": 0.6070450097847359,
+     "win_per_player": 0.03894324853228963
+    }
+   },
+   "end": {
+    "economy": 14.2628,
+    "environment": 6.333066666666666,
+    "social": 8.281
+   },
+   "extreme": {
+    "economy": 0.296,
+    "environment": 0.3438,
+    "social": 0.3156
+   },
+   "handled": 0.5441996468332078,
+   "loss": 0.8240666666666666,
+   "lost_round": 10.220127821373675,
+   "obj_win": {
+    "economy high, social low": [
+     879,
+     7296
+    ],
+    "economy high, social medium": [
+     327,
+     7704
+    ],
+    "economy low, social high": [
+     76,
+     7704
+    ],
+    "economy medium, social high": [
+     100,
+     7296
+    ],
+    "environment high, economy low": [
+     32,
+     7704
+    ],
+    "environment high, economy medium": [
+     48,
+     7296
+    ],
+    "environment medium, economy high": [
+     589,
+     15000
+    ]
+   },
+   "unhandled": 4.801066666666666,
+   "vote_pass": 0.3408376002379762,
+   "win_per_player": 0.034183333333333336
+  },
+  "cost8/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8433333333333334,
+   "any_winner": 0.5882666666666667,
+   "by_obj": {
+    "Degrowth": [
+     394,
+     7442
+    ],
+    "Efficient State": [
+     3348,
+     7558
+    ],
+    "Free Market": [
+     1839,
+     7442
+    ],
+    "Green Transition": [
+     472,
+     7558
+    ],
+    "Growth Power": [
+     3803,
+     15000
+    ],
+    "Solidarity Economy": [
+     779,
+     7442
+    ],
+    "Welfare State": [
+     735,
+     7558
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6653876686954221,
+     "games": 7558,
+     "loss": 0.00039693040486901297,
+     "pinned": 0.8526065096586398,
+     "win_per_player": 0.22300873246890712
+    },
+    "4-B": {
+     "any_winner": 0.5099435635581833,
+     "games": 7442,
+     "loss": 0.0,
+     "pinned": 0.8339156140822359,
+     "win_per_player": 0.1554689599570008
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4903,
+     "loss": 0.0004079135223332653,
+     "pinned": 0.8135835202936977,
+     "win_per_player": 0.17341423618192944
+    },
+    "A2": {
+     "games": 5115,
+     "loss": 0.0,
+     "pinned": 0.8916911045943304,
+     "win_per_player": 0.21402737047898338
+    },
+    "A3": {
+     "games": 4982,
+     "loss": 0.0002007226013649137,
+     "pinned": 0.8229626655961462,
+     "win_per_player": 0.18014853472501002
+    },
+    "B1": {
+     "games": 4979,
+     "loss": 0.0002008435428800964,
+     "pinned": 0.9222735489054027,
+     "win_per_player": 0.13341032335810404
+    },
+    "B2": {
+     "games": 5072,
+     "loss": 0.0,
+     "pinned": 0.820583596214511,
+     "win_per_player": 0.1915910883280757
+    },
+    "B3": {
+     "games": 4949,
+     "loss": 0.00040412204485754696,
+     "pinned": 0.7872297433825015,
+     "win_per_player": 0.24378662356031522
+    },
+    "C1": {
+     "games": 4962,
+     "loss": 0.00020153164046755341,
+     "pinned": 0.8573155985489722,
+     "win_per_player": 0.18304111245465537
+    },
+    "C2": {
+     "games": 5030,
+     "loss": 0.0,
+     "pinned": 0.8598409542743539,
+     "win_per_player": 0.19244532803180914
+    },
+    "C3": {
+     "games": 5008,
+     "loss": 0.00039936102236421724,
+     "pinned": 0.8128993610223643,
+     "win_per_player": 0.19294129392971246
+    },
+    "D1": {
+     "games": 5056,
+     "loss": 0.00019778481012658228,
+     "pinned": 0.834256329113924,
+     "win_per_player": 0.20891020569620253
+    },
+    "D2": {
+     "games": 5052,
+     "loss": 0.000395882818685669,
+     "pinned": 0.8527315914489311,
+     "win_per_player": 0.1559778305621536
+    },
+    "D3": {
+     "games": 4892,
+     "loss": 0.0,
+     "pinned": 0.8430089942763695,
+     "win_per_player": 0.20405764513491415
+    }
+   },
+   "end": {
+    "economy": 16.3302,
+    "environment": 9.0432,
+    "social": 10.460933333333333
+   },
+   "extreme": {
+    "economy": 0.5704666666666667,
+    "environment": 0.3946,
+    "social": 0.4418
+   },
+   "handled": 0.8564555555555555,
+   "loss": 0.0002,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     3348,
+     7558
+    ],
+    "economy high, social medium": [
+     1839,
+     7442
+    ],
+    "economy low, social high": [
+     779,
+     7442
+    ],
+    "economy medium, social high": [
+     735,
+     7558
+    ],
+    "environment high, economy low": [
+     394,
+     7442
+    ],
+    "environment high, economy medium": [
+     472,
+     7558
+    ],
+    "environment medium, economy high": [
+     3803,
+     15000
+    ]
+   },
+   "unhandled": 1.7225333333333332,
+   "vote_pass": 0.27053333333333335,
+   "win_per_player": 0.1895
+  },
+  "cost8/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8156666666666667,
+   "any_winner": 0.5961333333333333,
+   "by_obj": {
+    "Degrowth": [
+     465,
+     7378
+    ],
+    "Efficient State": [
+     3236,
+     7622
+    ],
+    "Free Market": [
+     1819,
+     7378
+    ],
+    "Green Transition": [
+     601,
+     7622
+    ],
+    "Growth Power": [
+     3842,
+     15000
+    ],
+    "Solidarity Economy": [
+     878,
+     7378
+    ],
+    "Welfare State": [
+     949,
+     7622
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6731828916294935,
+     "games": 7622,
+     "loss": 0.0011807924429283652,
+     "pinned": 0.826685909210181,
+     "win_per_player": 0.22959853056940435
+    },
+    "4-B": {
+     "any_winner": 0.5165356465166712,
+     "games": 7378,
+     "loss": 0.0013553808620222283,
+     "pinned": 0.8042830035239903,
+     "win_per_player": 0.16230685822716184
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4982,
+     "loss": 0.0018065034122842231,
+     "pinned": 0.7846246487354476,
+     "win_per_player": 0.18361099959855479
+    },
+    "A2": {
+     "games": 5028,
+     "loss": 0.000994431185361973,
+     "pinned": 0.8677406523468576,
+     "win_per_player": 0.22290175019888625
+    },
+    "A3": {
+     "games": 4990,
+     "loss": 0.001002004008016032,
+     "pinned": 0.7941883767535071,
+     "win_per_player": 0.18276553106212426
+    },
+    "B1": {
+     "games": 4924,
+     "loss": 0.0022339561332250205,
+     "pinned": 0.890536149471974,
+     "win_per_player": 0.14307473598700243
+    },
+    "B2": {
+     "games": 5073,
+     "loss": 0.0005913660555884093,
+     "pinned": 0.8119455943228858,
+     "win_per_player": 0.2021979105066036
+    },
+    "B3": {
+     "games": 5003,
+     "loss": 0.0009994003597841295,
+     "pinned": 0.7457525484709174,
+     "win_per_player": 0.24330401758944634
+    },
+    "C1": {
+     "games": 5010,
+     "loss": 0.0015968063872255488,
+     "pinned": 0.8325349301397206,
+     "win_per_player": 0.18882235528942115
+    },
+    "C2": {
+     "games": 4964,
+     "loss": 0.00040290088638195,
+     "pinned": 0.8317888799355359,
+     "win_per_player": 0.1968170829975826
+    },
+    "C3": {
+     "games": 5026,
+     "loss": 0.0017906884202148826,
+     "pinned": 0.7829287703939515,
+     "win_per_player": 0.2038400318344608
+    },
+    "D1": {
+     "games": 5061,
+     "loss": 0.0015807152736613318,
+     "pinned": 0.8016202331555029,
+     "win_per_player": 0.20830863465718238
+    },
+    "D2": {
+     "games": 4963,
+     "loss": 0.0010074551682450132,
+     "pinned": 0.8204714890187387,
+     "win_per_player": 0.17207334273624825
+    },
+    "D3": {
+     "games": 4976,
+     "loss": 0.0012057877813504824,
+     "pinned": 0.8251607717041801,
+     "win_per_player": 0.20885249196141478
+    }
+   },
+   "end": {
+    "economy": 15.982666666666667,
+    "environment": 9.526933333333334,
+    "social": 10.876533333333333
+   },
+   "extreme": {
+    "economy": 0.526,
+    "environment": 0.3676,
+    "social": 0.42286666666666667
+   },
+   "handled": 0.8660866569998389,
+   "loss": 0.0012666666666666666,
+   "lost_round": 11.842105263157896,
+   "obj_win": {
+    "economy high, social low": [
+     3236,
+     7622
+    ],
+    "economy high, social medium": [
+     1819,
+     7378
+    ],
+    "economy low, social high": [
+     878,
+     7378
+    ],
+    "economy medium, social high": [
+     949,
+     7622
+    ],
+    "environment high, economy low": [
+     465,
+     7378
+    ],
+    "environment high, economy medium": [
+     601,
+     7622
+    ],
+    "environment medium, economy high": [
+     3842,
+     15000
+    ]
+   },
+   "unhandled": 1.6069333333333333,
+   "vote_pass": 0.36976171825085974,
+   "win_per_player": 0.1965
+  },
+  "cost9/cooperative": {
+   "all_winners": 0.0,
+   "any_extreme": 0.8292,
+   "any_winner": 0.5851333333333333,
+   "by_obj": {
+    "Degrowth": [
+     423,
+     7462
+    ],
+    "Efficient State": [
+     3405,
+     7538
+    ],
+    "Free Market": [
+     1840,
+     7462
+    ],
+    "Green Transition": [
+     467,
+     7538
+    ],
+    "Growth Power": [
+     3540,
+     15000
+    ],
+    "Solidarity Economy": [
+     834,
+     7462
+    ],
+    "Welfare State": [
+     777,
+     7538
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.668081719288936,
+     "games": 7538,
+     "loss": 0.0023879013000795966,
+     "pinned": 0.8372247280445742,
+     "win_per_player": 0.22197532501989917
+    },
+    "4-B": {
+     "any_winner": 0.5013401232913428,
+     "games": 7462,
+     "loss": 0.003484320557491289,
+     "pinned": 0.8210935406057357,
+     "win_per_player": 0.1538796569284374
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 4960,
+     "loss": 0.0030241935483870967,
+     "pinned": 0.7989919354838709,
+     "win_per_player": 0.17036290322580644
+    },
+    "A2": {
+     "games": 5000,
+     "loss": 0.0022,
+     "pinned": 0.8814,
+     "win_per_player": 0.2163
+    },
+    "A3": {
+     "games": 5040,
+     "loss": 0.0035714285714285713,
+     "pinned": 0.8071428571428572,
+     "win_per_player": 0.1775793650793651
+    },
+    "B1": {
+     "games": 4902,
+     "loss": 0.0032639738882088943,
+     "pinned": 0.9165646674826602,
+     "win_per_player": 0.13499592003263974
+    },
+    "B2": {
+     "games": 5163,
+     "loss": 0.0030989734650397056,
+     "pinned": 0.799341468138679,
+     "win_per_player": 0.19562269998063142
+    },
+    "B3": {
+     "games": 4935,
+     "loss": 0.0024316109422492403,
+     "pinned": 0.7736575481256333,
+     "win_per_player": 0.23297872340425532
+    },
+    "C1": {
+     "games": 4976,
+     "loss": 0.003215434083601286,
+     "pinned": 0.8462620578778135,
+     "win_per_player": 0.18001406752411575
+    },
+    "C2": {
+     "games": 5024,
+     "loss": 0.0017914012738853504,
+     "pinned": 0.852906050955414,
+     "win_per_player": 0.19421775477707007
+    },
+    "C3": {
+     "games": 5000,
+     "loss": 0.0038,
+     "pinned": 0.7884,
+     "win_per_player": 0.19
+    },
+    "D1": {
+     "games": 5071,
+     "loss": 0.0029579964504042595,
+     "pinned": 0.822914612502465,
+     "win_per_player": 0.19961546046144746
+    },
+    "D2": {
+     "games": 4999,
+     "loss": 0.0034006801360272052,
+     "pinned": 0.8371674334866973,
+     "win_per_player": 0.15518103620724144
+    },
+    "D3": {
+     "games": 4930,
+     "loss": 0.002434077079107505,
+     "pinned": 0.8275862068965517,
+     "win_per_player": 0.20963488843813388
+    }
+   },
+   "end": {
+    "economy": 16.082266666666666,
+    "environment": 8.600733333333332,
+    "social": 10.189
+   },
+   "extreme": {
+    "economy": 0.5514,
+    "environment": 0.3947333333333333,
+    "social": 0.4286
+   },
+   "handled": 0.7927055555555556,
+   "loss": 0.0029333333333333334,
+   "lost_round": 12.0,
+   "obj_win": {
+    "economy high, social low": [
+     3405,
+     7538
+    ],
+    "economy high, social medium": [
+     1840,
+     7462
+    ],
+    "economy low, social high": [
+     834,
+     7462
+    ],
+    "economy medium, social high": [
+     777,
+     7538
+    ],
+    "environment high, economy low": [
+     423,
+     7462
+    ],
+    "environment high, economy medium": [
+     467,
+     7538
+    ],
+    "environment medium, economy high": [
+     3540,
+     15000
+    ]
+   },
+   "unhandled": 2.4875333333333334,
+   "vote_pass": 0.2669111111111111,
+   "win_per_player": 0.1881
+  },
+  "cost9/mixed": {
+   "all_winners": 0.0,
+   "any_extreme": 0.7972,
+   "any_winner": 0.5848,
+   "by_obj": {
+    "Degrowth": [
+     478,
+     7486
+    ],
+    "Efficient State": [
+     3166,
+     7514
+    ],
+    "Free Market": [
+     1737,
+     7486
+    ],
+    "Green Transition": [
+     584,
+     7514
+    ],
+    "Growth Power": [
+     3592,
+     15000
+    ],
+    "Solidarity Economy": [
+     958,
+     7486
+    ],
+    "Welfare State": [
+     942,
+     7514
+    ]
+   },
+   "by_preset": {
+    "4-A": {
+     "any_winner": 0.6670215597551238,
+     "games": 7514,
+     "loss": 0.014905509715198297,
+     "pinned": 0.8106201756720788,
+     "win_per_player": 0.22488022358264573
+    },
+    "4-B": {
+     "any_winner": 0.5022709056906225,
+     "games": 7486,
+     "loss": 0.018835158963398345,
+     "pinned": 0.7837296286401282,
+     "win_per_player": 0.1568928666844777
+    }
+   },
+   "by_quad": {
+    "A1": {
+     "games": 5088,
+     "loss": 0.01690251572327044,
+     "pinned": 0.7665094339622641,
+     "win_per_player": 0.17767295597484276
+    },
+    "A2": {
+     "games": 4967,
+     "loss": 0.013086370042279041,
+     "pinned": 0.8423595731830078,
+     "win_per_player": 0.21275417757197504
+    },
+    "A3": {
+     "games": 4945,
+     "loss": 0.02062689585439838,
+     "pinned": 0.783417593528817,
+     "win_per_player": 0.1827098078867543
+    },
+    "B1": {
+     "games": 4887,
+     "loss": 0.01882545528954369,
+     "pinned": 0.8776345406179661,
+     "win_per_player": 0.13996316758747698
+    },
+    "B2": {
+     "games": 5087,
+     "loss": 0.01651267937880873,
+     "pinned": 0.7843522704934146,
+     "win_per_player": 0.20306664045606448
+    },
+    "B3": {
+     "games": 5026,
+     "loss": 0.01532033426183844,
+     "pinned": 0.7319936331078393,
+     "win_per_player": 0.22826303223239156
+    },
+    "C1": {
+     "games": 5056,
+     "loss": 0.018393987341772153,
+     "pinned": 0.8125,
+     "win_per_player": 0.1852254746835443
+    },
+    "C2": {
+     "games": 4871,
+     "loss": 0.015807842332169985,
+     "pinned": 0.8168753849312256,
+     "win_per_player": 0.19400533771299527
+    },
+    "C3": {
+     "games": 5073,
+     "loss": 0.01636112753794599,
+     "pinned": 0.7630593337275774,
+     "win_per_player": 0.1937216637098364
+    },
+    "D1": {
+     "games": 5007,
+     "loss": 0.015777910924705412,
+     "pinned": 0.7839025364489715,
+     "win_per_player": 0.20196724585580186
+    },
+    "D2": {
+     "games": 5008,
+     "loss": 0.017172523961661343,
+     "pinned": 0.8079073482428115,
+     "win_per_player": 0.16608426517571884
+    },
+    "D3": {
+     "games": 4985,
+     "loss": 0.01765295887662989,
+     "pinned": 0.7997993981945838,
+     "win_per_player": 0.20486459378134403
+    }
+   },
+   "end": {
+    "economy": 15.634866666666667,
+    "environment": 8.975133333333334,
+    "social": 10.616066666666667
+   },
+   "extreme": {
+    "economy": 0.5026,
+    "environment": 0.36406666666666665,
+    "social": 0.41886666666666666
+   },
+   "handled": 0.8034510544888716,
+   "loss": 0.016866666666666665,
+   "lost_round": 11.782608695652174,
+   "obj_win": {
+    "economy high, social low": [
+     3166,
+     7514
+    ],
+    "economy high, social medium": [
+     1737,
+     7486
+    ],
+    "economy low, social high": [
+     958,
+     7486
+    ],
+    "economy medium, social high": [
+     942,
+     7514
+    ],
+    "environment high, economy low": [
+     478,
+     7486
+    ],
+    "environment high, economy medium": [
+     584,
+     7514
+    ],
+    "environment medium, economy high": [
+     3592,
+     15000
+    ]
+   },
+   "unhandled": 2.3578666666666668,
+   "vote_pass": 0.3624607518964128,
+   "win_per_player": 0.19095
+  }
+ }
+}

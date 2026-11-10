@@ -1,0 +1,59 @@
+{
+ "run_id": "20261106-1145-5f33de91",
+ "created": "2026-11-06T11:45:36",
+ "games_per_cell": 2000,
+ "inputs": {
+  "Design document": "1750a7b5",
+  "Quadrants": "c7d964e1",
+  "Events": "06e809f6",
+  "Objectives": "16148ae5"
+ },
+ "code": {
+  "secret_onu_sim.py": "76b96a6a",
+  "make_report.py": "36642e84",
+  "report_template.html": "f2fc4b28"
+ },
+ "rules": {
+  "rounds": 12,
+  "loss_at_unhandled": 5,
+  "event_cost": {
+   "3": 6,
+   "4": 8,
+   "5": 10,
+   "6": 12
+  },
+  "vote_cost": {
+   "3": 7,
+   "4": 9,
+   "5": 11,
+   "6": 13
+  },
+  "hand": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "track_max": 20,
+  "sections": {
+   "low": [
+    0,
+    6
+   ],
+   "medium": [
+    7,
+    13
+   ],
+   "high": [
+    14,
+    20
+   ]
+  },
+  "vote_deck_size": 40,
+  "vote_magnitude_2_share": 0.3
+ },
+ "doc_warnings": [],
+ "note": "Seeds are fixed in the code, so the same inputs and games give identical results."
+}

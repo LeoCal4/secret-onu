@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secret ONU – Hot-seat Simulator</title>
+<style>
+:root{
+  --bg:#0f141b; --panel:#17202b; --panel2:#1e2a38; --line:#2c3b4e; --text:#e6edf5; --mute:#8fa1b5;
+  --eco:#4cc38a; --ecn:#e9b949; --soc:#e0707f; --acc:#5aa9ff; --bad:#ff6b6b; --good:#4cc38a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,Segoe UI,Roboto,sans-serif}
+h1,h2,h3{margin:0 0 8px}
+h2{font-size:17px} h3{font-size:14px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+button{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}
+button:hover:not(:disabled){border-color:var(--acc)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button.primary{background:var(--acc);color:#04111f;border-color:var(--acc);font-weight:600}
+button.sm{padding:3px 9px;font-size:13px}
+input[type=text],select{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:inherit}
+.wrap{max-width:1250px;margin:0 auto;padding:12px 16px 40px}
+header.top{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:14px}
+header.top .sp{flex:1}
+.grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px}
+@media(max-width:950px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+.muted{color:var(--mute)} .small{font-size:13px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{display:inline-block;padding:1px 7px;border-radius:99px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.ECO{color:var(--eco);border-color:var(--eco)} .ECN{color:var(--ecn);border-color:var(--ecn)} .SOC{color:var(--soc);border-color:var(--soc)}
+.chip.pos{background:rgba(76,195,138,.12)} .chip.neg{background:rgba(255,107,107,.12)}
+/* tracks */
+.track{margin:10px 0}
+.track .lbl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:3px}
+.bar{position:relative;height:22px;border-radius:6px;background:var(--bg);overflow:hidden;display:flex}
+.bar .seg{flex:0 0 auto;border-right:1px solid var(--line);font-size:10px;color:var(--mute);padding:2px 5px}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;opacity:.55;transition:width .3s}
+.bar .mark{position:absolute;top:0;bottom:0;width:3px;background:#fff;transition:left .3s}
+/* quadrants */
+.quad{margin:12px 0}
+.quad .qh{font-size:13px;margin-bottom:4px}
+.cells{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cell{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 2px;min-height:52px;text-align:center;font-size:10.5px;line-height:1.25}
+.cell.cur{border-color:var(--acc);background:rgba(90,169,255,.18);box-shadow:0 0 0 1px var(--acc)}
+.cell .n{color:var(--mute);font-size:10px}
+.cell .e{display:block}
+/* cards */
+.hand{display:flex;gap:8px;flex-wrap:wrap}
+.rc{width:46px;height:62px;border-radius:8px;border:2px solid var(--line);background:var(--panel2);font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative}
+.rc.selE{border-color:var(--ecn);background:rgba(233,185,73,.18)}
+.rc.selV{border-color:var(--acc);background:rgba(90,169,255,.18)}
+.rc .tag{position:absolute;bottom:-17px;font-size:10px;font-weight:600}
+.vcard{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px;min-width:190px;flex:1}
+.vcard.sel{border-color:var(--acc)}
+.vcard .back{margin-top:6px;padding:6px;border:1px dashed var(--ecn);border-radius:6px;background:rgba(233,185,73,.07)}
+.event{border-left:4px solid var(--bad);padding-left:10px}
+.event.pos{border-color:var(--good)}
+.cover{text-align:center;padding:30px 10px;border:2px dashed var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%}
+td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
+th{color:var(--mute);font-weight:500}
+.ok{color:var(--good)} .ko{color:var(--bad)}
+.log{max-height:300px;overflow:auto;font-size:13px}
+.log div{padding:3px 0;border-bottom:1px solid var(--line)}
+.pdot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:var(--line)}
+.pdot.pres{background:var(--acc)}
+.warn{background:rgba(255,107,107,.1);border:1px solid var(--bad);border-radius:8px;padding:6px 10px;margin:6px 0;font-size:13px}
+.note{background:rgba(233,185,73,.1);border:1px solid var(--ecn);border-radius:8px;padding:6px 10px;margin:6px 0;font-size:13px}
+.big{font-size:22px;font-weight:700}
+label.chk{display:inline-flex;gap:5px;align-items:center;font-size:13px;color:var(--mute);cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script>
+"use strict";
+/* =================== DATA (from test_*.md and the design doc) =================== */
+const TR = ["ECO","ECN","SOC"];
+const TNAME = {ECO:"Environment",ECN:"Economy",SOC:"Social"};
+const ROUNDS = 12, LOSS_AT = 5, TRACK_MAX = 20;
+const EVENT_COST = {3:6,4:8,5:10,6:12};   // design doc (test_events.md says 13 for 6p: typo?)
+const VOTE_COST  = {3:7,4:9,5:11,6:13};
+const SECTIONS = {low:[0,6],medium:[7,13],high:[14,20]};   // assumption, same as the python sim
+const VOTE_DECK_SIZE = 40, P_MAG2 = 0.3;
+const DEFAULT_NAMES = ["USA","China","EU","Russia","India","Brazil"];
+
+// Each group (A–D) has 3 candidate quadrants; one per group is used in a game.
+const QUAD_OPTIONS = {
+ A:[
+  {id:"A1",name:"Cosmopolitan ↔ Nationalist",start:3,cells:[{SOC:3,ECN:-3},{SOC:2,ECN:-2},{SOC:1},{ECN:-1},{ECN:1},{ECN:2,SOC:-1},{ECN:3,SOC:-3}]},
+  {id:"A2",name:"Controlled Immigration ↔ Open Borders",start:5,cells:[{SOC:1,ECN:-1},{SOC:1},{SOC:1,ECN:1},{SOC:-2},{ECN:1},{ECN:2,SOC:-1},{ECN:2,SOC:-2}]},
+  {id:"A3",name:"Military Power ↔ Diplomacy",start:4,cells:[{SOC:2,ECN:-1,ECO:-1},{SOC:2,ECN:-1},{SOC:1,ECN:-1},{SOC:-2},{SOC:1},{SOC:1,ECN:1},{SOC:2,ECN:1,ECO:1}]},
+ ],
+ B:[
+  {id:"B1",name:"Fossil Fuels ↔ Renewables",start:2,cells:[{ECO:-3,ECN:3},{ECO:-2,ECN:3},{ECO:-1,ECN:2},{ECN:-1},{ECO:1},{ECO:2},{ECO:3,SOC:1}]},
+  {id:"B2",name:"Deforestation ↔ Reforestation",start:5,cells:[{ECN:3,ECO:-1,SOC:-1},{ECN:1,ECO:-1},{ECO:-1},{ECN:-1},{ECO:1},{ECO:2},{ECO:3,SOC:1}]},
+  {id:"B3",name:"Final Disposal ↔ Recycling and Reusing",start:2,cells:[{ECN:2,ECO:-1,SOC:-1},{ECN:1,SOC:-1},{SOC:-1},{SOC:-2},{SOC:1,ECN:-1},{SOC:2,ECN:-1},{SOC:1,ECO:2,ECN:1}]},
+ ],
+ C:[
+  {id:"C1",name:"Wild Innovation ↔ Responsible Innovation",start:6,cells:[{SOC:2,ECO:1,ECN:-1},{SOC:1,ECO:1},{SOC:1},{SOC:-1,ECN:-1},{ECN:1},{ECN:3,SOC:-1},{ECN:3,SOC:-1,ECO:-1}]},
+  {id:"C2",name:"Private Companies ↔ Welfare",start:2,cells:[{ECN:4,SOC:-2},{ECN:3,SOC:-1},{ECN:1},{ECN:-1,SOC:-1},{SOC:1},{SOC:1,ECN:-1},{SOC:2,ECN:-3}]},
+  {id:"C3",name:"Protectionism ↔ Liberism",start:6,cells:[{ECO:1,SOC:1,ECN:-1},{SOC:1,ECN:-1},{SOC:1},{ECN:-1},{ECN:1},{ECN:2,SOC:-1},{ECN:3,SOC:-3}]},
+ ],
+ D:[
+  {id:"D1",name:"Private Education ↔ Public Education",start:4,cells:[{SOC:1,ECN:1},{ECN:1},{SOC:-1},{SOC:-1,ECN:-1},{SOC:1},{SOC:2},{SOC:3,ECN:-1}]},
+  {id:"D2",name:"Private Healthcare ↔ Public Healthcare",start:7,cells:[{ECN:2,SOC:-2},{ECN:1,SOC:-1},{ECN:1},{SOC:-1},{SOC:1},{SOC:2,ECN:-1},{SOC:2,ECN:-2,ECO:-1}]},
+  {id:"D3",name:"Company Profits ↔ Workers Rights",start:5,cells:[{ECN:2,ECO:-2},{ECN:1,ECO:-1},{ECN:1,SOC:-1},{SOC:-1},{SOC:1},{SOC:1,ECO:1},{SOC:2,ECO:1,ECN:-1}]},
+ ],
+};
+const GROUPS = Object.keys(QUAD_OPTIONS);        // groups A–D (3 candidates each)
+// Neutral-drift baseline (test_quadrants_neutral.md): 3 linear quadrants in a cycle, all start in the middle.
+const _nq=(a,b)=>[{[a]:2,[b]:-2},{[a]:1,[b]:-1},{[a]:1,[b]:-1},{},{[b]:1,[a]:-1},{[b]:1,[a]:-1},{[b]:2,[a]:-2}];
+const NEUTRAL_OPTIONS = {
+  A:[{id:"A",name:"Environment ↔ Economy",start:4,cells:_nq("ECO","ECN")}],
+  B:[{id:"B",name:"Economy ↔ Social",start:4,cells:_nq("ECN","SOC")}],
+  C:[{id:"C",name:"Social ↔ Environment",start:4,cells:_nq("SOC","ECO")}],
+};
+let QIDS = GROUPS.slice();                       // slots in play this game
+let QUADS = {};                                  // slot -> chosen quadrant (set per game)
+function applySel(sel,qset){
+  const opts = qset==="neutral" ? NEUTRAL_OPTIONS : QUAD_OPTIONS;
+  QIDS=Object.keys(opts); QUADS={};
+  QIDS.forEach(g=>{QUADS[g]=opts[g].find(o=>o.id===sel[g])});
+}
+const ql=q=>QUADS[q]?QUADS[q].id:q;
+
+const EVENTS = [
+  {n:"Heatwave Across Continents",fx:{ECO:-3,SOC:-1}},
+  {n:"Global Stock Market Crash",fx:{ECN:-4}},
+  {n:"Oil Tanker Spill",fx:{ECO:-3,ECN:-1}},
+  {n:"Refugee Crisis",fx:{SOC:-3,ECN:-1}},
+  {n:"Pandemic Outbreak",fx:{SOC:-2,ECN:-2}},
+  {n:"Mass Protests Against Inequality",fx:{SOC:-3}},
+  {n:"Crop Failures",fx:{ECO:-2,SOC:-2}},
+  {n:"Cyberattack on Financial Systems",fx:{ECN:-3,SOC:-1}},
+  {n:"Rainforest Wildfires",fx:{ECO:-4}},
+  {n:"Trade War Escalation",fx:{ECN:-3},banB:true,txt:"Next turn, the President cannot choose a Vote card affecting Quadrant B."},
+  {n:"Disinformation Wave",fx:{SOC:-2},noLie:true,txt:"Next turn, the President must reveal the Vote card's back to the table (no lying)."},
+  {n:"Energy Grid Blackouts",fx:{ECN:-2,SOC:-2}},
+  {n:"Glacier Collapse",fx:{ECO:-3},shift:"A",txt:"Quadrant A moves 1 step toward 1."},
+  {n:"Sovereign Debt Crisis",fx:{ECN:-3},shift:"B",txt:"Quadrant B moves 1 step toward 1."},
+  {n:"Diplomatic Incident",fx:{ECO:-1,ECN:-1,SOC:-1},extra:2,txt:"Next turn, the Vote requires +2 resources to pass."},
+  {n:"Water Scarcity",fx:{ECO:-2,ECN:-1,SOC:-1}},
+  {n:"Industrial Accident",fx:{ECO:-2,ECN:-2}},
+  {n:"Wave of Authoritarianism",fx:{SOC:-3},shift:"C",txt:"Quadrant C moves 1 step toward 1."},
+  {n:"Resource Scramble",fx:{ECO:-2,ECN:-1},shift:"D",txt:"Quadrant D moves 1 step toward 1."},
+  {n:"Unexpected Technological Breakthrough",fx:{ECN:2,ECO:2},positive:true,txt:"POSITIVE: effects apply only if handled. If not handled, nothing happens, but the unhandled counter still increases."},
+];
+// Objective pool (test_objective_sets.md). Conditions: [track, section]
+const OBJ_POOL = [
+  ["Green Transition",[["ECO","high"],["ECN","medium"]]],
+  ["Welfare State",[["ECN","medium"],["SOC","high"]]],
+  ["Growth Power",[["ECO","medium"],["ECN","high"]]],
+  ["Free Market",[["ECN","high"],["SOC","medium"]]],
+  ["Conservation",[["ECO","high"],["SOC","medium"]]],
+  ["Humanist",[["ECO","medium"],["SOC","high"]]],
+  ["Degrowth",[["ECO","high"],["ECN","low"]]],
+  ["Resource Power",[["ECO","low"],["ECN","high"]]],
+  ["Efficient State",[["ECN","high"],["SOC","low"]]],
+  ["Solidarity Economy",[["ECN","low"],["SOC","high"]]],
+  ["Right to Development",[["ECO","low"],["SOC","high"]]],
+  ["Fortress Conservation",[["ECO","high"],["SOC","low"]]],
+];
+const OBJECTIVES = OBJ_POOL.map(o=>o[1]);
+const OBJ_NAME = new Map(OBJ_POOL.map(o=>[o[1],o[0]]));
+// Preset sets per player count (pool numbers, 1-based)
+const PRESETS = {
+  3:[{id:"3-A",label:"The spoiler wants growth",objs:[1,2,8],note:"Allies 1+2; Resource Power opposes both."},
+     {id:"3-B",label:"The spoiler wants degrowth",objs:[3,6,7],note:"Allies 3+6; Degrowth opposes both."}],
+  4:[{id:"4-A",label:"Sustainable vs growth",objs:[1,2,3,9],note:"Blocs 1+2 and 3+9."},
+     {id:"4-B",label:"Degrowth vs growth",objs:[7,10,3,4],note:"Blocs 7+10 and 3+4; most polarised."}],
+  5:[{id:"5-A",label:"The kingmaker",objs:[1,2,3,9,11],note:"Allies 1+2, 2+11, 3+9."},
+     {id:"5-B",label:"The chain",objs:[8,4,5,7,10],note:"Chain 8+4, 4+5, 5+7, 7+10; three low objectives."}],
+  6:[{id:"6-A",label:"Even bounce",objs:[1,2,3,4,11,12],note:"Allies 1+2, 1+12, 2+11, 3+4."},
+     {id:"6-B",label:"Three blocs",objs:[4,5,6,9,10,12],note:"Pairs 4+5, 6+10, 9+12."}],
+};
+function objModeValid(mode,n){
+  if(mode==="pool"||mode==="classic"||mode==="custom") return true;
+  return (PRESETS[n]||[]).some(p=>"preset:"+p.id===mode);
+}
+function pickObjectives(n){
+  const mode=objModeValid(UI.objMode,n)?UI.objMode:"pool";
+  if(mode==="custom") return Array.from({length:n},(_,i)=>UI.custObj[i]);
+  if(mode==="classic") return shuffle([0,1,2,3,4,5]).slice(0,n);
+  if(mode.startsWith("preset:")){
+    const pr=PRESETS[n].find(p=>"preset:"+p.id===mode);
+    return shuffle(pr.objs.map(x=>x-1));
+  }
+  return shuffle(OBJECTIVES.map((_,i)=>i)).slice(0,n);
+}
+
+/* =================== helpers =================== */
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const sgn=v=>(v>0?"+":"")+v;
+const clone=o=>JSON.parse(JSON.stringify(o));
+function fxChips(fx){
+  const k=Object.keys(fx);
+  if(!k.length) return '<span class="muted">nothing</span>';
+  return k.map(t=>`<span class="chip ${t} ${fx[t]>0?'pos':'neg'}">${sgn(fx[t])} ${t}</span>`).join(" ");
+}
+function secOf(v){return v<=6?"low":v<=13?"medium":"high"}
+function objMet(obj,tracks){return obj.every(([t,s])=>{const [lo,hi]=SECTIONS[s];return tracks[t]>=lo&&tracks[t]<=hi})}
+function objText(obj){const nm=OBJ_NAME.get(obj);return (nm?`<i>${nm}</i>: `:"")+obj.map(([t,s])=>`${TNAME[t]} <b>${s.toUpperCase()}</b>`).join(" &amp; ")}
+function qDelta(d){return Object.keys(d).map(q=>`${ql(q)} ${sgn(d[q])}`).join(", ")}
+
+function makeVoteDeck(){
+  const deck=[];
+  for(let i=1;i<=VOTE_DECK_SIZE;i++){
+    const qs=shuffle(QIDS.slice()).slice(0,2).sort(), d={};
+    qs.forEach(q=>{d[q]=(Math.random()<P_MAG2?2:1)*(Math.random()<.5?-1:1)});
+    deck.push({id:i,d});
+  }
+  return deck;
+}
+
+/* =================== state =================== */
+let S=null;                 // game state
+let UI={view:'mine',qset:'groups',objMode:'pool',custObj:[0,1,2,3,4,5],bots:Array(6).fill('human'),qsel:{A:'random',B:'random',C:'random',D:'random'},peek:false,god:true,names:DEFAULT_NAMES.slice(),n:4,pickTop:null,tmp:{e:null,v:null},shown:false};
+const SAVE_KEY="secret-onu-save-v1";
+
+function save(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(S))}catch(e){}}
+function loadSave(){try{const s=localStorage.getItem(SAVE_KEY);return s?JSON.parse(s):null}catch(e){return null}}
+function clearSave(){try{localStorage.removeItem(SAVE_KEY)}catch(e){}}
+
+function newGame(n,names,startPres,bots){
+  const sel={}, qset=UI.qset;
+  if(qset==="neutral") Object.keys(NEUTRAL_OPTIONS).forEach(g=>sel[g]=g);
+  else GROUPS.forEach(g=>{const c=UI.qsel[g]; sel[g]=(c&&c!=='random')?c:QUAD_OPTIONS[g][Math.floor(Math.random()*3)].id});
+  applySel(sel,qset);
+  const objs=pickObjectives(n);
+  S={
+    n, round:0, pres:startPres, sel, qset,
+    players:names.slice(0,n).map((nm,i)=>({name:nm||DEFAULT_NAMES[i],obj:objs[i],hand:[0,1,2,3,4,5],bot:(bots&&bots[i]&&bots[i]!=='human')?bots[i]:null})),
+    tracks:{ECO:10,ECN:10,SOC:10},
+    qpos:Object.fromEntries(QIDS.map(q=>[q,QUADS[q].start])),
+    eventDeck:shuffle(EVENTS.map((_,i)=>i)), voteDeck:makeVoteDeck(), discard:[],
+    unhandled:0, pend:{extra:0,banB:false,noLie:false}, cur:null,
+    ev:null, drawn:[], chosen:null, claim:null, alloc:[], allocIdx:0,
+    phase:"president", res:null, log:[], over:null, snap:null,
+  };
+  startRound();
+}
+
+function startRound(){
+  S.round++;
+  S.ev=S.eventDeck.pop();
+  S.cur=S.pend; S.pend={extra:0,banB:false,noLie:false};
+  S.drawn=[]; S.chosen=null; S.claim=null; S.alloc=[]; S.allocIdx=0; S.res=null;
+  S.phase="president";
+  UI.peek=false;UI.pickTop=null;UI.tmp={e:null,v:null};UI.shown=false;
+  S.snap=null; S.snap=JSON.stringify(S);   // snapshot for "restart round"
+  render();
+}
+function restartRound(){
+  if(!S.snap) return;
+  S=JSON.parse(S.snap); S.snap=JSON.stringify(S);
+  UI.peek=false;UI.pickTop=null;UI.tmp={e:null,v:null};UI.shown=false;
+  render();
+}
+
+
+/* =================== BOTS (port of sim/secret_onu_sim.py) =================== */
+const STRATS={random:0,cooperative:1,mixed:0.5,selfish:0};   // value = coop weight
+const BOT_TRUST=0.6;
+const OBJ=p=>OBJECTIVES[p.obj];
+function bDist(tracks,obj){let d=0;for(const [t,sec] of obj){const [lo,hi]=SECTIONS[sec],v=tracks[t];d+=Math.max(0,lo-v,v-hi)}return d}
+function bDrift(qpos){const o={ECO:0,ECN:0,SOC:0};for(const q of QIDS){const c=QUADS[q].cells[qpos[q]-1];for(const t in c)o[t]+=c[t]}return o}
+function bProject(tracks,qpos,left){const d=bDrift(qpos),o={};for(const t of TR)o[t]=clamp(tracks[t]+d[t]*left,0,TRACK_MAX);return o}
+function bMove(qpos,delta){const q={...qpos};for(const k in delta)q[k]=clamp(q[k]+delta[k],1,7);return q}
+function bVoteGain(obj,delta,left){
+  return bDist(bProject(S.tracks,S.qpos,left),obj)-bDist(bProject(S.tracks,bMove(S.qpos,delta),left),obj);
+}
+function bEventGain(obj,ev,left){
+  const tr=S.tracks,qp=S.qpos;
+  if(ev.positive){
+    const h={...tr};for(const k in ev.fx)h[k]=clamp(tr[k]+ev.fx[k],0,TRACK_MAX);
+    return bDist(bProject(tr,qp,left),obj)-bDist(bProject(h,qp,left),obj);
+  }
+  const t={...tr};for(const k in ev.fx)t[k]=clamp(t[k]+ev.fx[k],0,TRACK_MAX);
+  const q=(ev.shift&&QUADS[ev.shift])?bMove(qp,{[ev.shift]:-1}):qp;
+  return bDist(bProject(t,q,left),obj)-bDist(bProject(tr,qp,left),obj);
+}
+function gauss(sd){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return sd*Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+function botChooseCards(hand,strat,sE,sV){
+  if(strat==="random"){const h=shuffle(hand.slice());return {e:h[0],v:h[1]}}
+  let best=null,bs=-1e9;
+  for(const e of hand)for(const v of hand){ if(e===v)continue;
+    const sc=sE*e+sV*v+gauss(0.6); if(sc>bs){bs=sc;best={e,v}} }
+  return best;
+}
+function botAlloc(i){
+  const p=S.players[i],strat=p.bot,coop=STRATS[strat],obj=OBJ(p),left=ROUNDS-S.round,ev=EVENTS[S.ev];
+  const vg = i===S.pres ? bVoteGain(obj,S.chosen.d,left) : BOT_TRUST*bVoteGain(obj,S.claim,left);
+  const eg = bEventGain(obj,ev,left);
+  const urgency=Math.min(1,0.5+0.12*S.unhandled);
+  const sV=clamp(vg/3,-1,1), sE=coop*urgency+(1-coop)*clamp(eg/3,-1,1);
+  return botChooseCards(p.hand,strat,sE,sV);
+}
+function botPresident(){
+  const p=S.players[S.pres],strat=p.bot,obj=OBJ(p),left=ROUNDS-S.round;
+  let idx=S.drawn.map((_,i)=>i).filter(i=>!banned(S.drawn[i]));
+  if(!idx.length) idx=S.drawn.map((_,i)=>i);
+  let gi=idx[0],bg=-1e9,gains={};
+  idx.forEach(i=>{const g=bVoteGain(obj,S.drawn[i].d,left)+Math.random()*0.01;gains[i]=g;if(g>bg){bg=g;gi=i}});
+  const card=S.drawn[gi], others=S.drawn.filter((_,i)=>i!==gi);
+  S.voteDeck.push(others[0]); S.discard.push(others[1]);
+  S.chosen=card; S.drawn=[]; S.claim=clone(card.d);
+  if(!S.cur.noLie && bVoteGain(obj,card.d,left)<0 && strat!=="random"){
+    for(const q in S.claim) S.claim[q]=-S.claim[q];
+  }
+  S.phase="claim"; UI.peek=false;
+}
+function autoAlloc(){
+  while(S.allocIdx<S.n && S.players[S.allocIdx].bot){
+    const i=S.allocIdx,c=botAlloc(i);
+    S.players[i].hand=S.players[i].hand.filter(x=>x!==c.e&&x!==c.v);
+    S.alloc.push({e:c.e,v:c.v}); S.allocIdx++;
+  }
+  UI.tmp={e:null,v:null};UI.shown=false;
+  if(S.allocIdx>=S.n) resolve(); else render();
+}
+const BOT_LABEL={random:"Random",cooperative:"Cooperative",mixed:"Mixed",selfish:"Selfish"};
+
+/* =================== phase actions =================== */
+function drawVotes(){
+  S.drawn=[S.voteDeck.pop(),S.voteDeck.pop(),S.voteDeck.pop()];
+  S.phase="choose";
+  if(S.players[S.pres].bot) botPresident();
+  render();
+}
+function banned(c){return S.cur.banB && ("B" in c.d)}
+function allBanned(){return S.drawn.every(banned)}
+function chooseCard(i){
+  S.chosen=i; UI.pickTop=null; render();
+}
+function pickTop(i){
+  // card i goes back on top, the remaining one is discarded
+  const card=S.drawn[S.chosen];
+  S.drawn.forEach((c,j)=>{ if(j!==S.chosen){ if(j===i) S.voteDeck.push(c); else S.discard.push(c);} });
+  S.chosen=card; S.drawn=[];
+  S.claim=clone(card.d);
+  S.phase="claim"; UI.peek=false; render();
+}
+function setClaim(q,v){S.claim[q]=+v; render();}
+function startAlloc(){
+  if(S.cur.noLie) S.claim=clone(S.chosen.d);
+  S.phase="alloc"; S.allocIdx=0; S.alloc=[]; UI.tmp={e:null,v:null}; UI.shown=false; autoAlloc();
+}
+function selCard(kind,val){
+  const t=UI.tmp;
+  if(kind==="e"){ t.e=(t.e===val?null:val); if(t.v===val)t.v=null; }
+  else { t.v=(t.v===val?null:val); if(t.e===val)t.e=null; }
+  render();
+}
+function confirmAlloc(){
+  const p=S.players[S.allocIdx], t=UI.tmp;
+  p.hand=p.hand.filter(x=>x!==t.e&&x!==t.v);
+  S.alloc.push({e:t.e,v:t.v});
+  S.allocIdx++; UI.tmp={e:null,v:null}; UI.shown=false;
+  autoAlloc();
+}
+
+/* =================== resolution =================== */
+function resolve(){
+  const L=[], n=S.n, ev=EVENTS[S.ev];
+  const eSum=S.alloc.reduce((a,x)=>a+x.e,0), vSum=S.alloc.reduce((a,x)=>a+x.v,0);
+  const vCost=VOTE_COST[n]+S.cur.extra, eCost=EVENT_COST[n];
+  const passed=vSum>=vCost, handled=eSum>=eCost;
+  const before={tracks:{...S.tracks},qpos:{...S.qpos}};
+  const res={eSum,vSum,vCost,eCost,passed,handled,lines:[],before,real:clone(S.chosen.d),claim:clone(S.claim)};
+
+  if(passed){
+    for(const q in S.chosen.d) S.qpos[q]=clamp(S.qpos[q]+S.chosen.d[q],1,7);
+    L.push(`Vote PASSED (${vSum}/${vCost}). Real effect on quadrants: ${qDelta(S.chosen.d)}.`);
+  } else L.push(`Vote FAILED (${vSum}/${vCost}). No quadrant change.`);
+
+  if(handled){
+    L.push(`Event "${ev.n}" HANDLED (${eSum}/${eCost}).`);
+    if(ev.positive){ for(const t in ev.fx) S.tracks[t]=clamp(S.tracks[t]+ev.fx[t],0,TRACK_MAX); L.push(`Breakthrough bonus: ${Object.keys(ev.fx).map(t=>sgn(ev.fx[t])+" "+t).join(", ")}.`); }
+  } else {
+    S.unhandled++;
+    L.push(`Event "${ev.n}" NOT handled (${eSum}/${eCost}). Unhandled counter: ${S.unhandled}/${LOSS_AT}.`);
+    if(ev.positive) L.push("Missed opportunity: nothing happens.");
+    else {
+      for(const t in ev.fx) S.tracks[t]=clamp(S.tracks[t]+ev.fx[t],0,TRACK_MAX);
+      L.push("Event effects applied: "+Object.keys(ev.fx).map(t=>sgn(ev.fx[t])+" "+t).join(", ")+".");
+      if(ev.shift&&QUADS[ev.shift]){ S.qpos[ev.shift]=clamp(S.qpos[ev.shift]-1,1,7); L.push(`Quadrant ${ql(ev.shift)} moved 1 step toward 1.`); }
+      S.pend={extra:ev.extra||0,banB:!!ev.banB,noLie:!!ev.noLie};
+    }
+  }
+  if(S.unhandled>=LOSS_AT){
+    S.over="lost"; L.push("★ Fifth unhandled event – ALL PLAYERS LOSE.");
+  } else {
+    // quadrant drift
+    const drift={ECO:0,ECN:0,SOC:0};
+    QIDS.forEach(q=>{const c=QUADS[q].cells[S.qpos[q]-1]; for(const t in c) drift[t]+=c[t];});
+    for(const t of TR) S.tracks[t]=clamp(S.tracks[t]+drift[t],0,TRACK_MAX);
+    L.push("Quadrant effects this round: "+TR.map(t=>sgn(drift[t])+" "+t).join(", ")+".");
+    if(S.round>=ROUNDS) { S.over = S.over||"ended"; }
+    // hands refill when everyone ran out
+    if(S.players.every(p=>p.hand.length===0)){ S.players.forEach(p=>p.hand=[0,1,2,3,4,5]); L.push("All hands empty – everyone takes back their 6 resource cards."); }
+  }
+  res.after={tracks:{...S.tracks},qpos:{...S.qpos}};
+  res.lines=L;
+  S.res=res;
+  S.log.unshift({round:S.round,pres:S.players[S.pres].name,ev:ev.n,lines:L});
+  S.phase="result"; render();
+}
+function nextRound(){
+  if(S.over){ S.phase="end"; render(); return; }
+  S.pres=(S.pres+1)%S.n;
+  startRound();
+}
+
+/* =================== rendering =================== */
+const $app=document.getElementById("app");
+function render(){ if(S&&S.phase) save(); $app.innerHTML = S ? renderGame() : renderSetup(); }
+
+function renderSetup(){
+  const sv=loadSave();
+  let h=`<h1>Secret ONU <span class="muted small">– hot-seat simulator</span></h1>
+  <div class="card" style="max-width:560px">
+    <h2>New game</h2>
+    <p class="muted small">You control every player. Objectives are secret (hidden unless you reveal them or enable “show all secrets”).</p>
+    <div class="row" style="margin-bottom:10px">Players:
+      ${[3,4,5,6].map(k=>`<button class="${UI.n===k?'primary':''}" onclick="UI.n=${k};render()">${k}</button>`).join("")}
+    </div>
+    ${Array.from({length:UI.n},(_,i)=>`<div class="row" style="margin:5px 0"><span class="muted" style="width:70px">Player ${i+1}</span>
+      <input type="text" value="${esc(UI.names[i])}" oninput="UI.names[${i}]=this.value">
+      <select onchange="UI.bots[${i}]=this.value">${["human","random","cooperative","mixed","selfish"].map(k=>`<option value="${k}" ${UI.bots[i]===k?"selected":""}>${k==="human"?"👤 Human (you)":"🤖 Bot – "+BOT_LABEL[k]}</option>`).join("")}</select></div>`).join("")}
+    <h2 style="margin-top:16px">Objectives</h2>
+    ${(()=>{const mode=objModeValid(UI.objMode,UI.n)?UI.objMode:"pool";
+      const pr=(PRESETS[UI.n]||[]);
+      const cur=pr.find(p=>"preset:"+p.id===mode);
+      return `<div class="row"><select onchange="UI.objMode=this.value;render()">
+        <option value="pool" ${mode==="pool"?"selected":""}>🎲 Random from the pool of 12</option>
+        <option value="classic" ${mode==="classic"?"selected":""}>🎲 Random from the original 6 (pool #1–6)</option>
+        ${pr.map(p=>`<option value="preset:${p.id}" ${mode==="preset:"+p.id?"selected":""}>Preset ${p.id} · ${p.label}</option>`).join("")}
+        <option value="custom" ${mode==="custom"?"selected":""}>✎ Choose each player's objective</option></select></div>`
+      +(cur?`<p class="muted small">${cur.objs.map(x=>OBJ_POOL[x-1][0]).join(", ")} – ${cur.note} Dealt to the players in random order.</p>`:"")
+      +(mode==="custom"?Array.from({length:UI.n},(_,i)=>`<div class="row" style="margin:5px 0"><span class="muted" style="width:70px">Player ${i+1}</span>
+        <select onchange="UI.custObj[${i}]=+this.value">${OBJ_POOL.map((o,k)=>`<option value="${k}" ${UI.custObj[i]===k?"selected":""}>${k+1}. ${o[0]} – ${o[1].map(([t,sc])=>t+" "+sc).join(", ")}</option>`).join("")}</select></div>`).join(""):"");})()}
+    <h2 style="margin-top:16px">Quadrants</h2>
+    <div class="row" style="margin-bottom:6px"><select onchange="UI.qset=this.value;render()">
+      <option value="groups" ${UI.qset==="groups"?"selected":""}>Groups A–D (3 candidates each)</option>
+      <option value="neutral" ${UI.qset==="neutral"?"selected":""}>Neutral baseline (3 synthetic quadrants, all start in the middle)</option></select></div>
+    ${UI.qset==="neutral"?`<p class="muted small">Environment ↔ Economy (A), Economy ↔ Social (B), Social ↔ Environment (C). Events that move quadrant D have no effect in this set.</p>`:
+    GROUPS.map(g=>`<div class="row" style="margin:5px 0"><b style="width:70px">Group ${g}</b>
+      <select onchange="UI.qsel.${g}=this.value">
+        <option value="random" ${UI.qsel[g]==='random'?'selected':''}>🎲 Random</option>
+        ${QUAD_OPTIONS[g].map(o=>`<option value="${o.id}" ${UI.qsel[g]===o.id?'selected':''}>${o.id} · ${o.name}</option>`).join("")}
+      </select></div>`).join("")+`<div class="row" style="margin-top:6px"><button class="sm" onclick="GROUPS.forEach(g=>UI.qsel[g]='random');render()">Set all random</button></div>`}
+    <div class="row" style="margin-top:14px">
+      <button class="primary" onclick="newGame(UI.n,UI.names,Math.floor(Math.random()*UI.n),UI.bots)">Start game</button>
+      ${sv&&sv.phase?`<button onclick="S=loadSave();applySel(S.sel,S.qset);render()">Resume saved game (round ${sv.round})</button>`:""}
+    </div>
+    <p class="muted small" style="margin-top:14px">Costs: event ${Object.entries(EVENT_COST).map(([k,v])=>k+"p→"+v).join(", ")} · vote ${Object.entries(VOTE_COST).map(([k,v])=>k+"p→"+v).join(", ")}.<br>
+    Assumptions beyond the design doc: Low 0–6 / Medium 7–13 / High 14–20; vote deck of 40 cards, each touching 2 quadrants with magnitude 1 (70%) or 2 (30%) and random sign; tracks start at 10.</p>
+  </div>`;
+  return h;
+}
+
+function renderGame(){
+  const n=S.n, ev=EVENTS[S.ev];
+  let h=`<header class="top">
+    <h1 style="font-size:20px">Secret ONU</h1>
+    <span class="big">${S.phase==="end"?"Game over":`Round ${S.round}/${ROUNDS}`}</span>
+    <span>Unhandled events: <b class="${S.unhandled>=3?'ko':''}">${S.unhandled}/${LOSS_AT}</b></span>
+    <span class="sp"></span>
+    <label class="chk">Secrets: <select onchange="UI.view=this.value;render()">
+      <option value="mine" ${UI.view==="mine"?"selected":""}>Show mine only (hide bots')</option>
+      <option value="all" ${UI.view==="all"?"selected":""}>Show everything</option>
+      <option value="none" ${UI.view==="none"?"selected":""}>Hide all (hot-seat)</option></select></label>
+    <button class="sm" onclick="restartRound()" ${S.snap&&S.phase!=="end"?"":"disabled"} title="Go back to the start of this round">↺ Restart round</button>
+    <button class="sm" onclick="if(confirm('Abandon this game?')){S=null;clearSave();render()}">New game</button>
+  </header>
+  <div class="grid"><div>${renderBoard()}</div><div>${renderPhase(ev)}${renderLog()}</div></div>`;
+  return h;
+}
+
+function renderBoard(){
+  let h=`<div class="card"><h3>Players</h3><table>`;
+  S.players.forEach((p,i)=>{
+    const secret=seeAll(p)?`${objText(OBJECTIVESS(p))} ${objMet(OBJECTIVESS(p),S.tracks)?'<span class="ok">✓</span>':'<span class="ko">✗</span>'}`:'<span class="muted">secret</span>';
+    h+=`<tr><td><span class="pdot ${i===S.pres?'pres':''}"></span>${esc(p.name)}${p.bot?` <span class="chip" style="color:var(--mute);border-color:var(--mute)">🤖 ${BOT_LABEL[p.bot]}</span>`:''}${i===S.pres?' <span class="chip" style="color:var(--acc);border-color:var(--acc)">President</span>':''}</td>
+      <td class="small">${secret}</td><td class="small muted">hand: ${p.hand.join(" ")||"–"}</td></tr>`;
+  });
+  h+=`</table></div><div class="card"><h3>Tracks</h3>`;
+  for(const t of TR){
+    const v=S.tracks[t];
+    h+=`<div class="track"><div class="lbl"><span class="chip ${t}">${TNAME[t]}</span><span><b>${v}</b>/20 · ${secOf(v).toUpperCase()}</span></div>
+      <div class="bar">
+        <div class="seg" style="width:${7/21*100}%">LOW 0–6</div><div class="seg" style="width:${7/21*100}%">MEDIUM 7–13</div><div class="seg" style="width:${7/21*100}%;border:0">HIGH 14–20</div>
+        <div class="mark" style="left:calc(${(v+0.5)/21*100}% - 1px)"></div></div></div>`;
+  }
+  h+=`</div><div class="card"><h3>Quadrants</h3>`;
+  for(const q of QIDS){
+    h+=`<div class="quad"><div class="qh"><b>${ql(q)}</b> · ${QUADS[q].name} <span class="muted">(position ${S.qpos[q]})</span></div><div class="cells">`;
+    QUADS[q].cells.forEach((c,i)=>{
+      h+=`<div class="cell ${S.qpos[q]===i+1?'cur':''}"><div class="n">${i+1}</div>${Object.keys(c).map(t=>`<span class="e ${t}" style="border:0">${sgn(c[t])} ${t}</span>`).join("")||'<span class="muted">–</span>'}</div>`;
+    });
+    h+=`</div></div>`;
+  }
+  return h+`</div>`;
+}
+function seeAll(p){return UI.view==='all' || (UI.view==='mine' && !(p&&p.bot))}
+function OBJECTIVESS(p){return OBJECTIVES[p.obj]}
+
+function eventCard(ev){
+  const fx=ev.positive?`<div>If handled: ${fxChips(ev.fx)}</div>`:`<div>If NOT handled: ${fxChips(ev.fx)}</div>`;
+  return `<div class="event ${ev.positive?'pos':''}"><b>${esc(ev.n)}</b>${fx}${ev.txt?`<div class="small muted">${esc(ev.txt).replace(/Quadrant ([A-D])/g,(m,g)=>QUADS[g]?`the group-${g} quadrant (${ql(g)})`:`the group-${g} quadrant (not in play – no effect)`)}</div>`:""}
+    <div class="small">Resources needed to handle: <b>${EVENT_COST[S.n]}</b></div></div>`;
+}
+function restrictions(){
+  const c=S.cur, r=[];
+  if(c.extra) r.push(`The Vote requires <b>+${c.extra}</b> resources this turn (total ${VOTE_COST[S.n]+c.extra}).`);
+  if(c.banB) r.push("The President cannot choose a Vote card affecting Quadrant B.");
+  if(c.noLie) r.push("The President must reveal the Vote card's back publicly (no lying).");
+  return r.map(x=>`<div class="warn">⚠ ${x}</div>`).join("");
+}
+function voteFront(c){
+  return `<b>Resolution #${c.id}</b><div class="small">Affects quadrants: ${Object.keys(c.d).map(q=>`<b>${ql(q)}</b> (${QUADS[q].name})`).join(" and ")}</div>
+    <div class="small">Needs <b>${VOTE_COST[S.n]+S.cur.extra}</b> resources</div>`;
+}
+function voteBack(c){
+  return `<div class="back small">Back: ${Object.keys(c.d).map(q=>`<b>${ql(q)} ${sgn(c.d[q])}</b>`).join(", ")}</div>`;
+}
+
+function renderPhase(ev0){
+  const ev=EVENTS[S.ev], pres=S.players[S.pres];
+  let h=`<div class="card">`;
+  if(S.phase==="president"){
+    h+=`<h2>1 · Event</h2>${eventCard(ev)}${restrictions()}
+      <p class="muted small">President: <b>${esc(pres.name)}</b>. Next they draw 3 Vote cards.</p>
+      <button class="primary" onclick="drawVotes()">President draws 3 Vote cards →</button>`;
+  }
+  else if(S.phase==="choose"){
+    h+=`<h2>2 · President chooses a Vote</h2>${eventCard(ev)}${restrictions()}
+    <p class="small"><b>${esc(pres.name)}</b> sees the backs. <label class="chk"><input type="checkbox" ${UI.peek||seeAll(pres)?"checked":""} onchange="UI.peek=this.checked;render()"> reveal backs (President only!)</label></p>`;
+    const stage2=S.chosen!==null;
+    if(!stage2){
+      if(S.cur.banB&&allBanned()) h+=`<div class="note">All three cards affect Quadrant B – restriction waived.</div>`;
+      h+=`<div class="row" style="align-items:stretch">${S.drawn.map((c,i)=>{
+        const bn=banned(c)&&!allBanned();
+        return `<div class="vcard">${voteFront(c)}${(UI.peek||seeAll(pres))?voteBack(c):""}
+          <div style="margin-top:8px"><button class="sm primary" ${bn?"disabled":""} onclick="chooseCard(${i})">${bn?"Banned (Quadrant B)":"Propose this"}</button></div></div>`}).join("")}</div>`;
+    } else {
+      h+=`<p>Proposed: Resolution #${S.drawn[S.chosen].id}. Now choose which of the other two goes <b>back on top of the Vote deck</b> (the last is discarded).</p>
+      <div class="row" style="align-items:stretch">${S.drawn.map((c,i)=>i===S.chosen?"":
+        `<div class="vcard">${voteFront(c)}${(UI.peek||seeAll(pres))?voteBack(c):""}<div style="margin-top:8px"><button class="sm" onclick="pickTop(${i})">Put back on top</button></div></div>`).join("")}</div>
+      <div style="margin-top:8px"><button class="sm" onclick="S.chosen=null;render()">← Change proposal</button></div>`;
+    }
+  }
+  else if(S.phase==="claim"){
+    const c=S.chosen;
+    h+=`<h2>3 · Discussion &amp; President's announcement</h2>${eventCard(ev)}${restrictions()}
+    <div class="vcard" style="margin:8px 0">${voteFront(c)}
+      ${(UI.peek||seeAll(pres)||S.cur.noLie)?voteBack(c):`<div class="small muted" style="margin-top:6px">Real values hidden (President only).</div>`}</div>
+    ${pres.bot?"":`<p class="small"><label class="chk"><input type="checkbox" ${UI.peek?"checked":""} onchange="UI.peek=this.checked;render()"> peek at real values (President only)</label></p>`}`;
+    if(S.cur.noLie){
+      h+=`<div class="warn">Disinformation Wave: the President must show the real values.</div>`;
+    } else if(pres.bot){
+      h+=`<h3>🤖 ${esc(pres.name)} (President) announces</h3><p><b>${qDelta(S.claim)}</b> ${seeAll(pres)?(JSON.stringify(S.claim)===JSON.stringify(c.d)?"(truthful)":'<span class="ko">(a lie)</span>'):""}</p>`;
+    } else {
+      h+=`<h3>What the President announces to the table</h3><div class="row">${Object.keys(c.d).map(q=>`<span>Quadrant ${ql(q)}:
+        <select onchange="setClaim('${q}',this.value)">${[-2,-1,1,2].map(v=>`<option value="${v}" ${S.claim[q]===v?"selected":""}>${sgn(v)}</option>`).join("")}</select></span>`).join("")}</div>
+      <p class="muted small">Announced: <b>${qDelta(S.claim)}</b> ${JSON.stringify(S.claim)===JSON.stringify(c.d)?"(truthful)":'<span class="ko">(a lie)</span>'}</p>`;
+    }
+    h+=`<div style="margin-top:10px"><button class="primary" onclick="startAlloc()">Everyone allocates cards →</button></div>`;
+  }
+  else if(S.phase==="alloc"){
+    const p=S.players[S.allocIdx], t=UI.tmp;
+    h+=`<h2>4 · Secret allocation – ${S.allocIdx+1}/${S.n}</h2>
+    <div class="small" style="margin-bottom:8px"><b>Event:</b> ${esc(ev.n)} (${fxChipsText(ev)}) – needs ${EVENT_COST[S.n]} total.<br>
+    <b>Vote:</b> Resolution #${S.chosen.id}, announced ${qDelta(S.claim)} – needs ${VOTE_COST[S.n]+S.cur.extra} total.</div>`;
+    if(!UI.shown && UI.view==='none'){
+      h+=`<div class="cover"><div class="big">${esc(p.name)}</div><p class="muted">Take control of this player.<br>(Other players shouldn't look!)</p>
+        <button class="primary" onclick="UI.shown=true;render()">Show ${esc(p.name)}'s hand</button></div>`;
+    } else {
+      const obj=OBJECTIVESS(p);
+      h+=`<div class="note"><b>${esc(p.name)}</b> – secret objective: ${objText(obj)} ${objMet(obj,S.tracks)?'<span class="ok">(currently met)</span>':'<span class="ko">(currently not met)</span>'}</div>
+      <p class="small">Pick one card for the <span style="color:var(--ecn)"><b>Event</b></span>, one for the <span style="color:var(--acc)"><b>Vote</b></span>.</p>
+      <div class="row"><div style="width:60px;color:var(--ecn)">Event</div><div class="hand">${p.hand.map(v=>`<div class="rc ${t.e===v?'selE':''}" onclick="selCard('e',${v})">${v}</div>`).join("")}</div></div>
+      <div class="row" style="margin-top:10px"><div style="width:60px;color:var(--acc)">Vote</div><div class="hand">${p.hand.map(v=>`<div class="rc ${t.v===v?'selV':''}" onclick="selCard('v',${v})">${v}</div>`).join("")}</div></div>
+      <div style="margin-top:14px"><button class="primary" ${t.e!==null&&t.v!==null?"":"disabled"} onclick="confirmAlloc()">Confirm &amp; ${S.allocIdx+1<S.n?"next player":"reveal"} →</button></div>`;
+    }
+    if(S.allocIdx>0) h+=`<p class="muted small" style="margin-top:12px">Already allocated: ${S.players.slice(0,S.allocIdx).map(x=>esc(x.name)).join(", ")}</p>`;
+  }
+  else if(S.phase==="result"){
+    const r=S.res;
+    h+=`<h2>5 · Reveal &amp; resolution</h2>
+    <table><tr><th>Player</th><th>Event</th><th>Vote</th></tr>
+    ${S.players.map((p,i)=>`<tr><td>${esc(p.name)}</td><td>${S.alloc[i].e}</td><td>${S.alloc[i].v}</td></tr>`).join("")}
+    <tr><th>Total / needed</th><th class="${r.handled?'ok':'ko'}">${r.eSum} / ${r.eCost}</th><th class="${r.passed?'ok':'ko'}">${r.vSum} / ${r.vCost}</th></tr></table>
+    <div style="margin:10px 0">President's vote card: announced <b>${qDelta(r.claim)}</b>, real <b>${qDelta(r.real)}</b>
+      ${JSON.stringify(r.claim)===JSON.stringify(r.real)?'<span class="ok">– truthful</span>':'<span class="ko">– the President lied!</span>'}</div>
+    ${r.lines.map(l=>`<div class="small">• ${esc(l)}</div>`).join("")}
+    <div style="margin-top:8px" class="small muted">Tracks: ${TR.map(t=>`${t} ${r.before.tracks[t]}→<b>${r.after.tracks[t]}</b>`).join(" · ")}</div>
+    <div style="margin-top:12px"><button class="primary" onclick="nextRound()">${S.over?"Final results →":`Next round (President → ${esc(S.players[(S.pres+1)%S.n].name)}) →`}</button></div>`;
+  }
+  else if(S.phase==="end"){
+    const lost=S.over==="lost";
+    h+=`<h2>${lost?"💥 Everyone loses":"End of round 12"}</h2>
+    ${lost?'<p class="ko">The fifth unhandled event ended the game – no one wins.</p>':""}
+    <table><tr><th>Player</th><th>Objective</th><th>Result</th></tr>
+    ${S.players.map(p=>{const o=OBJECTIVESS(p), ok=!lost&&objMet(o,S.tracks);return `<tr><td>${esc(p.name)}</td><td>${objText(o)}</td><td class="${ok?'ok':'ko'}">${ok?"WINS":"loses"}</td></tr>`}).join("")}</table>
+    <p class="small muted">Final tracks: ${TR.map(t=>`${TNAME[t]} ${S.tracks[t]} (${secOf(S.tracks[t])})`).join(" · ")}</p>
+    <button class="primary" onclick="S=null;clearSave();render()">New game</button>`;
+  }
+  return h+`</div>`;
+}
+function fxChipsText(ev){return Object.keys(ev.fx).map(t=>sgn(ev.fx[t])+" "+t).join(", ")+(ev.positive?" if handled":" if unhandled")}
+
+function renderLog(){
+  if(!S.log.length) return "";
+  return `<div class="card"><h3>History</h3><div class="log">${S.log.map(e=>
+    `<div><b>R${e.round}</b> · Pres. ${esc(e.pres)} · ${esc(e.ev)}<br><span class="muted">${e.lines.map(esc).join(" ")}</span></div>`).join("")}</div></div>`;
+}
+
+render();
+</script>
+</body>
+</html>

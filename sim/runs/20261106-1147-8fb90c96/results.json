@@ -1,0 +1,1664 @@
+{
+ "lies": {
+  "3p/lies": {
+   "all_winners": 0.0,
+   "any_winner": 0.6655,
+   "end": {
+    "environment": 11.7695,
+    "economy": 14.296,
+    "social": 13.734
+   },
+   "extreme": {
+    "environment": 0.2235,
+    "economy": 0.3005,
+    "social": 0.3115
+   },
+   "handled": 0.8979583333333333,
+   "loss": 0.0015,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     262,
+     1006
+    ],
+    "environment high, social medium": [
+     243,
+     960
+    ],
+    "economy high, environment medium": [
+     375,
+     1036
+    ],
+    "economy high, social medium": [
+     332,
+     998
+    ],
+    "social high, environment medium": [
+     343,
+     1018
+    ],
+    "social high, economy medium": [
+     324,
+     982
+    ]
+   },
+   "unhandled": 1.2245,
+   "vote_pass": 0.292875,
+   "win_per_player": 0.31316666666666665
+  },
+  "3p/truth": {
+   "all_winners": 0.0,
+   "any_winner": 0.708,
+   "end": {
+    "environment": 12.3885,
+    "economy": 13.841,
+    "social": 14.084
+   },
+   "extreme": {
+    "environment": 0.2095,
+    "economy": 0.2725,
+    "social": 0.319
+   },
+   "handled": 0.9046666666666666,
+   "loss": 0.001,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     291,
+     995
+    ],
+    "environment high, social medium": [
+     283,
+     959
+    ],
+    "economy high, environment medium": [
+     352,
+     1011
+    ],
+    "economy high, social medium": [
+     341,
+     1019
+    ],
+    "social high, environment medium": [
+     377,
+     1016
+    ],
+    "social high, economy medium": [
+     354,
+     1000
+    ]
+   },
+   "unhandled": 1.144,
+   "vote_pass": 0.286125,
+   "win_per_player": 0.333
+  },
+  "4p/lies": {
+   "all_winners": 0.0,
+   "any_winner": 0.6705,
+   "end": {
+    "environment": 11.4565,
+    "economy": 14.2215,
+    "social": 13.7895
+   },
+   "extreme": {
+    "environment": 0.2275,
+    "economy": 0.2915,
+    "social": 0.3175
+   },
+   "handled": 0.896125,
+   "loss": 0.0015,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     268,
+     1308
+    ],
+    "environment high, social medium": [
+     240,
+     1329
+    ],
+    "economy high, environment medium": [
+     415,
+     1346
+    ],
+    "economy high, social medium": [
+     399,
+     1353
+    ],
+    "social high, environment medium": [
+     404,
+     1347
+    ],
+    "social high, economy medium": [
+     345,
+     1317
+    ]
+   },
+   "unhandled": 1.2465,
+   "vote_pass": 0.32358333333333333,
+   "win_per_player": 0.258875
+  },
+  "4p/truth": {
+   "all_winners": 0.0,
+   "any_winner": 0.7035,
+   "end": {
+    "environment": 12.9305,
+    "economy": 13.929,
+    "social": 14.6585
+   },
+   "extreme": {
+    "environment": 0.1875,
+    "economy": 0.2345,
+    "social": 0.332
+   },
+   "handled": 0.9125416666666667,
+   "loss": 0.0015,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     330,
+     1313
+    ],
+    "environment high, social medium": [
+     276,
+     1302
+    ],
+    "economy high, environment medium": [
+     440,
+     1371
+    ],
+    "economy high, social medium": [
+     353,
+     1350
+    ],
+    "social high, environment medium": [
+     453,
+     1349
+    ],
+    "social high, economy medium": [
+     386,
+     1315
+    ]
+   },
+   "unhandled": 1.0495,
+   "vote_pass": 0.3155833333333333,
+   "win_per_player": 0.27975
+  },
+  "5p/lies": {
+   "all_winners": 0.0,
+   "any_winner": 0.685,
+   "end": {
+    "environment": 11.6055,
+    "economy": 14.493,
+    "social": 13.7465
+   },
+   "extreme": {
+    "environment": 0.1985,
+    "economy": 0.294,
+    "social": 0.289
+   },
+   "handled": 0.9035,
+   "loss": 0.0005,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     300,
+     1659
+    ],
+    "environment high, social medium": [
+     255,
+     1644
+    ],
+    "economy high, environment medium": [
+     468,
+     1680
+    ],
+    "economy high, social medium": [
+     436,
+     1652
+    ],
+    "social high, environment medium": [
+     435,
+     1686
+    ],
+    "social high, economy medium": [
+     403,
+     1679
+    ]
+   },
+   "unhandled": 1.158,
+   "vote_pass": 0.3162083333333333,
+   "win_per_player": 0.2297
+  },
+  "5p/truth": {
+   "all_winners": 0.0,
+   "any_winner": 0.713,
+   "end": {
+    "environment": 12.7295,
+    "economy": 14.127,
+    "social": 14.781
+   },
+   "extreme": {
+    "environment": 0.157,
+    "economy": 0.2235,
+    "social": 0.3155
+   },
+   "handled": 0.9180416666666666,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     354,
+     1660
+    ],
+    "environment high, social medium": [
+     296,
+     1649
+    ],
+    "economy high, environment medium": [
+     486,
+     1680
+    ],
+    "economy high, social medium": [
+     396,
+     1656
+    ],
+    "social high, environment medium": [
+     502,
+     1677
+    ],
+    "social high, economy medium": [
+     472,
+     1678
+    ]
+   },
+   "unhandled": 0.9835,
+   "vote_pass": 0.3124166666666667,
+   "win_per_player": 0.2506
+  },
+  "6p/lies": {
+   "all_winners": 0.0,
+   "any_winner": 0.6785,
+   "end": {
+    "environment": 11.518,
+    "economy": 14.3415,
+    "social": 14.03
+   },
+   "extreme": {
+    "environment": 0.205,
+    "economy": 0.277,
+    "social": 0.311
+   },
+   "handled": 0.9041666666666667,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     320,
+     2000
+    ],
+    "environment high, social medium": [
+     237,
+     2000
+    ],
+    "economy high, environment medium": [
+     507,
+     2000
+    ],
+    "economy high, social medium": [
+     419,
+     2000
+    ],
+    "social high, environment medium": [
+     499,
+     2000
+    ],
+    "social high, economy medium": [
+     447,
+     2000
+    ]
+   },
+   "unhandled": 1.15,
+   "vote_pass": 0.33891666666666664,
+   "win_per_player": 0.20241666666666666
+  },
+  "6p/truth": {
+   "all_winners": 0.0,
+   "any_winner": 0.724,
+   "end": {
+    "environment": 12.859,
+    "economy": 14.0455,
+    "social": 15.1165
+   },
+   "extreme": {
+    "environment": 0.166,
+    "economy": 0.2075,
+    "social": 0.342
+   },
+   "handled": 0.923125,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     373,
+     2000
+    ],
+    "environment high, social medium": [
+     279,
+     2000
+    ],
+    "economy high, environment medium": [
+     537,
+     2000
+    ],
+    "economy high, social medium": [
+     406,
+     2000
+    ],
+    "social high, environment medium": [
+     601,
+     2000
+    ],
+    "social high, economy medium": [
+     530,
+     2000
+    ]
+   },
+   "unhandled": 0.9225,
+   "vote_pass": 0.32895833333333335,
+   "win_per_player": 0.22716666666666666
+  }
+ },
+ "main": {
+  "3p/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.69,
+   "end": {
+    "environment": 11.816,
+    "economy": 14.4065,
+    "social": 13.4665
+   },
+   "extreme": {
+    "environment": 0.2225,
+    "economy": 0.341,
+    "social": 0.2815
+   },
+   "handled": 0.8995833333333333,
+   "loss": 0.0005,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     239,
+     998
+    ],
+    "environment high, social medium": [
+     240,
+     997
+    ],
+    "economy high, environment medium": [
+     392,
+     1001
+    ],
+    "economy high, social medium": [
+     434,
+     978
+    ],
+    "social high, environment medium": [
+     331,
+     997
+    ],
+    "social high, economy medium": [
+     308,
+     1029
+    ]
+   },
+   "unhandled": 1.205,
+   "vote_pass": 0.22566666666666665,
+   "win_per_player": 0.324
+  },
+  "3p/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.6535,
+   "end": {
+    "environment": 11.892,
+    "economy": 14.1985,
+    "social": 13.4805
+   },
+   "extreme": {
+    "environment": 0.225,
+    "economy": 0.303,
+    "social": 0.3155
+   },
+   "handled": 0.8967083333333333,
+   "loss": 0.003,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     248,
+     1015
+    ],
+    "environment high, social medium": [
+     239,
+     976
+    ],
+    "economy high, environment medium": [
+     360,
+     991
+    ],
+    "economy high, social medium": [
+     361,
+     1031
+    ],
+    "social high, environment medium": [
+     301,
+     995
+    ],
+    "social high, economy medium": [
+     300,
+     992
+    ]
+   },
+   "unhandled": 1.2395,
+   "vote_pass": 0.294375,
+   "win_per_player": 0.3015
+  },
+  "3p/random": {
+   "all_winners": 0.0,
+   "any_winner": 0.294,
+   "end": {
+    "environment": 8.513,
+    "economy": 13.514,
+    "social": 11.868
+   },
+   "extreme": {
+    "environment": 0.441,
+    "economy": 0.429,
+    "social": 0.423
+   },
+   "handled": 0.7427431675437107,
+   "loss": 0.1455,
+   "lost_round": 10.50171821305842,
+   "obj_win": {
+    "environment high, economy medium": [
+     77,
+     1023
+    ],
+    "environment high, social medium": [
+     89,
+     997
+    ],
+    "economy high, environment medium": [
+     141,
+     1005
+    ],
+    "economy high, social medium": [
+     157,
+     1021
+    ],
+    "social high, environment medium": [
+     134,
+     985
+    ],
+    "social high, economy medium": [
+     106,
+     969
+    ]
+   },
+   "unhandled": 3.031,
+   "vote_pass": 0.6212442709217451,
+   "win_per_player": 0.11733333333333333
+  },
+  "3p/selfish": {
+   "all_winners": 0.0,
+   "any_winner": 0.574,
+   "end": {
+    "environment": 11.2705,
+    "economy": 13.5685,
+    "social": 13.181
+   },
+   "extreme": {
+    "environment": 0.2305,
+    "economy": 0.2735,
+    "social": 0.3115
+   },
+   "handled": 0.8380331704056482,
+   "loss": 0.032,
+   "lost_round": 11.015625,
+   "obj_win": {
+    "environment high, economy medium": [
+     231,
+     976
+    ],
+    "environment high, social medium": [
+     212,
+     1016
+    ],
+    "economy high, environment medium": [
+     285,
+     1000
+    ],
+    "economy high, social medium": [
+     273,
+     1029
+    ],
+    "social high, environment medium": [
+     289,
+     972
+    ],
+    "social high, economy medium": [
+     261,
+     1007
+    ]
+   },
+   "unhandled": 1.9385,
+   "vote_pass": 0.46593140326690896,
+   "win_per_player": 0.2585
+  },
+  "4p/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.6545,
+   "end": {
+    "environment": 11.6565,
+    "economy": 14.509,
+    "social": 13.5205
+   },
+   "extreme": {
+    "environment": 0.207,
+    "economy": 0.3125,
+    "social": 0.292
+   },
+   "handled": 0.8961666666666667,
+   "loss": 0.0005,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     246,
+     1319
+    ],
+    "environment high, social medium": [
+     226,
+     1339
+    ],
+    "economy high, environment medium": [
+     460,
+     1333
+    ],
+    "economy high, social medium": [
+     420,
+     1338
+    ],
+    "social high, environment medium": [
+     372,
+     1328
+    ],
+    "social high, economy medium": [
+     328,
+     1343
+    ]
+   },
+   "unhandled": 1.246,
+   "vote_pass": 0.24679166666666666,
+   "win_per_player": 0.2565
+  },
+  "4p/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.67,
+   "end": {
+    "environment": 11.5565,
+    "economy": 14.2965,
+    "social": 13.783
+   },
+   "extreme": {
+    "environment": 0.2345,
+    "economy": 0.2915,
+    "social": 0.322
+   },
+   "handled": 0.9003333333333333,
+   "loss": 0.002,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     285,
+     1345
+    ],
+    "environment high, social medium": [
+     225,
+     1307
+    ],
+    "economy high, environment medium": [
+     424,
+     1333
+    ],
+    "economy high, social medium": [
+     408,
+     1342
+    ],
+    "social high, environment medium": [
+     380,
+     1350
+    ],
+    "social high, economy medium": [
+     346,
+     1323
+    ]
+   },
+   "unhandled": 1.196,
+   "vote_pass": 0.32295833333333335,
+   "win_per_player": 0.2585
+  },
+  "4p/random": {
+   "all_winners": 0.0,
+   "any_winner": 0.3445,
+   "end": {
+    "environment": 8.658,
+    "economy": 13.539,
+    "social": 11.8985
+   },
+   "extreme": {
+    "environment": 0.4745,
+    "economy": 0.4305,
+    "social": 0.457
+   },
+   "handled": 0.7621477982115742,
+   "loss": 0.106,
+   "lost_round": 10.622641509433961,
+   "obj_win": {
+    "environment high, economy medium": [
+     143,
+     1333
+    ],
+    "environment high, social medium": [
+     99,
+     1366
+    ],
+    "economy high, environment medium": [
+     157,
+     1325
+    ],
+    "economy high, social medium": [
+     181,
+     1338
+    ],
+    "social high, environment medium": [
+     134,
+     1317
+    ],
+    "social high, economy medium": [
+     167,
+     1321
+    ]
+   },
+   "unhandled": 2.8195,
+   "vote_pass": 0.6585540745739835,
+   "win_per_player": 0.110125
+  },
+  "4p/selfish": {
+   "all_winners": 0.0,
+   "any_winner": 0.6105,
+   "end": {
+    "environment": 11.2795,
+    "economy": 13.884,
+    "social": 13.537
+   },
+   "extreme": {
+    "environment": 0.2425,
+    "economy": 0.276,
+    "social": 0.3035
+   },
+   "handled": 0.839145669948273,
+   "loss": 0.0195,
+   "lost_round": 11.282051282051283,
+   "obj_win": {
+    "environment high, economy medium": [
+     259,
+     1347
+    ],
+    "environment high, social medium": [
+     214,
+     1356
+    ],
+    "economy high, environment medium": [
+     346,
+     1350
+    ],
+    "economy high, social medium": [
+     311,
+     1312
+    ],
+    "social high, environment medium": [
+     339,
+     1329
+    ],
+    "social high, economy medium": [
+     321,
+     1306
+    ]
+   },
+   "unhandled": 1.928,
+   "vote_pass": 0.512222593025196,
+   "win_per_player": 0.22375
+  },
+  "5p/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.7015,
+   "end": {
+    "environment": 11.7225,
+    "economy": 14.2875,
+    "social": 13.65
+   },
+   "extreme": {
+    "environment": 0.186,
+    "economy": 0.2805,
+    "social": 0.2755
+   },
+   "handled": 0.8995416666666667,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     287,
+     1662
+    ],
+    "environment high, social medium": [
+     275,
+     1636
+    ],
+    "economy high, environment medium": [
+     479,
+     1650
+    ],
+    "economy high, social medium": [
+     478,
+     1668
+    ],
+    "social high, environment medium": [
+     459,
+     1684
+    ],
+    "social high, economy medium": [
+     403,
+     1700
+    ]
+   },
+   "unhandled": 1.2055,
+   "vote_pass": 0.23783333333333334,
+   "win_per_player": 0.2381
+  },
+  "5p/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.6885,
+   "end": {
+    "environment": 11.7915,
+    "economy": 14.4555,
+    "social": 13.989
+   },
+   "extreme": {
+    "environment": 0.219,
+    "economy": 0.285,
+    "social": 0.3135
+   },
+   "handled": 0.9037916666666667,
+   "loss": 0.001,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     326,
+     1667
+    ],
+    "environment high, social medium": [
+     263,
+     1652
+    ],
+    "economy high, environment medium": [
+     444,
+     1678
+    ],
+    "economy high, social medium": [
+     414,
+     1679
+    ],
+    "social high, environment medium": [
+     446,
+     1662
+    ],
+    "social high, economy medium": [
+     425,
+     1662
+    ]
+   },
+   "unhandled": 1.1545,
+   "vote_pass": 0.3217083333333333,
+   "win_per_player": 0.2318
+  },
+  "5p/random": {
+   "all_winners": 0.0,
+   "any_winner": 0.381,
+   "end": {
+    "environment": 9.1085,
+    "economy": 14.076,
+    "social": 12.348
+   },
+   "extreme": {
+    "environment": 0.444,
+    "economy": 0.4485,
+    "social": 0.452
+   },
+   "handled": 0.7833263334733306,
+   "loss": 0.071,
+   "lost_round": 10.661971830985916,
+   "obj_win": {
+    "environment high, economy medium": [
+     143,
+     1650
+    ],
+    "environment high, social medium": [
+     109,
+     1639
+    ],
+    "economy high, environment medium": [
+     215,
+     1672
+    ],
+    "economy high, social medium": [
+     230,
+     1662
+    ],
+    "social high, environment medium": [
+     197,
+     1684
+    ],
+    "social high, economy medium": [
+     181,
+     1693
+    ]
+   },
+   "unhandled": 2.5795,
+   "vote_pass": 0.6887022259554809,
+   "win_per_player": 0.1075
+  },
+  "5p/selfish": {
+   "all_winners": 0.0,
+   "any_winner": 0.6405,
+   "end": {
+    "environment": 11.3455,
+    "economy": 14.121,
+    "social": 13.379
+   },
+   "extreme": {
+    "environment": 0.235,
+    "economy": 0.2325,
+    "social": 0.319
+   },
+   "handled": 0.8526627465699154,
+   "loss": 0.0135,
+   "lost_round": 11.222222222222221,
+   "obj_win": {
+    "environment high, economy medium": [
+     294,
+     1666
+    ],
+    "environment high, social medium": [
+     230,
+     1641
+    ],
+    "economy high, environment medium": [
+     397,
+     1652
+    ],
+    "economy high, social medium": [
+     368,
+     1679
+    ],
+    "social high, environment medium": [
+     386,
+     1672
+    ],
+    "social high, economy medium": [
+     383,
+     1690
+    ]
+   },
+   "unhandled": 1.7665,
+   "vote_pass": 0.5145335501897493,
+   "win_per_player": 0.2058
+  },
+  "6p/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.708,
+   "end": {
+    "environment": 11.667,
+    "economy": 14.3775,
+    "social": 13.6605
+   },
+   "extreme": {
+    "environment": 0.2085,
+    "economy": 0.269,
+    "social": 0.294
+   },
+   "handled": 0.8956666666666667,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     311,
+     2000
+    ],
+    "environment high, social medium": [
+     307,
+     2000
+    ],
+    "economy high, environment medium": [
+     485,
+     2000
+    ],
+    "economy high, social medium": [
+     480,
+     2000
+    ],
+    "social high, environment medium": [
+     485,
+     2000
+    ],
+    "social high, economy medium": [
+     458,
+     2000
+    ]
+   },
+   "unhandled": 1.252,
+   "vote_pass": 0.24958333333333332,
+   "win_per_player": 0.2105
+  },
+  "6p/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.682,
+   "end": {
+    "environment": 11.6875,
+    "economy": 14.2525,
+    "social": 14.017
+   },
+   "extreme": {
+    "environment": 0.204,
+    "economy": 0.2675,
+    "social": 0.313
+   },
+   "handled": 0.9037916666666667,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     305,
+     2000
+    ],
+    "environment high, social medium": [
+     256,
+     2000
+    ],
+    "economy high, environment medium": [
+     488,
+     2000
+    ],
+    "economy high, social medium": [
+     419,
+     2000
+    ],
+    "social high, environment medium": [
+     513,
+     2000
+    ],
+    "social high, economy medium": [
+     442,
+     2000
+    ]
+   },
+   "unhandled": 1.1545,
+   "vote_pass": 0.33941666666666664,
+   "win_per_player": 0.20191666666666666
+  },
+  "6p/random": {
+   "all_winners": 0.0,
+   "any_winner": 0.429,
+   "end": {
+    "environment": 9.1205,
+    "economy": 13.964,
+    "social": 11.9955
+   },
+   "extreme": {
+    "environment": 0.4545,
+    "economy": 0.44,
+    "social": 0.444
+   },
+   "handled": 0.7932032724984267,
+   "loss": 0.0615,
+   "lost_round": 10.658536585365853,
+   "obj_win": {
+    "environment high, economy medium": [
+     194,
+     2000
+    ],
+    "environment high, social medium": [
+     131,
+     2000
+    ],
+    "economy high, environment medium": [
+     247,
+     2000
+    ],
+    "economy high, social medium": [
+     285,
+     2000
+    ],
+    "social high, environment medium": [
+     205,
+     2000
+    ],
+    "social high, economy medium": [
+     247,
+     2000
+    ]
+   },
+   "unhandled": 2.4645,
+   "vote_pass": 0.7183973148730858,
+   "win_per_player": 0.10908333333333334
+  },
+  "6p/selfish": {
+   "all_winners": 0.0,
+   "any_winner": 0.662,
+   "end": {
+    "environment": 11.477,
+    "economy": 14.0985,
+    "social": 13.6615
+   },
+   "extreme": {
+    "environment": 0.214,
+    "economy": 0.267,
+    "social": 0.3155
+   },
+   "handled": 0.8583993330554398,
+   "loss": 0.0115,
+   "lost_round": 11.565217391304348,
+   "obj_win": {
+    "environment high, economy medium": [
+     331,
+     2000
+    ],
+    "environment high, social medium": [
+     270,
+     2000
+    ],
+    "economy high, environment medium": [
+     456,
+     2000
+    ],
+    "economy high, social medium": [
+     397,
+     2000
+    ],
+    "social high, environment medium": [
+     451,
+     2000
+    ],
+    "social high, economy medium": [
+     418,
+     2000
+    ]
+   },
+   "unhandled": 1.6985,
+   "vote_pass": 0.5365152146727803,
+   "win_per_player": 0.19358333333333333
+  }
+ },
+ "sweep": {
+  "cost10/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.602,
+   "end": {
+    "environment": 10.437,
+    "economy": 13.044,
+    "social": 12.636
+   },
+   "extreme": {
+    "environment": 0.2155,
+    "economy": 0.2505,
+    "social": 0.2725
+   },
+   "handled": 0.776,
+   "loss": 0.017,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     232,
+     1308
+    ],
+    "environment high, social medium": [
+     200,
+     1329
+    ],
+    "economy high, environment medium": [
+     353,
+     1368
+    ],
+    "economy high, social medium": [
+     343,
+     1316
+    ],
+    "social high, environment medium": [
+     316,
+     1313
+    ],
+    "social high, economy medium": [
+     314,
+     1366
+    ]
+   },
+   "unhandled": 2.688,
+   "vote_pass": 0.24429166666666666,
+   "win_per_player": 0.21975
+  },
+  "cost10/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.5855,
+   "end": {
+    "environment": 10.6665,
+    "economy": 13.1415,
+    "social": 12.8935
+   },
+   "extreme": {
+    "environment": 0.222,
+    "economy": 0.239,
+    "social": 0.3
+   },
+   "handled": 0.7812186978297162,
+   "loss": 0.052,
+   "lost_round": 11.615384615384615,
+   "obj_win": {
+    "environment high, economy medium": [
+     246,
+     1319
+    ],
+    "environment high, social medium": [
+     197,
+     1363
+    ],
+    "economy high, environment medium": [
+     324,
+     1359
+    ],
+    "economy high, social medium": [
+     305,
+     1317
+    ],
+    "social high, environment medium": [
+     311,
+     1293
+    ],
+    "social high, economy medium": [
+     336,
+     1349
+    ]
+   },
+   "unhandled": 2.621,
+   "vote_pass": 0.31139398998330553,
+   "win_per_player": 0.214875
+  },
+  "cost11/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.539,
+   "end": {
+    "environment": 9.8705,
+    "economy": 12.456,
+    "social": 12.311
+   },
+   "extreme": {
+    "environment": 0.2085,
+    "economy": 0.219,
+    "social": 0.264
+   },
+   "handled": 0.7186796699174793,
+   "loss": 0.071,
+   "lost_round": 11.95774647887324,
+   "obj_win": {
+    "environment high, economy medium": [
+     194,
+     1336
+    ],
+    "environment high, social medium": [
+     165,
+     1322
+    ],
+    "economy high, environment medium": [
+     298,
+     1340
+    ],
+    "economy high, social medium": [
+     321,
+     1342
+    ],
+    "social high, environment medium": [
+     263,
+     1344
+    ],
+    "social high, economy medium": [
+     290,
+     1316
+    ]
+   },
+   "unhandled": 3.375,
+   "vote_pass": 0.245311327831958,
+   "win_per_player": 0.191375
+  },
+  "cost11/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.4845,
+   "end": {
+    "environment": 9.623,
+    "economy": 12.149,
+    "social": 12.259
+   },
+   "extreme": {
+    "environment": 0.2215,
+    "economy": 0.2025,
+    "social": 0.269
+   },
+   "handled": 0.7094796085513881,
+   "loss": 0.188,
+   "lost_round": 11.492021276595745,
+   "obj_win": {
+    "environment high, economy medium": [
+     168,
+     1324
+    ],
+    "environment high, social medium": [
+     147,
+     1324
+    ],
+    "economy high, environment medium": [
+     232,
+     1326
+    ],
+    "economy high, social medium": [
+     270,
+     1296
+    ],
+    "social high, environment medium": [
+     265,
+     1357
+    ],
+    "social high, economy medium": [
+     291,
+     1373
+    ]
+   },
+   "unhandled": 3.4585,
+   "vote_pass": 0.31160485530681675,
+   "win_per_player": 0.171625
+  },
+  "cost12/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.407,
+   "end": {
+    "environment": 9.1275,
+    "economy": 12.006,
+    "social": 11.443
+   },
+   "extreme": {
+    "environment": 0.2235,
+    "economy": 0.1985,
+    "social": 0.238
+   },
+   "handled": 0.6685395614071868,
+   "loss": 0.2405,
+   "lost_round": 11.686070686070686,
+   "obj_win": {
+    "environment high, economy medium": [
+     141,
+     1333
+    ],
+    "environment high, social medium": [
+     115,
+     1321
+    ],
+    "economy high, environment medium": [
+     213,
+     1331
+    ],
+    "economy high, social medium": [
+     246,
+     1351
+    ],
+    "social high, environment medium": [
+     207,
+     1338
+    ],
+    "social high, economy medium": [
+     213,
+     1326
+    ]
+   },
+   "unhandled": 3.9525,
+   "vote_pass": 0.23782967839322403,
+   "win_per_player": 0.141875
+  },
+  "cost12/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.3165,
+   "end": {
+    "environment": 8.677,
+    "economy": 11.6435,
+    "social": 11.115
+   },
+   "extreme": {
+    "environment": 0.2255,
+    "economy": 0.199,
+    "social": 0.201
+   },
+   "handled": 0.6398566679618357,
+   "loss": 0.442,
+   "lost_round": 11.05316742081448,
+   "obj_win": {
+    "environment high, economy medium": [
+     95,
+     1305
+    ],
+    "environment high, social medium": [
+     97,
+     1348
+    ],
+    "economy high, environment medium": [
+     168,
+     1327
+    ],
+    "economy high, social medium": [
+     227,
+     1352
+    ],
+    "social high, environment medium": [
+     145,
+     1341
+    ],
+    "social high, economy medium": [
+     152,
+     1327
+    ]
+   },
+   "unhandled": 4.171,
+   "vote_pass": 0.30626430082459094,
+   "win_per_player": 0.1105
+  },
+  "cost13/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.247,
+   "end": {
+    "environment": 8.4535,
+    "economy": 11.099,
+    "social": 10.685
+   },
+   "extreme": {
+    "environment": 0.214,
+    "economy": 0.191,
+    "social": 0.2005
+   },
+   "handled": 0.616647329293971,
+   "loss": 0.5315,
+   "lost_round": 11.31420507996237,
+   "obj_win": {
+    "environment high, economy medium": [
+     75,
+     1321
+    ],
+    "environment high, social medium": [
+     84,
+     1349
+    ],
+    "economy high, environment medium": [
+     142,
+     1331
+    ],
+    "economy high, social medium": [
+     163,
+     1354
+    ],
+    "social high, environment medium": [
+     113,
+     1360
+    ],
+    "social high, economy medium": [
+     104,
+     1285
+    ]
+   },
+   "unhandled": 4.4605,
+   "vote_pass": 0.24102960766619397,
+   "win_per_player": 0.085125
+  },
+  "cost13/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.1355,
+   "end": {
+    "environment": 7.7345,
+    "economy": 10.535,
+    "social": 10.3185
+   },
+   "extreme": {
+    "environment": 0.2125,
+    "economy": 0.141,
+    "social": 0.168
+   },
+   "handled": 0.5687820983125459,
+   "loss": 0.7595,
+   "lost_round": 10.556945358788676,
+   "obj_win": {
+    "environment high, economy medium": [
+     32,
+     1322
+    ],
+    "environment high, social medium": [
+     29,
+     1334
+    ],
+    "economy high, environment medium": [
+     89,
+     1349
+    ],
+    "economy high, social medium": [
+     84,
+     1332
+    ],
+    "social high, environment medium": [
+     62,
+     1295
+    ],
+    "social high, economy medium": [
+     65,
+     1368
+    ]
+   },
+   "unhandled": 4.702,
+   "vote_pass": 0.3122707263389582,
+   "win_per_player": 0.045125
+  },
+  "cost8/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.689,
+   "end": {
+    "environment": 11.5425,
+    "economy": 14.232,
+    "social": 13.707
+   },
+   "extreme": {
+    "environment": 0.2235,
+    "economy": 0.2765,
+    "social": 0.292
+   },
+   "handled": 0.894625,
+   "loss": 0.0,
+   "lost_round": NaN,
+   "obj_win": {
+    "environment high, economy medium": [
+     282,
+     1304
+    ],
+    "environment high, social medium": [
+     232,
+     1352
+    ],
+    "economy high, environment medium": [
+     431,
+     1330
+    ],
+    "economy high, social medium": [
+     404,
+     1336
+    ],
+    "social high, environment medium": [
+     386,
+     1305
+    ],
+    "social high, economy medium": [
+     371,
+     1373
+    ]
+   },
+   "unhandled": 1.2645,
+   "vote_pass": 0.25045833333333334,
+   "win_per_player": 0.26325
+  },
+  "cost8/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.664,
+   "end": {
+    "environment": 11.8485,
+    "economy": 14.059,
+    "social": 13.886
+   },
+   "extreme": {
+    "environment": 0.223,
+    "economy": 0.275,
+    "social": 0.328
+   },
+   "handled": 0.8974583333333334,
+   "loss": 0.0005,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     307,
+     1328
+    ],
+    "environment high, social medium": [
+     245,
+     1362
+    ],
+    "economy high, environment medium": [
+     369,
+     1313
+    ],
+    "economy high, social medium": [
+     359,
+     1319
+    ],
+    "social high, environment medium": [
+     373,
+     1307
+    ],
+    "social high, economy medium": [
+     370,
+     1371
+    ]
+   },
+   "unhandled": 1.2305,
+   "vote_pass": 0.32908333333333334,
+   "win_per_player": 0.252875
+  },
+  "cost9/cooperative": {
+   "all_winners": 0.0,
+   "any_winner": 0.6405,
+   "end": {
+    "environment": 11.104,
+    "economy": 13.464,
+    "social": 13.2645
+   },
+   "extreme": {
+    "environment": 0.2205,
+    "economy": 0.261,
+    "social": 0.297
+   },
+   "handled": 0.8387083333333333,
+   "loss": 0.001,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     265,
+     1321
+    ],
+    "environment high, social medium": [
+     219,
+     1347
+    ],
+    "economy high, environment medium": [
+     394,
+     1339
+    ],
+    "economy high, social medium": [
+     352,
+     1322
+    ],
+    "social high, environment medium": [
+     336,
+     1302
+    ],
+    "social high, economy medium": [
+     348,
+     1369
+    ]
+   },
+   "unhandled": 1.9355,
+   "vote_pass": 0.244625,
+   "win_per_player": 0.23925
+  },
+  "cost9/mixed": {
+   "all_winners": 0.0,
+   "any_winner": 0.6435,
+   "end": {
+    "environment": 11.32,
+    "economy": 13.75,
+    "social": 13.4295
+   },
+   "extreme": {
+    "environment": 0.224,
+    "economy": 0.2535,
+    "social": 0.3035
+   },
+   "handled": 0.8456666666666667,
+   "loss": 0.0065,
+   "lost_round": 12.0,
+   "obj_win": {
+    "environment high, economy medium": [
+     286,
+     1306
+    ],
+    "environment high, social medium": [
+     228,
+     1367
+    ],
+    "economy high, environment medium": [
+     368,
+     1330
+    ],
+    "economy high, social medium": [
+     357,
+     1325
+    ],
+    "social high, environment medium": [
+     344,
+     1311
+    ],
+    "social high, economy medium": [
+     350,
+     1361
+    ]
+   },
+   "unhandled": 1.852,
+   "vote_pass": 0.31933333333333336,
+   "win_per_player": 0.241625
+  }
+ }
+}
